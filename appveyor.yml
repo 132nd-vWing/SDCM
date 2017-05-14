@@ -1,0 +1,26 @@
+version: 0.1.0.{build}
+skip_branch_with_pr: true
+environment:
+  fast_finish: true
+install:
+- cmd: choco install 7zip.commandline
+cache:
+- C:\ProgramData\chocolatey\lib
+- C:\ProgramData\chocolatey\bin
+build_script:
+- cmd: 7za a -bb0 dummy.miz C:\projects\SDCM\* -xr!.git -x!*.miz -x!*.yml
+- cmd: IF /I "%APPVEYOR_REPO_TAG%"=="true" (ren dummy.miz SDCM_%APPVEYOR_REPO_TAG_NAME%.miz) ELSE (ren dummy.miz SDCM_%APPVEYOR_BUILD_VERSION%.miz)
+test: off
+artifacts:
+- path: '*.miz'
+  name: SDCM
+deploy:
+- provider: GitHub
+  auth_token:
+    secure: pSZSIGECKsAVKeW3cxW8/fvsGAjGAmqvlLgAABm6oQYkQjvW7ixUUAHm/RsOXddF
+  artifact: 'SDCM'
+  draft: false
+  force_update: true
+  on:
+    branch: master
+    APPVEYOR_REPO_TAG: true
