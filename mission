@@ -736,6 +736,7 @@ mission =
                                         ["AddPropAircraft"] =
                                         {
                                             ["ForceINSRules"] = false,
+                                            ["GunBurst"] = 1,
                                             ["LaserCode1"] = 8,
                                             ["LaserCode10"] = 8,
                                             ["LaserCode100"] = 6,
@@ -857,6 +858,7 @@ mission =
                                         ["AddPropAircraft"] =
                                         {
                                             ["ForceINSRules"] = false,
+                                            ["GunBurst"] = 1,
                                             ["LaserCode1"] = 8,
                                             ["LaserCode10"] = 8,
                                             ["LaserCode100"] = 6,
@@ -978,6 +980,7 @@ mission =
                                         ["AddPropAircraft"] =
                                         {
                                             ["ForceINSRules"] = false,
+                                            ["GunBurst"] = 1,
                                             ["LaserCode1"] = 8,
                                             ["LaserCode10"] = 8,
                                             ["LaserCode100"] = 6,
@@ -1099,6 +1102,7 @@ mission =
                                         ["AddPropAircraft"] =
                                         {
                                             ["ForceINSRules"] = false,
+                                            ["GunBurst"] = 1,
                                             ["LaserCode1"] = 8,
                                             ["LaserCode10"] = 8,
                                             ["LaserCode100"] = 6,
@@ -1256,6 +1260,7 @@ mission =
                                         ["AddPropAircraft"] =
                                         {
                                             ["ForceINSRules"] = false,
+                                            ["GunBurst"] = 1,
                                             ["LaserCode1"] = 8,
                                             ["LaserCode10"] = 8,
                                             ["LaserCode100"] = 6,
@@ -1378,6 +1383,7 @@ mission =
                                         ["AddPropAircraft"] =
                                         {
                                             ["ForceINSRules"] = false,
+                                            ["GunBurst"] = 1,
                                             ["LaserCode1"] = 8,
                                             ["LaserCode10"] = 8,
                                             ["LaserCode100"] = 6,
@@ -1500,6 +1506,7 @@ mission =
                                         ["AddPropAircraft"] =
                                         {
                                             ["ForceINSRules"] = false,
+                                            ["GunBurst"] = 1,
                                             ["LaserCode1"] = 8,
                                             ["LaserCode10"] = 8,
                                             ["LaserCode100"] = 6,
@@ -1622,6 +1629,7 @@ mission =
                                         ["AddPropAircraft"] =
                                         {
                                             ["ForceINSRules"] = false,
+                                            ["GunBurst"] = 1,
                                             ["LaserCode1"] = 8,
                                             ["LaserCode10"] = 8,
                                             ["LaserCode100"] = 6,
@@ -1744,6 +1752,7 @@ mission =
                                         ["AddPropAircraft"] =
                                         {
                                             ["ForceINSRules"] = false,
+                                            ["GunBurst"] = 1,
                                             ["LaserCode1"] = 8,
                                             ["LaserCode10"] = 8,
                                             ["LaserCode100"] = 6,
@@ -1866,6 +1875,7 @@ mission =
                                         ["AddPropAircraft"] =
                                         {
                                             ["ForceINSRules"] = false,
+                                            ["GunBurst"] = 1,
                                             ["LaserCode1"] = 8,
                                             ["LaserCode10"] = 8,
                                             ["LaserCode100"] = 6,
@@ -2232,7 +2242,7 @@ mission =
                                             ["ETA"] = 0,
                                             ["ETA_locked"] = true,
                                             ["action"] = "Off Road",
-                                            ["alt"] = 9,
+                                            ["alt"] = 18,
                                             ["alt_type"] = "BARO",
                                             ["formation_template"] = "",
                                             ["name"] = "DictKey_WptName_452",
@@ -2249,8 +2259,8 @@ mission =
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Turning Point",
-                                            ["x"] = -295571.42857143,
-                                            ["y"] = 651276.57142857,
+                                            ["x"] = -293370.57142857,
+                                            ["y"] = 653321.71428572,
                                         }, -- end of [1]
                                     }, -- end of ["points"]
                                     ["spans"] =
@@ -2277,13 +2287,13 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "Soldier stinger",
                                         ["unitId"] = 253,
-                                        ["x"] = -295571.42857143,
-                                        ["y"] = 651276.57142857,
+                                        ["x"] = -293370.57142857,
+                                        ["y"] = 653321.71428572,
                                     }, -- end of [1]
                                 }, -- end of ["units"]
                                 ["visible"] = false,
-                                ["x"] = -295571.42857143,
-                                ["y"] = 651276.57142857,
+                                ["x"] = -293370.57142857,
+                                ["y"] = 653321.71428572,
                             }, -- end of [1]
                         }, -- end of ["group"]
                     }, -- end of ["vehicle"]
@@ -10085,7 +10095,7 @@ mission =
                                             ["ETA"] = 0,
                                             ["ETA_locked"] = true,
                                             ["action"] = "Off Road",
-                                            ["alt"] = 9,
+                                            ["alt"] = 19,
                                             ["alt_type"] = "BARO",
                                             ["formation_template"] = "",
                                             ["name"] = "DictKey_WptName_449",
@@ -10102,8 +10112,8 @@ mission =
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Turning Point",
-                                            ["x"] = -295382.85714285,
-                                            ["y"] = 650816.57142857,
+                                            ["x"] = -293027.71428571,
+                                            ["y"] = 653178.85714287,
                                         }, -- end of [1]
                                     }, -- end of ["points"]
                                     ["spans"] =
@@ -10130,13 +10140,13 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "AAV7",
                                         ["unitId"] = 252,
-                                        ["x"] = -295382.85714285,
-                                        ["y"] = 650816.57142857,
+                                        ["x"] = -293027.71428571,
+                                        ["y"] = 653178.85714287,
                                     }, -- end of [1]
                                 }, -- end of ["units"]
                                 ["visible"] = false,
-                                ["x"] = -295382.85714285,
-                                ["y"] = 650816.57142857,
+                                ["x"] = -293027.71428571,
+                                ["y"] = 653178.85714287,
                             }, -- end of [2]
                         }, -- end of ["group"]
                     }, -- end of ["vehicle"]
@@ -24271,7 +24281,7 @@ mission =
             [17] = 48,
         }, -- end of ["red"]
     }, -- end of ["coalitions"]
-    ["currentKey"] = 9138,
+    ["currentKey"] = 9766,
     ["date"] =
     {
         ["Day"] = 1,
@@ -24319,9 +24329,9 @@ mission =
     }, -- end of ["groundControl"]
     ["map"] =
     {
-        ["centerX"] = -237327.71428571,
-        ["centerY"] = 744093.14285715,
-        ["zoom"] = 200000,
+        ["centerX"] = -295877.71428571,
+        ["centerY"] = 654650.28571429,
+        ["zoom"] = 50000,
     }, -- end of ["map"]
     ["maxDictId"] = 517,
     ["needModules"] =
