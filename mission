@@ -2242,7 +2242,7 @@ mission =
                                             ["ETA"] = 0,
                                             ["ETA_locked"] = true,
                                             ["action"] = "Off Road",
-                                            ["alt"] = 18,
+                                            ["alt"] = 23,
                                             ["alt_type"] = "BARO",
                                             ["formation_template"] = "",
                                             ["name"] = "DictKey_WptName_452",
@@ -2259,8 +2259,8 @@ mission =
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Turning Point",
-                                            ["x"] = -293370.57142857,
-                                            ["y"] = 653321.71428572,
+                                            ["x"] = -293027.71428571,
+                                            ["y"] = 658864.57142858,
                                         }, -- end of [1]
                                     }, -- end of ["points"]
                                     ["spans"] =
@@ -2287,13 +2287,13 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "Soldier stinger",
                                         ["unitId"] = 253,
-                                        ["x"] = -293370.57142857,
-                                        ["y"] = 653321.71428572,
+                                        ["x"] = -293027.71428571,
+                                        ["y"] = 658864.57142858,
                                     }, -- end of [1]
                                 }, -- end of ["units"]
                                 ["visible"] = false,
-                                ["x"] = -293370.57142857,
-                                ["y"] = 653321.71428572,
+                                ["x"] = -293027.71428571,
+                                ["y"] = 658864.57142858,
                             }, -- end of [1]
                         }, -- end of ["group"]
                     }, -- end of ["vehicle"]
@@ -10095,7 +10095,7 @@ mission =
                                             ["ETA"] = 0,
                                             ["ETA_locked"] = true,
                                             ["action"] = "Off Road",
-                                            ["alt"] = 19,
+                                            ["alt"] = 21,
                                             ["alt_type"] = "BARO",
                                             ["formation_template"] = "",
                                             ["name"] = "DictKey_WptName_449",
@@ -10112,8 +10112,8 @@ mission =
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Turning Point",
-                                            ["x"] = -293027.71428571,
-                                            ["y"] = 653178.85714287,
+                                            ["x"] = -291356.28571428,
+                                            ["y"] = 656864.57142858,
                                         }, -- end of [1]
                                     }, -- end of ["points"]
                                     ["spans"] =
@@ -10140,13 +10140,13 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "AAV7",
                                         ["unitId"] = 252,
-                                        ["x"] = -293027.71428571,
-                                        ["y"] = 653178.85714287,
+                                        ["x"] = -291356.28571428,
+                                        ["y"] = 656864.57142858,
                                     }, -- end of [1]
                                 }, -- end of ["units"]
                                 ["visible"] = false,
-                                ["x"] = -293027.71428571,
-                                ["y"] = 653178.85714287,
+                                ["x"] = -291356.28571428,
+                                ["y"] = 656864.57142858,
                             }, -- end of [2]
                         }, -- end of ["group"]
                     }, -- end of ["vehicle"]
@@ -24281,7 +24281,7 @@ mission =
             [17] = 48,
         }, -- end of ["red"]
     }, -- end of ["coalitions"]
-    ["currentKey"] = 9766,
+    ["currentKey"] = 10393,
     ["date"] =
     {
         ["Day"] = 1,
@@ -24329,8 +24329,8 @@ mission =
     }, -- end of ["groundControl"]
     ["map"] =
     {
-        ["centerX"] = -295877.71428571,
-        ["centerY"] = 654650.28571429,
+        ["centerX"] = -294592,
+        ["centerY"] = 655978.85714286,
         ["zoom"] = 50000,
     }, -- end of ["map"]
     ["maxDictId"] = 517,
