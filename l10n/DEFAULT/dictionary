@@ -33,7 +33,8 @@ Target priorities:\
 1. Enemy armor (IFV/MBT)\
 2. Enemy artillery\
 3. Enemy AAA/SAM\
-4. Logistical veichles\
+4. Enemy armor (APC)\
+5. Logistical veichles\
 \
 Restrictions:\
 Type 1 and Type 2 control approved.\
@@ -47,7 +48,7 @@ We have reporting of a Air Defence Battery at ONI (Manpads+SA-19 Tunguska).",
 TO: JTAC\
 \
 ENEMY:\
-Currently we have what appears to be a APC Company currently holding the key terrain (Road junction at AMBROLAURI), This will enable the Russian forces to move forces WEST past AMROULARI in order to get continue their offensive toward the WEST.\
+Currently we have what appears to be a Motorozed infantry company, reinforced with a platoon of IFV's,  currently holding the key terrain (Road junction at AMBROLAURI), This will enable the Russian forces to move forces WEST past AMROULARI in order to get continue their offensive toward the WEST.\
 \
 It is HIGHLY LIKELY that the russian forces will be reinforced from the EAST.",
     ["DictKey_ActionText_541"] = "FROM: GFC\
@@ -168,6 +169,14 @@ LZ can be marked with green smoke (Use F10 menu)",
     ["DictKey_GroupName_549"] = "AMROLAURI: GEO_T55_plt1",
     ["DictKey_GroupName_558"] = "AMBROLAURI: GEO_medevac1",
     ["DictKey_GroupName_569"] = "RUSSIA_EAST_CAP ZONE",
+    ["DictKey_GroupName_577"] = "AMB:GEO_T72_plt1",
+    ["DictKey_GroupName_582"] = "AMB:RUS_BMP_plt1",
+    ["DictKey_GroupName_592"] = "AMB:RUS_static_logistics",
+    ["DictKey_GroupName_595"] = "AMB:RUS_static_logistics #001",
+    ["DictKey_GroupName_598"] = "AMB:RUS_static_logistics #002",
+    ["DictKey_GroupName_601"] = "AMB:RUS_static_logistics #003",
+    ["DictKey_GroupName_604"] = "AMB_BLue_reinf",
+    ["DictKey_GroupName_612"] = "AMB_BLue_reinf #001",
     ["DictKey_UnitName_6"] = "Neck",
     ["DictKey_UnitName_9"] = "Trollef",
     ["DictKey_UnitName_12"] = "Hansolo",
@@ -488,6 +497,25 @@ LZ can be marked with green smoke (Use F10 menu)",
     ["DictKey_UnitName_562"] = "AMBROLAURI: GEO_medevac1 #002",
     ["DictKey_UnitName_563"] = "AMBROLAURI: GEO_medevac1 #003",
     ["DictKey_UnitName_570"] = "RUSSIA_EAST_CAP ZONE",
+    ["DictKey_UnitName_578"] = "AMB:GEO_T72_plt1",
+    ["DictKey_UnitName_579"] = "AMB:GEO_T72_plt1 #001",
+    ["DictKey_UnitName_580"] = "AMB:GEO_T72_plt1 #002",
+    ["DictKey_UnitName_583"] = "AMB:RUS_BMP_plt1",
+    ["DictKey_UnitName_588"] = "AMB:RUS_BMP_plt1 #001",
+    ["DictKey_UnitName_589"] = "AMB:RUS_BMP_plt1 #002",
+    ["DictKey_UnitName_593"] = "",
+    ["DictKey_UnitName_596"] = "AMB:RUS_static_logistics",
+    ["DictKey_UnitName_599"] = "AMB:RUS_static_logistics",
+    ["DictKey_UnitName_602"] = "AMB:RUS_static_logistics #001",
+    ["DictKey_UnitName_605"] = "Unit #099",
+    ["DictKey_UnitName_607"] = "Unit #100",
+    ["DictKey_UnitName_608"] = "Unit #101",
+    ["DictKey_UnitName_609"] = "Unit #102",
+    ["DictKey_UnitName_610"] = "Unit #103",
+    ["DictKey_UnitName_611"] = "Unit #104",
+    ["DictKey_UnitName_613"] = "Unit #105",
+    ["DictKey_UnitName_615"] = "Unit #106",
+    ["DictKey_UnitName_616"] = "Unit #107",
     ["DictKey_WptName_7"] = "",
     ["DictKey_WptName_10"] = "",
     ["DictKey_WptName_13"] = "",
@@ -623,6 +651,17 @@ LZ can be marked with green smoke (Use F10 menu)",
     ["DictKey_WptName_574"] = "",
     ["DictKey_WptName_575"] = "",
     ["DictKey_WptName_576"] = "",
+    ["DictKey_WptName_581"] = "",
+    ["DictKey_WptName_584"] = "",
+    ["DictKey_WptName_585"] = "",
+    ["DictKey_WptName_586"] = "",
+    ["DictKey_WptName_587"] = "",
+    ["DictKey_WptName_594"] = "",
+    ["DictKey_WptName_597"] = "",
+    ["DictKey_WptName_600"] = "",
+    ["DictKey_WptName_603"] = "",
+    ["DictKey_WptName_606"] = "",
+    ["DictKey_WptName_614"] = "",
     ["DictKey_descriptionBlueTask_3"] = "",
     ["DictKey_descriptionRedTask_2"] = "",
     ["DictKey_descriptionText_1"] = "",
