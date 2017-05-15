@@ -4,11 +4,80 @@ dictionary =
     ["DictKey_ActionRadioText_457"] = "GFC intent",
     ["DictKey_ActionRadioText_458"] = "",
     ["DictKey_ActionRadioText_459"] = "GFC Check-in",
+    ["DictKey_ActionRadioText_531"] = "GFC intent",
+    ["DictKey_ActionRadioText_532"] = "GFC Check-in",
+    ["DictKey_ActionRadioText_533"] = "GFC Check-in",
+    ["DictKey_ActionRadioText_534"] = "Threat",
+    ["DictKey_ActionRadioText_535"] = "Enemies",
+    ["DictKey_ActionRadioText_536"] = "Friendlies",
+    ["DictKey_ActionRadioText_537"] = "Artillery",
+    ["DictKey_ActionRadioText_565"] = "MEDEVAC info",
+    ["DictKey_ActionRadioText_568"] = "Green smoke",
     ["DictKey_ActionText_454"] = "",
     ["DictKey_ActionText_455"] = "From: GFC\
 To: JTAC\
 Welcome, we need your support. Use the F10 menu to get additional information",
     ["DictKey_ActionText_456"] = "GFC intent",
+    ["DictKey_ActionText_530"] = "From: GFC\
+To: JTAC\
+Welcome, we need your support. Use the F10 menu to get additional information",
+    ["DictKey_ActionText_538"] = "FROM: GFC\
+TO: JTAC\
+\
+GFC INTENT:\
+The enemy is blocking the vital roadjunction opening up an axis from EAST toward WEST. Our task is to sezie and occupy this roadjunction.\
+\
+In order to do this we need to destroy the enemy forces occupying the junction, before we can make a push when our reinfocements arrive.\
+\
+Target priorities:\
+1. Enemy armor (IFV/MBT)\
+2. Enemy artillery\
+3. Enemy AAA/SAM\
+4. Logistical veichles\
+\
+Restrictions:\
+Type 1 and Type 2 control approved.\
+Type 3, only approved 3,5nm EAST of AMBROLAURI, EAST of the bridge.",
+    ["DictKey_ActionText_539"] = "FROM: GFC\
+TO: JTAC\
+\
+THREAT:\
+We have reporting of a Air Defence Battery at ONI (Manpads+SA-19 Tunguska).",
+    ["DictKey_ActionText_540"] = "FROM: GFC\
+TO: JTAC\
+\
+ENEMY:\
+Currently we have what appears to be a APC Company currently holding the key terrain (Road junction at AMBROLAURI), This will enable the Russian forces to move forces WEST past AMROULARI in order to get continue their offensive toward the WEST.\
+\
+It is HIGHLY LIKELY that the russian forces will be reinforced from the EAST.",
+    ["DictKey_ActionText_541"] = "FROM: GFC\
+TO: JTAC\
+\
+FRIENDLIES:\
+The Goergian forces in the area are a BTR-80 Platoon, in defensive positions.\
+\
+We expect reinforcements to arrive consisting of several platoons of T-55's. Once the reinforcements have arrived, we will commence a attack against the key terrain (Road junction Amrolauri) in order to prevent the Russian forces to continue their offensive toward the WEST.",
+    ["DictKey_ActionText_542"] = "FROM: GFC\
+TO: JTAC\
+\
+ARTILLERY:\
+Currently we have no artillery support.",
+    ["DictKey_ActionText_564"] = "FROM: GFC\
+TO: JTAC\
+\
+We have a friendly casualty that is in urgent need of MEDEVAC. Due to incoming enemy mortar fire we have 2 casualties. Request MEDEVAC as soon as possible, and they the patients out of here.\
+ (Use F10 menu for additional information about casualties)",
+    ["DictKey_ActionText_566"] = "FROM: GFC\
+TO: JTAC\
+\
+MEDEVAC:\
+2 patients close to forward line of friendly troops. Due to situation in the area, the casualties must be picked up by RW landing on the road. \
+(Location N42 30.937 E043 08.437)\
+\
+Ensure that LZ is clear.\
+\
+LZ can be marked with green smoke (Use F10 menu)",
+    ["DictKey_ActionText_567"] = "",
     ["DictKey_GroupName_5"] = "Neck",
     ["DictKey_GroupName_8"] = "Trollef",
     ["DictKey_GroupName_11"] = "Hansolo",
@@ -87,14 +156,17 @@ Welcome, we need your support. Use the F10 menu to get additional information",
     ["DictKey_GroupName_444"] = "JTAC BATMAN",
     ["DictKey_GroupName_447"] = "NECK1",
     ["DictKey_GroupName_450"] = "NECK2",
-    ["DictKey_GroupName_462"] = "AMBROLAURI: APC Coy",
+    ["DictKey_GroupName_462"] = "AMBROLAURI:RUS_APC Coy",
     ["DictKey_GroupName_475"] = "AMBROLAURI: GEO_defence",
-    ["DictKey_GroupName_482"] = "AMBROLAURI: RUS_Mortar",
+    ["DictKey_GroupName_482"] = "AMBROLAURI:RUS_Mortar",
     ["DictKey_GroupName_508"] = "AMBROLAURI: RUS_Mortar vehicles",
     ["DictKey_GroupName_518"] = "Hospital_SHUA-BASHI_Role3",
     ["DictKey_GroupName_521"] = "Hospital_ISULA_Role3",
     ["DictKey_GroupName_524"] = "Hospital_SHUA-BASHI_Role3 #001",
     ["DictKey_GroupName_527"] = "Hospital_TKIBULI_role2",
+    ["DictKey_GroupName_543"] = "",
+    ["DictKey_GroupName_549"] = "AMROLAURI: GEO_T55_plt1",
+    ["DictKey_GroupName_558"] = "AMBROLAURI: GEO_medevac1",
     ["DictKey_UnitName_6"] = "Neck",
     ["DictKey_UnitName_9"] = "Trollef",
     ["DictKey_UnitName_12"] = "Hansolo",
@@ -363,10 +435,10 @@ Welcome, we need your support. Use the F10 menu to get additional information",
     ["DictKey_UnitName_472"] = "AMBROLAURI: APC Coy #009",
     ["DictKey_UnitName_473"] = "AMBROLAURI: APC Coy #010",
     ["DictKey_UnitName_476"] = "AMBROLAURI: GEO_defence",
-    ["DictKey_UnitName_478"] = "Unit #099",
-    ["DictKey_UnitName_479"] = "Unit #100",
-    ["DictKey_UnitName_480"] = "Unit #101",
-    ["DictKey_UnitName_481"] = "Unit #102",
+    ["DictKey_UnitName_478"] = "AMBROLAURI: GEO_defence #003",
+    ["DictKey_UnitName_479"] = "AMBROLAURI: GEO_defence #002",
+    ["DictKey_UnitName_480"] = "AMBROLAURI: GEO_defence #001",
+    ["DictKey_UnitName_481"] = "AMBROLAURI: GEO_defence #004",
     ["DictKey_UnitName_483"] = "AMBROLAURI: RUS_Mortar",
     ["DictKey_UnitName_484"] = "AMBROLAURI: RUS_Mortar #001",
     ["DictKey_UnitName_485"] = "AMBROLAURI: RUS_Mortar #002",
@@ -403,6 +475,17 @@ Welcome, we need your support. Use the F10 menu to get additional information",
     ["DictKey_UnitName_522"] = "",
     ["DictKey_UnitName_525"] = "",
     ["DictKey_UnitName_528"] = "",
+    ["DictKey_UnitName_544"] = "",
+    ["DictKey_UnitName_546"] = "AMBROLAURI:RUS_Mortar",
+    ["DictKey_UnitName_547"] = "AMBROLAURI:RUS_Mortar #001",
+    ["DictKey_UnitName_548"] = "AMBROLAURI:RUS_Mortar #002",
+    ["DictKey_UnitName_550"] = "AMROLAURI: GEO_T55_plt1",
+    ["DictKey_UnitName_552"] = "AMROLAURI: GEO_T55_plt1 #001",
+    ["DictKey_UnitName_553"] = "AMROLAURI: GEO_T55_plt1 #002",
+    ["DictKey_UnitName_559"] = "AMBROLAURI: GEO_medevac1",
+    ["DictKey_UnitName_561"] = "AMBROLAURI: GEO_medevac1 #001",
+    ["DictKey_UnitName_562"] = "AMBROLAURI: GEO_medevac1 #002",
+    ["DictKey_UnitName_563"] = "AMBROLAURI: GEO_medevac1 #003",
     ["DictKey_WptName_7"] = "",
     ["DictKey_WptName_10"] = "",
     ["DictKey_WptName_13"] = "",
@@ -525,6 +608,13 @@ Welcome, we need your support. Use the F10 menu to get additional information",
     ["DictKey_WptName_523"] = "",
     ["DictKey_WptName_526"] = "",
     ["DictKey_WptName_529"] = "",
+    ["DictKey_WptName_545"] = "",
+    ["DictKey_WptName_551"] = "",
+    ["DictKey_WptName_554"] = "",
+    ["DictKey_WptName_555"] = "",
+    ["DictKey_WptName_556"] = "",
+    ["DictKey_WptName_557"] = "",
+    ["DictKey_WptName_560"] = "",
     ["DictKey_descriptionBlueTask_3"] = "",
     ["DictKey_descriptionRedTask_2"] = "",
     ["DictKey_descriptionText_1"] = "",
