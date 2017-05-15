@@ -8540,6 +8540,129 @@ mission =
                                 ["x"] = -273217.99999999,
                                 ["y"] = 697157.14285715,
                             }, -- end of [1]
+                            [2] =
+                            {
+                                ["dead"] = false,
+                                ["groupId"] = 80,
+                                ["heading"] = 0.4014257279587,
+                                ["name"] = "DictKey_GroupName_518",
+                                ["route"] =
+                                {
+                                    ["points"] =
+                                    {
+                                        [1] =
+                                        {
+                                            ["action"] = "",
+                                            ["alt"] = 0,
+                                            ["formation_template"] = "",
+                                            ["name"] = "",
+                                            ["speed"] = 0,
+                                            ["type"] = "",
+                                            ["x"] = -287285.42857142,
+                                            ["y"] = 684055.14285714,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                }, -- end of ["route"]
+                                ["units"] =
+                                {
+                                    [1] =
+                                    {
+                                        ["canCargo"] = false,
+                                        ["category"] = "Fortifications",
+                                        ["heading"] = 0.4014257279587,
+                                        ["name"] = "DictKey_GroupName_518",
+                                        ["shape_name"] = "Hospital",
+                                        ["type"] = "hospital",
+                                        ["unitId"] = 297,
+                                        ["x"] = -287285.42857142,
+                                        ["y"] = 684055.14285714,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["x"] = -287285.42857142,
+                                ["y"] = 684055.14285714,
+                            }, -- end of [2]
+                            [3] =
+                            {
+                                ["dead"] = false,
+                                ["groupId"] = 81,
+                                ["heading"] = 4.9043751981041,
+                                ["name"] = "DictKey_GroupName_521",
+                                ["route"] =
+                                {
+                                    ["points"] =
+                                    {
+                                        [1] =
+                                        {
+                                            ["action"] = "",
+                                            ["alt"] = 0,
+                                            ["formation_template"] = "",
+                                            ["name"] = "",
+                                            ["speed"] = 0,
+                                            ["type"] = "",
+                                            ["x"] = -282433.14285714,
+                                            ["y"] = 647706.85714285,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                }, -- end of ["route"]
+                                ["units"] =
+                                {
+                                    [1] =
+                                    {
+                                        ["canCargo"] = false,
+                                        ["category"] = "Fortifications",
+                                        ["heading"] = 4.9043751981041,
+                                        ["name"] = "DictKey_GroupName_521",
+                                        ["shape_name"] = "Hospital",
+                                        ["type"] = "hospital",
+                                        ["unitId"] = 298,
+                                        ["x"] = -282433.14285714,
+                                        ["y"] = 647706.85714285,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["x"] = -282433.14285714,
+                                ["y"] = 647706.85714285,
+                            }, -- end of [3]
+                            [4] =
+                            {
+                                ["dead"] = false,
+                                ["groupId"] = 83,
+                                ["heading"] = 2.4783675378319,
+                                ["name"] = "DictKey_GroupName_527",
+                                ["route"] =
+                                {
+                                    ["points"] =
+                                    {
+                                        [1] =
+                                        {
+                                            ["action"] = "",
+                                            ["alt"] = 0,
+                                            ["formation_template"] = "",
+                                            ["name"] = "",
+                                            ["speed"] = 0,
+                                            ["type"] = "",
+                                            ["x"] = -261874.57142856,
+                                            ["y"] = 723360,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                }, -- end of ["route"]
+                                ["units"] =
+                                {
+                                    [1] =
+                                    {
+                                        ["canCargo"] = false,
+                                        ["category"] = "Fortifications",
+                                        ["heading"] = 2.4783675378319,
+                                        ["name"] = "DictKey_GroupName_527",
+                                        ["shape_name"] = "Hospital",
+                                        ["type"] = "hospital",
+                                        ["unitId"] = 300,
+                                        ["x"] = -261874.57142856,
+                                        ["y"] = 723360,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["x"] = -261874.57142856,
+                                ["y"] = 723360,
+                            }, -- end of [4]
                         }, -- end of ["group"]
                     }, -- end of ["static"]
                     ["vehicle"] =
@@ -24281,7 +24404,7 @@ mission =
             [17] = 48,
         }, -- end of ["red"]
     }, -- end of ["coalitions"]
-    ["currentKey"] = 10393,
+    ["currentKey"] = 15509,
     ["date"] =
     {
         ["Day"] = 1,
@@ -24329,11 +24452,11 @@ mission =
     }, -- end of ["groundControl"]
     ["map"] =
     {
-        ["centerX"] = -294592,
-        ["centerY"] = 655978.85714286,
-        ["zoom"] = 50000,
+        ["centerX"] = -331986.28571428,
+        ["centerY"] = 678193.14285714,
+        ["zoom"] = 1000000,
     }, -- end of ["map"]
-    ["maxDictId"] = 517,
+    ["maxDictId"] = 529,
     ["needModules"] =
     {
     }, -- end of ["needModules"]
