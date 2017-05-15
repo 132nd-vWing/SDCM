@@ -25,7 +25,7 @@ Welcome, we need your support. Use the F10 menu to get additional information",
 TO: JTAC\
 \
 GFC INTENT:\
-The enemy is blocking the vital roadjunction opening up an axis from EAST toward WEST. Our task is to sezie and occupy this roadjunction.\
+The enemy is blocking the vital roadjunction opening up an axis from EAST toward WEST. Our task is to seize and occupy this roadjunction.\
 \
 In order to do this we need to destroy the enemy forces occupying the junction, before we can make a push when our reinfocements arrive.\
 \
@@ -65,7 +65,7 @@ Currently we have no artillery support.",
     ["DictKey_ActionText_564"] = "FROM: GFC\
 TO: JTAC\
 \
-We have a friendly casualty that is in urgent need of MEDEVAC. Due to incoming enemy mortar fire we have 2 casualties. Request MEDEVAC as soon as possible, and they the patients out of here.\
+We have a friendly casualty that is in urgent need of MEDEVAC. Due to incoming enemy mortar fire we have 2 casualties. Request MEDEVAC as soon as possible, and they get the patients out of here.\
  (Use F10 menu for additional information about casualties)",
     ["DictKey_ActionText_566"] = "FROM: GFC\
 TO: JTAC\
