@@ -17,3 +17,6 @@ Georgia reached out to its friends and allies and while ground forces are slowly
 The primary allied bases in the area are now KUTASISI, KOBULET, SENAKI and BATUMI.
 
 For designing the local situation and taskings: EAST of KUTAISI/SENAKI=WAR ,  WEST of KUTAISI/SENAKI= Insurgent activity , this will give increased flexibility and different taskings in the two different areas.
+
+## Tasking responsible
+AMBROULARI-CAS :  NECK
