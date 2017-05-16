@@ -2,6 +2,7 @@ mapResource =
 {
     ["ResKey_Action_460"] = "mist_4_3_74.lua",
     ["ResKey_Action_461"] = "CTLD.lua",
-    ["ResKey_Action_590"] = "autogft-1_10-alpha-testing.lua",
+    ["ResKey_Action_590"] = "autogft-1_10-testing.lua",
     ["ResKey_Action_591"] = "AMB_autogft.lua",
+    ["ResKey_Action_889"] = "CHI_autogft.lua",
 } -- end of mapResource

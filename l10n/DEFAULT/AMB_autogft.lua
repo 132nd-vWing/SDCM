@@ -14,19 +14,21 @@
 -- (BLUE TASK FORCE)
 -- Adding base zone(s)
 -- Adding control zone(s)
-autogft_Group.USING_ROAD_DISTANCE_THRESHOLD_M = 1
+autogft_Group.USING_ROAD_DISTANCE_THRESHOLD_M = 100
+autogft_Group.ROUTE_OVERSHOOT_M = 50
 
 autogft_Setup:new()
   :useStaging()
   :addBaseZone("AMB_BLUE_BASE")
   :startUsingRoads()
   :setSpeed(14)
-  :addControlZone("AMB_BLUE_reduce_speed")
-  :addControlZone("AMB_blue_obj1")
+  :addIntermidiateZone("AMB_BLUE_reduce_speed")
   :setSpeed(6)
+  :addControlZone("AMB_blue_obj1")
   :addControlZone("AMB_Junction_south")
   :addControlZone("AMB_junction_north")
   :scanUnits("AMB:GEO_T55_plt1")
+  :setReinforceTimer(200)
 
  autogft_Setup:new()
    :useStaging()
@@ -34,23 +36,14 @@ autogft_Setup:new()
    :startUsingRoads()
    :setSpeed(12)
    :addControlZone("AMB_BLUE_reduce_speed")
-   :addControlZone("AMB_blue_obj1")
    :setSpeed(5)
+   :addControlZone("AMB_blue_obj1")
    :addControlZone("AMB_Junction_south")
    :addControlZone("AMB_junction_north")
    :scanUnits("AMB:GEO_T55_plt2")
 
--- autogft_Setup:new()
- -- :useStaging()
- -- :addBaseZone("AMB_BLUE")
- -- :startUsingRoads()
- -- :setSpeed(5)
- -- :addControlZone("AMB_Junction_south")
- -- :addControlZone("AMB_junction_north")
- -- :addUnits(3, "T-55")
 
 
---- 
 -- (RED TASK FORCE)
 
 autogft_Setup:new()
