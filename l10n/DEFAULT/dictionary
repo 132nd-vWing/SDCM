@@ -20,6 +20,8 @@ dictionary =
     ["DictKey_ActionRadioText_766"] = "Friendlies",
     ["DictKey_ActionRadioText_767"] = "Artillery",
     ["DictKey_ActionRadioText_768"] = "GFC Check-in",
+    ["DictKey_ActionRadioText_915"] = "MEDEVAC info",
+    ["DictKey_ActionRadioText_916"] = "Green smoke on LZ",
     ["DictKey_ActionText_454"] = "",
     ["DictKey_ActionText_455"] = "From: GFC\
 To: JTAC\
@@ -124,23 +126,22 @@ No reporting indicates AAA/SAM threats in the area.",
 TO: JTAC\
 \
 ENEMY:\
-Reporting indicates that a Mechanized infantry BN (MECH INF BN) is located at SACHHERE.\
+Reporting indicates that a Mechanized infantry BN (MECH INF BN) is located at SACHHERE (N42 20.608 E043 24.739).\
 \
-Our recce team reports that elements of the MECH INF BN is located in SAREKI, and that they have started to exploit the fuel facility in SAREKI. It is assessed that the russian forces will capture the fuel in SAREKI in order to support their offensive.\
+Our recce team reports that elements of the MECH INF BN is located in SAREKI (N42 19.852 E043 21.515), and that they have started to exploit the fuel facility in SAREKI. It is assessed that the russian forces will capture the fuel in SAREKI in order to support their offensive.\
 \
 We have also reporting that indicate that Russian artillery is supporting the MECH INF BN in SACHERE. \
 \
-The current assessment is that the russians is likely trying to capture a ammunition facotry in the village of TABAGREBI, which is NORTH of CHIATURA.\
+The current assessment is that the russians is likely trying to capture a ammunition factory in the village of TABAGREBI(N42 19.652 E043 16.971), which is NORTH of CHIATURA.\
 ",
     ["DictKey_ActionText_772"] = "FROM: GFC\
 TO: JTAC\
 \
 FRIENDLIES:\
-The Georgian forces in the area are a BTR-80 Platoon, in defensive positions. In addition 2x T-55 platoons is forward staged to prepare for a attack.\
+The Georgian forces in the area are a BTR-80 BN, in defensive positions.We are moving BTR-80 platoons forward to the ammunition factory in TABAGREBI.\
 \
-A T-55 Bn is staged at HOTEVI and is preparing for an attack.\
 \
-Once the strength of the enemy force is reduced, we will commence a attack against the key terrain (Road junction Amrolauri) in order to prevent the Russian forces to continue their offensive toward the WEST.",
+",
     ["DictKey_ActionText_773"] = "FROM: GFC\
 TO: JTAC\
 \
@@ -150,6 +151,23 @@ Currently we have no artillery support.",
     ["DictKey_ActionText_852"] = "CTLD loaded",
     ["DictKey_ActionText_853"] = "MIST loaded",
     ["DictKey_ActionText_890"] = "CHI_autogft loaded",
+    ["DictKey_ActionText_914"] = "FROM: GFC\
+TO: JTAC\
+\
+We have a friendly casualty that is in urgent need of MEDEVAC.  Request MEDEVAC as soon as possible, so we can get the patients out of here.\
+ (Use F10 menu for additional information about casualties)",
+    ["DictKey_ActionText_917"] = "FROM: GFC\
+TO: JTAC\
+\
+MEDEVAC:\
+We have two patients that are in urgent need of medical treatment. Both patients were hit by enemy shrapnels. 5 minutes ago. They need to be evacuated and be in a ROLE 2 Hospital within 55 minutes to stay within the Golden Hour.\
+\
+LZ for RW medevac is located at location: N42 17.291 E043 16.689.\
+NORTHWEST of the railroadstation, NORTHWEST of the river.\
+\
+Ensure that LZ is clear.\
+\
+LZ can be marked with green smoke (Use F10 menu)",
     ["DictKey_GroupName_5"] = "Neck",
     ["DictKey_GroupName_8"] = "Trollef",
     ["DictKey_GroupName_11"] = "Hansolo",
@@ -292,6 +310,18 @@ Currently we have no artillery support.",
     ["DictKey_GroupName_859"] = "CHI:GEO_IFV_PLT2",
     ["DictKey_GroupName_864"] = "CHI:GEO_IFV_PLT3",
     ["DictKey_GroupName_869"] = "CHI:GEO_REINFORCEMENTS",
+    ["DictKey_GroupName_891"] = "New Vehicle Group #001",
+    ["DictKey_GroupName_894"] = "New Vehicle Group #002",
+    ["DictKey_GroupName_897"] = "New Vehicle Group #003",
+    ["DictKey_GroupName_900"] = "New Vehicle Group #004",
+    ["DictKey_GroupName_905"] = "JTAC HITMAN #001",
+    ["DictKey_GroupName_908"] = "CHI: GEO_medevac",
+    ["DictKey_GroupName_918"] = "CHI_static_Medical facility",
+    ["DictKey_GroupName_921"] = "CHI_static_Medical facility #001",
+    ["DictKey_GroupName_924"] = "CHI_static_Medical facility #002",
+    ["DictKey_GroupName_927"] = "CHI_static_Medical facility #003",
+    ["DictKey_GroupName_930"] = "",
+    ["DictKey_GroupName_933"] = "CHI: GEO_medevac_vehicle",
     ["DictKey_UnitName_6"] = "Neck",
     ["DictKey_UnitName_9"] = "Trollef",
     ["DictKey_UnitName_12"] = "Hansolo",
@@ -798,6 +828,21 @@ Currently we have no artillery support.",
     ["DictKey_UnitName_886"] = "CHI:GEO_REINFORCEMENTS #015",
     ["DictKey_UnitName_887"] = "CHI:GEO_REINFORCEMENTS #016",
     ["DictKey_UnitName_888"] = "CHI:GEO_REINFORCEMENTS #017",
+    ["DictKey_UnitName_892"] = "Unit #099",
+    ["DictKey_UnitName_895"] = "Unit #100",
+    ["DictKey_UnitName_898"] = "Unit #101",
+    ["DictKey_UnitName_901"] = "Unit #102",
+    ["DictKey_UnitName_906"] = "Unit #103",
+    ["DictKey_UnitName_909"] = "CHI: GEO_medevac",
+    ["DictKey_UnitName_910"] = "CHI: GEO_medevac #001",
+    ["DictKey_UnitName_911"] = "CHI: GEO_medevac #002",
+    ["DictKey_UnitName_912"] = "CHI: GEO_medevac #003",
+    ["DictKey_UnitName_919"] = "",
+    ["DictKey_UnitName_922"] = "CHI_static_Medical facility",
+    ["DictKey_UnitName_925"] = "CHI_static_Medical facility #001",
+    ["DictKey_UnitName_928"] = "CHI_static_Medical facility #001",
+    ["DictKey_UnitName_931"] = "",
+    ["DictKey_UnitName_934"] = "CHI: GEO_medevac_vehicle",
     ["DictKey_WptName_7"] = "",
     ["DictKey_WptName_10"] = "",
     ["DictKey_WptName_13"] = "",
@@ -989,6 +1034,26 @@ Currently we have no artillery support.",
     ["DictKey_WptName_863"] = "",
     ["DictKey_WptName_868"] = "",
     ["DictKey_WptName_871"] = "",
+    ["DictKey_WptName_893"] = "",
+    ["DictKey_WptName_896"] = "",
+    ["DictKey_WptName_899"] = "",
+    ["DictKey_WptName_902"] = "",
+    ["DictKey_WptName_903"] = "",
+    ["DictKey_WptName_904"] = "",
+    ["DictKey_WptName_907"] = "",
+    ["DictKey_WptName_913"] = "",
+    ["DictKey_WptName_920"] = "",
+    ["DictKey_WptName_923"] = "",
+    ["DictKey_WptName_926"] = "",
+    ["DictKey_WptName_929"] = "",
+    ["DictKey_WptName_932"] = "",
+    ["DictKey_WptName_935"] = "",
+    ["DictKey_WptName_936"] = "",
+    ["DictKey_WptName_937"] = "",
+    ["DictKey_WptName_938"] = "",
+    ["DictKey_WptName_939"] = "",
+    ["DictKey_WptName_940"] = "",
+    ["DictKey_WptName_941"] = "",
     ["DictKey_descriptionBlueTask_3"] = "",
     ["DictKey_descriptionRedTask_2"] = "",
     ["DictKey_descriptionText_1"] = "",
