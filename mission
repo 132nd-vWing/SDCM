@@ -10010,7 +10010,7 @@ mission =
                                             [3] = 1,
                                             ["name"] = "Overlord11",
                                         }, -- end of ["callsign"]
-                                        ["heading"] = 0,
+                                        ["heading"] = -1.4057291459246,
                                         ["livery_id"] = "nato",
                                         ["name"] = "DictKey_UnitName_374",
                                         ["onboard_num"] = "302",
@@ -10772,7 +10772,7 @@ mission =
                                             [3] = 1,
                                             ["name"] = "Arco11",
                                         }, -- end of ["callsign"]
-                                        ["heading"] = 0,
+                                        ["heading"] = -1.419375123303,
                                         ["livery_id"] = "Standard USAF",
                                         ["name"] = "DictKey_UnitName_423",
                                         ["onboard_num"] = "305",
@@ -17271,7 +17271,7 @@ mission =
                                         ["alt"] = 88,
                                         ["alt_type"] = "BARO",
                                         ["callsign"] = 403,
-                                        ["heading"] = 0,
+                                        ["heading"] = -1.4169479754468,
                                         ["name"] = "DictKey_UnitName_407",
                                         ["onboard_num"] = "403",
                                         ["parking"] = "21",
@@ -32249,7 +32249,7 @@ mission =
                                             ["ETA"] = 0,
                                             ["ETA_locked"] = true,
                                             ["action"] = "Off Road",
-                                            ["alt"] = 892,
+                                            ["alt"] = 887,
                                             ["alt_type"] = "BARO",
                                             ["formation_template"] = "",
                                             ["name"] = "DictKey_WptName_341",
@@ -32266,8 +32266,8 @@ mission =
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Turning Point",
-                                            ["x"] = -259507.14285714,
-                                            ["y"] = 804845.71428572,
+                                            ["x"] = -259318.85714286,
+                                            ["y"] = 804885.0625,
                                         }, -- end of [1]
                                     }, -- end of ["points"]
                                     ["spans"] =
@@ -32292,12 +32292,12 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "Ural-375 PBU",
                                         ["unitId"] = 207,
-                                        ["x"] = -259507.14285714,
-                                        ["y"] = 804845.71428572,
+                                        ["x"] = -259318.85714286,
+                                        ["y"] = 804885.0625,
                                     }, -- end of [1]
                                     [2] =
                                     {
-                                        ["heading"] = 0,
+                                        ["heading"] = 4.5553093477052,
                                         ["name"] = "DictKey_UnitName_332",
                                         ["playerCanDrive"] = true,
                                         ["skill"] = "Average",
@@ -32307,12 +32307,12 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "Osa 9A33 ln",
                                         ["unitId"] = 208,
-                                        ["x"] = -259521.42857142,
-                                        ["y"] = 804845.71428572,
+                                        ["x"] = -259348.85714286,
+                                        ["y"] = 804832.20535714,
                                     }, -- end of [2]
                                     [3] =
                                     {
-                                        ["heading"] = 0,
+                                        ["heading"] = 2.7401669256311,
                                         ["name"] = "DictKey_UnitName_333",
                                         ["playerCanDrive"] = true,
                                         ["skill"] = "Average",
@@ -32322,12 +32322,12 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "Osa 9A33 ln",
                                         ["unitId"] = 209,
-                                        ["x"] = -259568,
-                                        ["y"] = 804855.42857143,
+                                        ["x"] = -259381.71428571,
+                                        ["y"] = 804901.63392857,
                                     }, -- end of [3]
                                     [4] =
                                     {
-                                        ["heading"] = 0,
+                                        ["heading"] = 1.4137166941154,
                                         ["name"] = "DictKey_UnitName_334",
                                         ["playerCanDrive"] = true,
                                         ["skill"] = "Average",
@@ -32337,12 +32337,12 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "Osa 9A33 ln",
                                         ["unitId"] = 210,
-                                        ["x"] = -259534,
-                                        ["y"] = 804845.71428572,
+                                        ["x"] = -259294,
+                                        ["y"] = 804962.20535714,
                                     }, -- end of [4]
                                     [5] =
                                     {
-                                        ["heading"] = 0,
+                                        ["heading"] = 6.1261056745001,
                                         ["name"] = "DictKey_UnitName_335",
                                         ["playerCanDrive"] = true,
                                         ["skill"] = "Average",
@@ -32352,8 +32352,8 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "Osa 9A33 ln",
                                         ["unitId"] = 211,
-                                        ["x"] = -259534,
-                                        ["y"] = 804863.42857143,
+                                        ["x"] = -259265.42857143,
+                                        ["y"] = 804882.77678572,
                                     }, -- end of [5]
                                     [6] =
                                     {
@@ -32367,8 +32367,8 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "Ural-375",
                                         ["unitId"] = 212,
-                                        ["x"] = -259545.42857142,
-                                        ["y"] = 804845.71428572,
+                                        ["x"] = -259330.57142857,
+                                        ["y"] = 804862.49107143,
                                     }, -- end of [6]
                                     [7] =
                                     {
@@ -32382,8 +32382,8 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "Ural-375",
                                         ["unitId"] = 213,
-                                        ["x"] = -259546,
-                                        ["y"] = 804863.42857143,
+                                        ["x"] = -259305.71428571,
+                                        ["y"] = 804879.0625,
                                     }, -- end of [7]
                                     [8] =
                                     {
@@ -32397,8 +32397,8 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "KAMAZ Truck",
                                         ["unitId"] = 214,
-                                        ["x"] = -259557.42857142,
-                                        ["y"] = 804845.71428572,
+                                        ["x"] = -259350.28571429,
+                                        ["y"] = 804884.20535714,
                                     }, -- end of [8]
                                     [9] =
                                     {
@@ -32412,8 +32412,8 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "KAMAZ Truck",
                                         ["unitId"] = 215,
-                                        ["x"] = -259558.57142857,
-                                        ["y"] = 804863.42857143,
+                                        ["x"] = -259332.85714286,
+                                        ["y"] = 804895.0625,
                                     }, -- end of [9]
                                     [10] =
                                     {
@@ -32427,13 +32427,13 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "GAZ-66",
                                         ["unitId"] = 216,
-                                        ["x"] = -259570.57142857,
-                                        ["y"] = 804845.71428572,
+                                        ["x"] = -259304.57142857,
+                                        ["y"] = 804893.34821429,
                                     }, -- end of [10]
                                 }, -- end of ["units"]
                                 ["visible"] = false,
-                                ["x"] = -259507.14285714,
-                                ["y"] = 804845.71428572,
+                                ["x"] = -259318.85714286,
+                                ["y"] = 804885.0625,
                             }, -- end of [5]
                             [6] =
                             {
@@ -32449,7 +32449,7 @@ mission =
                                             ["ETA"] = 0,
                                             ["ETA_locked"] = true,
                                             ["action"] = "Off Road",
-                                            ["alt"] = 845,
+                                            ["alt"] = 1166,
                                             ["alt_type"] = "BARO",
                                             ["formation_template"] = "",
                                             ["name"] = "DictKey_WptName_361",
@@ -32466,8 +32466,8 @@ mission =
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Turning Point",
-                                            ["x"] = -227730.85714285,
-                                            ["y"] = 758975.14285714,
+                                            ["x"] = -234545.71428572,
+                                            ["y"] = 760135.34821429,
                                         }, -- end of [1]
                                     }, -- end of ["points"]
                                     ["spans"] =
@@ -32492,8 +32492,8 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "Dog Ear radar",
                                         ["unitId"] = 217,
-                                        ["x"] = -227730.85714285,
-                                        ["y"] = 758975.14285714,
+                                        ["x"] = -234545.71428572,
+                                        ["y"] = 760135.34821429,
                                     }, -- end of [1]
                                     [2] =
                                     {
@@ -32507,8 +32507,8 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "2S6 Tunguska",
                                         ["unitId"] = 218,
-                                        ["x"] = -227711.7142857,
-                                        ["y"] = 758920.57142857,
+                                        ["x"] = -234526.57142857,
+                                        ["y"] = 760080.77678572,
                                     }, -- end of [2]
                                     [3] =
                                     {
@@ -32522,8 +32522,8 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "2S6 Tunguska",
                                         ["unitId"] = 219,
-                                        ["x"] = -227711.7142857,
-                                        ["y"] = 758946.57142857,
+                                        ["x"] = -234526.57142857,
+                                        ["y"] = 760106.77678572,
                                     }, -- end of [3]
                                     [4] =
                                     {
@@ -32537,8 +32537,8 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "2S6 Tunguska",
                                         ["unitId"] = 220,
-                                        ["x"] = -227712.28571427,
-                                        ["y"] = 758998.85714285,
+                                        ["x"] = -234527.14285714,
+                                        ["y"] = 760159.0625,
                                     }, -- end of [4]
                                     [5] =
                                     {
@@ -32552,8 +32552,8 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "2S6 Tunguska",
                                         ["unitId"] = 221,
-                                        ["x"] = -227712.28571427,
-                                        ["y"] = 759025.14285714,
+                                        ["x"] = -234527.14285714,
+                                        ["y"] = 760185.34821429,
                                     }, -- end of [5]
                                     [6] =
                                     {
@@ -32567,8 +32567,8 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "Ural-375 PBU",
                                         ["unitId"] = 222,
-                                        ["x"] = -227748.57142856,
-                                        ["y"] = 758938,
+                                        ["x"] = -234563.42857143,
+                                        ["y"] = 760098.20535715,
                                     }, -- end of [6]
                                     [7] =
                                     {
@@ -32582,8 +32582,8 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "Ural-375 PBU",
                                         ["unitId"] = 223,
-                                        ["x"] = -227754.85714285,
-                                        ["y"] = 758938,
+                                        ["x"] = -234569.71428572,
+                                        ["y"] = 760098.20535715,
                                     }, -- end of [7]
                                     [8] =
                                     {
@@ -32597,8 +32597,8 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "Ural-375",
                                         ["unitId"] = 224,
-                                        ["x"] = -227755.14285713,
-                                        ["y"] = 759010.85714285,
+                                        ["x"] = -234570,
+                                        ["y"] = 760171.0625,
                                     }, -- end of [8]
                                     [9] =
                                     {
@@ -32612,8 +32612,8 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "Ural-375",
                                         ["unitId"] = 225,
-                                        ["x"] = -227761.42857142,
-                                        ["y"] = 759010.85714286,
+                                        ["x"] = -234576.28571429,
+                                        ["y"] = 760171.06250001,
                                     }, -- end of [9]
                                     [10] =
                                     {
@@ -32627,8 +32627,8 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "KAMAZ Truck",
                                         ["unitId"] = 226,
-                                        ["x"] = -227767.42857142,
-                                        ["y"] = 759010.85714286,
+                                        ["x"] = -234582.28571429,
+                                        ["y"] = 760171.06250001,
                                     }, -- end of [10]
                                     [11] =
                                     {
@@ -32642,8 +32642,8 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "KAMAZ Truck",
                                         ["unitId"] = 227,
-                                        ["x"] = -227773.42857142,
-                                        ["y"] = 759010.85714286,
+                                        ["x"] = -234588.28571429,
+                                        ["y"] = 760171.06250001,
                                     }, -- end of [11]
                                     [12] =
                                     {
@@ -32657,8 +32657,8 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "GAZ-66",
                                         ["unitId"] = 228,
-                                        ["x"] = -227772.85714284,
-                                        ["y"] = 758994.57142858,
+                                        ["x"] = -234587.71428571,
+                                        ["y"] = 760154.77678573,
                                     }, -- end of [12]
                                     [13] =
                                     {
@@ -32672,8 +32672,8 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "GAZ-66",
                                         ["unitId"] = 229,
-                                        ["x"] = -227772.85714284,
-                                        ["y"] = 758986.28571429,
+                                        ["x"] = -234587.71428571,
+                                        ["y"] = 760146.49107144,
                                     }, -- end of [13]
                                     [14] =
                                     {
@@ -32687,8 +32687,8 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "ATMZ-5",
                                         ["unitId"] = 230,
-                                        ["x"] = -227757.42857142,
-                                        ["y"] = 758984,
+                                        ["x"] = -234572.28571429,
+                                        ["y"] = 760144.20535715,
                                     }, -- end of [14]
                                     [15] =
                                     {
@@ -32702,8 +32702,8 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "SA-18 Igla-S manpad",
                                         ["unitId"] = 231,
-                                        ["x"] = -227752.57142856,
-                                        ["y"] = 758946.28571428,
+                                        ["x"] = -234567.42857143,
+                                        ["y"] = 760106.49107143,
                                     }, -- end of [15]
                                     [16] =
                                     {
@@ -32717,8 +32717,8 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "SA-18 Igla-S manpad",
                                         ["unitId"] = 232,
-                                        ["x"] = -227750.28571427,
-                                        ["y"] = 758900.85714285,
+                                        ["x"] = -234565.14285714,
+                                        ["y"] = 760061.0625,
                                     }, -- end of [16]
                                     [17] =
                                     {
@@ -32732,8 +32732,8 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "SA-18 Igla-S manpad",
                                         ["unitId"] = 233,
-                                        ["x"] = -227766.85714285,
-                                        ["y"] = 759000.85714285,
+                                        ["x"] = -234581.71428572,
+                                        ["y"] = 760161.0625,
                                     }, -- end of [17]
                                     [18] =
                                     {
@@ -32747,13 +32747,13 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "SA-18 Igla-S manpad",
                                         ["unitId"] = 234,
-                                        ["x"] = -227754.85714285,
-                                        ["y"] = 759047.71428571,
+                                        ["x"] = -234569.71428572,
+                                        ["y"] = 760207.91964286,
                                     }, -- end of [18]
                                 }, -- end of ["units"]
                                 ["visible"] = false,
-                                ["x"] = -227730.85714285,
-                                ["y"] = 758975.14285714,
+                                ["x"] = -234545.71428572,
+                                ["y"] = 760135.34821429,
                             }, -- end of [6]
                             [7] =
                             {
@@ -36078,7 +36078,7 @@ mission =
             [17] = 48,
         }, -- end of ["red"]
     }, -- end of ["coalitions"]
-    ["currentKey"] = 131580,
+    ["currentKey"] = 132729,
     ["date"] =
     {
         ["Day"] = 1,
@@ -39153,9 +39153,9 @@ mission =
     }, -- end of ["groundControl"]
     ["map"] =
     {
-        ["centerX"] = -262568,
-        ["centerY"] = 795393.0625,
-        ["zoom"] = 500000,
+        ["centerX"] = -240068.57142857,
+        ["centerY"] = 768221.0625,
+        ["zoom"] = 200000,
     }, -- end of ["map"]
     ["maxDictId"] = 1117,
     ["needModules"] =
