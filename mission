@@ -35313,7 +35313,7 @@ mission =
                             [23] =
                             {
                                 ["groupId"] = 165,
-                                ["hidden"] = false,
+                                ["hidden"] = true,
                                 ["lateActivation"] = true,
                                 ["name"] = "DictKey_GroupName_1024",
                                 ["route"] =
@@ -35559,7 +35559,7 @@ mission =
                             [26] =
                             {
                                 ["groupId"] = 169,
-                                ["hidden"] = false,
+                                ["hidden"] = true,
                                 ["lateActivation"] = true,
                                 ["name"] = "DictKey_GroupName_1061",
                                 ["route"] =
@@ -35641,7 +35641,7 @@ mission =
                             [27] =
                             {
                                 ["groupId"] = 173,
-                                ["hidden"] = false,
+                                ["hidden"] = true,
                                 ["lateActivation"] = true,
                                 ["name"] = "DictKey_GroupName_1101",
                                 ["route"] =
@@ -35723,7 +35723,7 @@ mission =
                             [28] =
                             {
                                 ["groupId"] = 174,
-                                ["hidden"] = false,
+                                ["hidden"] = true,
                                 ["lateActivation"] = true,
                                 ["name"] = "DictKey_GroupName_1104",
                                 ["route"] =
@@ -35805,7 +35805,7 @@ mission =
                             [29] =
                             {
                                 ["groupId"] = 175,
-                                ["hidden"] = false,
+                                ["hidden"] = true,
                                 ["lateActivation"] = true,
                                 ["name"] = "DictKey_GroupName_1107",
                                 ["route"] =
@@ -35817,7 +35817,7 @@ mission =
                                             ["ETA"] = 0,
                                             ["ETA_locked"] = true,
                                             ["action"] = "Off Road",
-                                            ["alt"] = 788,
+                                            ["alt"] = 833,
                                             ["alt_type"] = "BARO",
                                             ["formation_template"] = "",
                                             ["name"] = "DictKey_WptName_1109",
@@ -35834,8 +35834,8 @@ mission =
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Turning Point",
-                                            ["x"] = -266810,
-                                            ["y"] = 760909.71428573,
+                                            ["x"] = -266857.14285715,
+                                            ["y"] = 760882.57142856,
                                         }, -- end of [1]
                                     }, -- end of ["points"]
                                     ["routeRelativeTOT"] = true,
@@ -35876,13 +35876,13 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "Osa 9A33 ln",
                                         ["unitId"] = 553,
-                                        ["x"] = -266810,
-                                        ["y"] = 760909.71428573,
+                                        ["x"] = -266857.14285715,
+                                        ["y"] = 760882.57142856,
                                     }, -- end of [1]
                                 }, -- end of ["units"]
                                 ["visible"] = false,
-                                ["x"] = -266810,
-                                ["y"] = 760909.71428573,
+                                ["x"] = -266857.14285715,
+                                ["y"] = 760882.57142856,
                             }, -- end of [29]
                             [30] =
                             {
@@ -36078,7 +36078,7 @@ mission =
             [17] = 48,
         }, -- end of ["red"]
     }, -- end of ["coalitions"]
-    ["currentKey"] = 125345,
+    ["currentKey"] = 127644,
     ["date"] =
     {
         ["Day"] = 1,
@@ -39153,9 +39153,9 @@ mission =
     }, -- end of ["groundControl"]
     ["map"] =
     {
-        ["centerX"] = -271664.28571429,
-        ["centerY"] = 763696.85714285,
-        ["zoom"] = 50000,
+        ["centerX"] = -270628.57142858,
+        ["centerY"] = 770311.14285714,
+        ["zoom"] = 100000,
     }, -- end of ["map"]
     ["maxDictId"] = 1117,
     ["needModules"] =
