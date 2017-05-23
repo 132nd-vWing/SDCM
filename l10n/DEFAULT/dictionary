@@ -149,7 +149,7 @@ ARTILLERY:\
 Currently we have no artillery support.",
     ["DictKey_ActionText_851"] = "ATUOFGT loaded",
     ["DictKey_ActionText_852"] = "CTLD loaded",
-    ["DictKey_ActionText_853"] = "MIST loaded",
+    ["DictKey_ActionText_853"] = "MOOSE  loaded",
     ["DictKey_ActionText_890"] = "CHI_autogft loaded",
     ["DictKey_ActionText_914"] = "FROM: GFC\
 TO: JTAC\
@@ -168,6 +168,31 @@ NORTHWEST of the railroadstation, NORTHWEST of the river.\
 Ensure that LZ is clear.\
 \
 LZ can be marked with green smoke (Use F10 menu)",
+    ["DictKey_ActionText_980"] = "MIST loaded",
+    ["DictKey_ActionText_982"] = "MOOSE  loaded",
+    ["DictKey_ActionText_984"] = "BASE:TraceAll(true)\
+BASE:TraceOnOff(true)  \
+  \
+AR_Zone = ZONE:New(\"AR_KORBOULI\")\
+\
+AR_Korbouli_TablePatrol = { \"AR_Korbouli_Template1\", \"AR_Korbouli_Template2\", \"AR_Korbouli_Template3\",\"AR_Korbouli_Template4\",\"AR_Korbouli_Template5\" }\
+\
+AR_Korbouli_Patrol_1 = SPAWN:New(\"AR_Korbouli_Patrol_1\"):InitRandomizeTemplate( AR_Korbouli_TablePatrol ):SpawnFromVec3(AR_Zone:GetRandomPointVec3())\
+AR_Korbouli_Patrol_2 = SPAWN:New(\"AR_Korbouli_Patrol_2\"):InitRandomizeTemplate( AR_Korbouli_TablePatrol ):SpawnFromVec3(AR_Zone:GetRandomPointVec3())\
+AR_Korbouli_Patrol_3 = SPAWN:New(\"AR_Korbouli_Patrol_3\"):InitRandomizeTemplate( AR_Korbouli_TablePatrol ):SpawnFromVec3(AR_Zone:GetRandomPointVec3())\
+\
+SCHEDULER:New(nil,function()\
+AR_Korbouli_Patrol_1:RouteToVec3(AR_Zone:GetRandomPointVec3(),25)\
+end,{},5,180,0.5)\
+\
+SCHEDULER:New(nil,function()\
+AR_Korbouli_Patrol_2:RouteToVec3(AR_Zone:GetRandomPointVec3(),25)\
+end,{},12,180,0.5)\
+\
+SCHEDULER:New(nil,function()\
+AR_Korbouli_Patrol_3:RouteToVec3(AR_Zone:GetRandomPointVec3(),25)\
+end,{},18,180,0.5)\
+",
     ["DictKey_GroupName_5"] = "Neck",
     ["DictKey_GroupName_8"] = "Trollef",
     ["DictKey_GroupName_11"] = "Hansolo",
@@ -334,6 +359,18 @@ LZ can be marked with green smoke (Use F10 menu)",
     ["DictKey_GroupName_970"] = "Fueltank #003",
     ["DictKey_GroupName_973"] = "Fueltank #004",
     ["DictKey_GroupName_976"] = "Fueltank #005",
+    ["DictKey_GroupName_985"] = "AR_Korbouli_Template1",
+    ["DictKey_GroupName_991"] = "AR_Korbouli_Template2",
+    ["DictKey_GroupName_994"] = "AR_Korbouli_Template3",
+    ["DictKey_GroupName_997"] = "AR_Korbouli_Template4",
+    ["DictKey_GroupName_1000"] = "AR_Korbouli_Template5",
+    ["DictKey_GroupName_1003"] = "AR_Korbouli_Template1",
+    ["DictKey_GroupName_1006"] = "AR_Korbouli_Template1",
+    ["DictKey_GroupName_1009"] = "AR_Korbouli_Template1",
+    ["DictKey_GroupName_1012"] = "AR_Korbouli_Template1",
+    ["DictKey_GroupName_1024"] = "AR_Korbouli_Patrol_1",
+    ["DictKey_GroupName_1030"] = "AR_Korbouli_Patrol_2",
+    ["DictKey_GroupName_1033"] = "AR_Korbouli_Patrol_3",
     ["DictKey_UnitName_6"] = "Neck",
     ["DictKey_UnitName_9"] = "Trollef",
     ["DictKey_UnitName_12"] = "Hansolo",
@@ -867,6 +904,44 @@ LZ can be marked with green smoke (Use F10 menu)",
     ["DictKey_UnitName_971"] = "Fueltank #002",
     ["DictKey_UnitName_974"] = "Fueltank #002",
     ["DictKey_UnitName_977"] = "Fueltank #002",
+    ["DictKey_UnitName_986"] = "Unit #099",
+    ["DictKey_UnitName_988"] = "Unit #103",
+    ["DictKey_UnitName_989"] = "Unit #104",
+    ["DictKey_UnitName_990"] = "Unit #105",
+    ["DictKey_UnitName_992"] = "Unit #103",
+    ["DictKey_UnitName_995"] = "Unit #104",
+    ["DictKey_UnitName_998"] = "Unit #105",
+    ["DictKey_UnitName_1001"] = "Unit #106",
+    ["DictKey_UnitName_1004"] = "Unit #099",
+    ["DictKey_UnitName_1007"] = "Unit #099",
+    ["DictKey_UnitName_1010"] = "Unit #099",
+    ["DictKey_UnitName_1013"] = "Unit #099",
+    ["DictKey_UnitName_1015"] = "Unit #107",
+    ["DictKey_UnitName_1016"] = "Unit #108",
+    ["DictKey_UnitName_1017"] = "Unit #109",
+    ["DictKey_UnitName_1018"] = "Unit #110",
+    ["DictKey_UnitName_1019"] = "Unit #111",
+    ["DictKey_UnitName_1020"] = "Unit #112",
+    ["DictKey_UnitName_1021"] = "Unit #113",
+    ["DictKey_UnitName_1022"] = "Unit #114",
+    ["DictKey_UnitName_1023"] = "Unit #115",
+    ["DictKey_UnitName_1025"] = "AR_Korbouli_Patrol_1",
+    ["DictKey_UnitName_1031"] = "AR_Korbouli_Patrol_2",
+    ["DictKey_UnitName_1034"] = "AR_Korbouli_Patrol_3",
+    ["DictKey_UnitName_1036"] = "Unit #116",
+    ["DictKey_UnitName_1037"] = "Unit #117",
+    ["DictKey_UnitName_1038"] = "",
+    ["DictKey_UnitName_1039"] = "",
+    ["DictKey_UnitName_1040"] = "",
+    ["DictKey_UnitName_1041"] = "",
+    ["DictKey_UnitName_1042"] = "Unit #114",
+    ["DictKey_UnitName_1043"] = "Unit #115",
+    ["DictKey_UnitName_1044"] = "Unit #118",
+    ["DictKey_UnitName_1045"] = "Unit #119",
+    ["DictKey_UnitName_1046"] = "Unit #120",
+    ["DictKey_UnitName_1047"] = "Unit #121",
+    ["DictKey_UnitName_1048"] = "Unit #122",
+    ["DictKey_UnitName_1049"] = "Unit #123",
     ["DictKey_WptName_7"] = "",
     ["DictKey_WptName_10"] = "",
     ["DictKey_WptName_13"] = "",
@@ -1091,6 +1166,21 @@ LZ can be marked with green smoke (Use F10 menu)",
     ["DictKey_WptName_972"] = "",
     ["DictKey_WptName_975"] = "",
     ["DictKey_WptName_978"] = "",
+    ["DictKey_WptName_987"] = "",
+    ["DictKey_WptName_993"] = "",
+    ["DictKey_WptName_996"] = "",
+    ["DictKey_WptName_999"] = "",
+    ["DictKey_WptName_1002"] = "",
+    ["DictKey_WptName_1005"] = "",
+    ["DictKey_WptName_1008"] = "",
+    ["DictKey_WptName_1011"] = "",
+    ["DictKey_WptName_1014"] = "",
+    ["DictKey_WptName_1026"] = "",
+    ["DictKey_WptName_1027"] = "",
+    ["DictKey_WptName_1028"] = "",
+    ["DictKey_WptName_1029"] = "",
+    ["DictKey_WptName_1032"] = "",
+    ["DictKey_WptName_1035"] = "",
     ["DictKey_descriptionBlueTask_3"] = "",
     ["DictKey_descriptionRedTask_2"] = "",
     ["DictKey_descriptionText_1"] = "",
