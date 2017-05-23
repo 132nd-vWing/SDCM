@@ -9344,7 +9344,7 @@ mission =
                                 ["communication"] = true,
                                 ["frequency"] = 252.9,
                                 ["groupId"] = 57,
-                                ["hidden"] = true,
+                                ["hidden"] = false,
                                 ["modulation"] = 0,
                                 ["name"] = "DictKey_GroupName_365",
                                 ["radioSet"] = true,
@@ -9549,7 +9549,7 @@ mission =
                                 ["communication"] = true,
                                 ["frequency"] = 251.9,
                                 ["groupId"] = 58,
-                                ["hidden"] = true,
+                                ["hidden"] = false,
                                 ["modulation"] = 0,
                                 ["name"] = "DictKey_GroupName_369",
                                 ["radioSet"] = true,
@@ -9754,7 +9754,7 @@ mission =
                                 ["communication"] = true,
                                 ["frequency"] = 253.9,
                                 ["groupId"] = 59,
-                                ["hidden"] = true,
+                                ["hidden"] = false,
                                 ["modulation"] = 0,
                                 ["name"] = "DictKey_GroupName_373",
                                 ["radioSet"] = true,
@@ -10010,7 +10010,7 @@ mission =
                                             [3] = 1,
                                             ["name"] = "Overlord11",
                                         }, -- end of ["callsign"]
-                                        ["heading"] = -1.4057291459246,
+                                        ["heading"] = 0,
                                         ["livery_id"] = "nato",
                                         ["name"] = "DictKey_UnitName_374",
                                         ["onboard_num"] = "302",
@@ -10043,7 +10043,7 @@ mission =
                                 ["communication"] = true,
                                 ["frequency"] = 150,
                                 ["groupId"] = 61,
-                                ["hidden"] = true,
+                                ["hidden"] = false,
                                 ["modulation"] = 0,
                                 ["name"] = "DictKey_GroupName_384",
                                 ["radioSet"] = true,
@@ -10277,7 +10277,7 @@ mission =
                                 ["communication"] = true,
                                 ["frequency"] = 152,
                                 ["groupId"] = 62,
-                                ["hidden"] = true,
+                                ["hidden"] = false,
                                 ["modulation"] = 0,
                                 ["name"] = "DictKey_GroupName_390",
                                 ["radioSet"] = true,
@@ -10511,7 +10511,7 @@ mission =
                                 ["communication"] = true,
                                 ["frequency"] = 151,
                                 ["groupId"] = 67,
-                                ["hidden"] = true,
+                                ["hidden"] = false,
                                 ["modulation"] = 0,
                                 ["name"] = "DictKey_GroupName_422",
                                 ["radioSet"] = true,
@@ -10772,7 +10772,7 @@ mission =
                                             [3] = 1,
                                             ["name"] = "Arco11",
                                         }, -- end of ["callsign"]
-                                        ["heading"] = -1.419375123303,
+                                        ["heading"] = 0,
                                         ["livery_id"] = "Standard USAF",
                                         ["name"] = "DictKey_UnitName_423",
                                         ["onboard_num"] = "305",
@@ -16648,7 +16648,7 @@ mission =
                                 ["communication"] = true,
                                 ["frequency"] = 234,
                                 ["groupId"] = 60,
-                                ["hidden"] = true,
+                                ["hidden"] = false,
                                 ["modulation"] = 0,
                                 ["name"] = "DictKey_GroupName_380",
                                 ["radioSet"] = true,
@@ -16844,7 +16844,7 @@ mission =
                                 ["communication"] = true,
                                 ["frequency"] = 242.5,
                                 ["groupId"] = 63,
-                                ["hidden"] = true,
+                                ["hidden"] = false,
                                 ["modulation"] = 0,
                                 ["name"] = "DictKey_GroupName_395",
                                 ["radioSet"] = true,
@@ -17040,7 +17040,7 @@ mission =
                                 ["communication"] = true,
                                 ["frequency"] = 241.25,
                                 ["groupId"] = 64,
-                                ["hidden"] = true,
+                                ["hidden"] = false,
                                 ["modulation"] = 0,
                                 ["name"] = "DictKey_GroupName_406",
                                 ["radioSet"] = true,
@@ -17271,7 +17271,7 @@ mission =
                                         ["alt"] = 88,
                                         ["alt_type"] = "BARO",
                                         ["callsign"] = 403,
-                                        ["heading"] = -1.4169479754468,
+                                        ["heading"] = 0,
                                         ["name"] = "DictKey_UnitName_407",
                                         ["onboard_num"] = "403",
                                         ["parking"] = "21",
@@ -29544,7 +29544,7 @@ mission =
                                         }, -- end of [7]
                                         [8] =
                                         {
-                                            ["ETA"] = 47.852176490578,
+                                            ["ETA"] = 47.852176490662,
                                             ["ETA_locked"] = false,
                                             ["action"] = "Turning Point",
                                             ["alt"] = 2000,
@@ -34713,7 +34713,7 @@ mission =
                             [18] =
                             {
                                 ["groupId"] = 160,
-                                ["hidden"] = true,
+                                ["hidden"] = false,
                                 ["lateActivation"] = true,
                                 ["name"] = "DictKey_GroupName_985",
                                 ["route"] =
@@ -34857,7 +34857,7 @@ mission =
                             [19] =
                             {
                                 ["groupId"] = 161,
-                                ["hidden"] = true,
+                                ["hidden"] = false,
                                 ["lateActivation"] = true,
                                 ["name"] = "DictKey_GroupName_991",
                                 ["route"] =
@@ -34941,7 +34941,7 @@ mission =
                             [20] =
                             {
                                 ["groupId"] = 162,
-                                ["hidden"] = true,
+                                ["hidden"] = false,
                                 ["lateActivation"] = true,
                                 ["name"] = "DictKey_GroupName_994",
                                 ["route"] =
@@ -35025,7 +35025,7 @@ mission =
                             [21] =
                             {
                                 ["groupId"] = 163,
-                                ["hidden"] = true,
+                                ["hidden"] = false,
                                 ["lateActivation"] = true,
                                 ["name"] = "DictKey_GroupName_997",
                                 ["route"] =
@@ -35184,7 +35184,7 @@ mission =
                             [22] =
                             {
                                 ["groupId"] = 164,
-                                ["hidden"] = true,
+                                ["hidden"] = false,
                                 ["lateActivation"] = true,
                                 ["name"] = "DictKey_GroupName_1000",
                                 ["route"] =
@@ -35313,7 +35313,7 @@ mission =
                             [23] =
                             {
                                 ["groupId"] = 165,
-                                ["hidden"] = true,
+                                ["hidden"] = false,
                                 ["lateActivation"] = true,
                                 ["name"] = "DictKey_GroupName_1024",
                                 ["route"] =
@@ -35325,7 +35325,7 @@ mission =
                                             ["ETA"] = 0,
                                             ["ETA_locked"] = true,
                                             ["action"] = "Off Road",
-                                            ["alt"] = 838,
+                                            ["alt"] = 832,
                                             ["alt_type"] = "BARO",
                                             ["formation_template"] = "",
                                             ["name"] = "DictKey_WptName_1026",
@@ -35342,8 +35342,8 @@ mission =
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Turning Point",
-                                            ["x"] = -268871.42857143,
-                                            ["y"] = 762154,
+                                            ["x"] = -268900,
+                                            ["y"] = 762242.49107143,
                                         }, -- end of [1]
                                     }, -- end of ["points"]
                                     ["routeRelativeTOT"] = true,
@@ -35384,18 +35384,18 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "BTR-80",
                                         ["unitId"] = 529,
-                                        ["x"] = -268871.42857143,
-                                        ["y"] = 762154,
+                                        ["x"] = -268900,
+                                        ["y"] = 762242.49107143,
                                     }, -- end of [1]
                                 }, -- end of ["units"]
                                 ["visible"] = false,
-                                ["x"] = -268871.42857143,
-                                ["y"] = 762154,
+                                ["x"] = -268900,
+                                ["y"] = 762242.49107143,
                             }, -- end of [23]
                             [24] =
                             {
                                 ["groupId"] = 166,
-                                ["hidden"] = true,
+                                ["hidden"] = false,
                                 ["lateActivation"] = true,
                                 ["name"] = "DictKey_GroupName_1030",
                                 ["route"] =
@@ -35407,7 +35407,7 @@ mission =
                                             ["ETA"] = 0,
                                             ["ETA_locked"] = true,
                                             ["action"] = "Off Road",
-                                            ["alt"] = 837,
+                                            ["alt"] = 835,
                                             ["alt_type"] = "BARO",
                                             ["formation_template"] = "",
                                             ["name"] = "DictKey_WptName_1032",
@@ -35424,8 +35424,8 @@ mission =
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Turning Point",
-                                            ["x"] = -269271.42857143,
-                                            ["y"] = 761825.42857143,
+                                            ["x"] = -269189.42857143,
+                                            ["y"] = 761985.91964286,
                                         }, -- end of [1]
                                     }, -- end of ["points"]
                                     ["routeRelativeTOT"] = true,
@@ -35466,18 +35466,18 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "BTR-80",
                                         ["unitId"] = 530,
-                                        ["x"] = -269271.42857143,
-                                        ["y"] = 761825.42857143,
+                                        ["x"] = -269189.42857143,
+                                        ["y"] = 761985.91964286,
                                     }, -- end of [1]
                                 }, -- end of ["units"]
                                 ["visible"] = false,
-                                ["x"] = -269271.42857143,
-                                ["y"] = 761825.42857143,
+                                ["x"] = -269189.42857143,
+                                ["y"] = 761985.91964286,
                             }, -- end of [24]
                             [25] =
                             {
                                 ["groupId"] = 167,
-                                ["hidden"] = true,
+                                ["hidden"] = false,
                                 ["lateActivation"] = true,
                                 ["name"] = "DictKey_GroupName_1033",
                                 ["route"] =
@@ -35559,7 +35559,7 @@ mission =
                             [26] =
                             {
                                 ["groupId"] = 169,
-                                ["hidden"] = true,
+                                ["hidden"] = false,
                                 ["lateActivation"] = true,
                                 ["name"] = "DictKey_GroupName_1061",
                                 ["route"] =
@@ -35641,7 +35641,7 @@ mission =
                             [27] =
                             {
                                 ["groupId"] = 173,
-                                ["hidden"] = true,
+                                ["hidden"] = false,
                                 ["lateActivation"] = true,
                                 ["name"] = "DictKey_GroupName_1101",
                                 ["route"] =
@@ -35653,7 +35653,7 @@ mission =
                                             ["ETA"] = 0,
                                             ["ETA_locked"] = true,
                                             ["action"] = "Off Road",
-                                            ["alt"] = 788,
+                                            ["alt"] = 760,
                                             ["alt_type"] = "BARO",
                                             ["formation_template"] = "",
                                             ["name"] = "DictKey_WptName_1103",
@@ -35670,8 +35670,8 @@ mission =
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Turning Point",
-                                            ["x"] = -265367.14285715,
-                                            ["y"] = 759581.14285716,
+                                            ["x"] = -265371.42857143,
+                                            ["y"] = 759571.0625,
                                         }, -- end of [1]
                                     }, -- end of ["points"]
                                     ["routeRelativeTOT"] = true,
@@ -35712,18 +35712,18 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "2S6 Tunguska",
                                         ["unitId"] = 551,
-                                        ["x"] = -265367.14285715,
-                                        ["y"] = 759581.14285716,
+                                        ["x"] = -265371.42857143,
+                                        ["y"] = 759571.0625,
                                     }, -- end of [1]
                                 }, -- end of ["units"]
                                 ["visible"] = false,
-                                ["x"] = -265367.14285715,
-                                ["y"] = 759581.14285716,
+                                ["x"] = -265371.42857143,
+                                ["y"] = 759571.0625,
                             }, -- end of [27]
                             [28] =
                             {
                                 ["groupId"] = 174,
-                                ["hidden"] = true,
+                                ["hidden"] = false,
                                 ["lateActivation"] = true,
                                 ["name"] = "DictKey_GroupName_1104",
                                 ["route"] =
@@ -35805,7 +35805,7 @@ mission =
                             [29] =
                             {
                                 ["groupId"] = 175,
-                                ["hidden"] = true,
+                                ["hidden"] = false,
                                 ["lateActivation"] = true,
                                 ["name"] = "DictKey_GroupName_1107",
                                 ["route"] =
@@ -35887,7 +35887,7 @@ mission =
                             [30] =
                             {
                                 ["groupId"] = 177,
-                                ["hidden"] = true,
+                                ["hidden"] = false,
                                 ["lateActivation"] = true,
                                 ["name"] = "DictKey_GroupName_1113",
                                 ["route"] =
@@ -35899,7 +35899,7 @@ mission =
                                             ["ETA"] = 0,
                                             ["ETA_locked"] = true,
                                             ["action"] = "Off Road",
-                                            ["alt"] = 838,
+                                            ["alt"] = 829,
                                             ["alt_type"] = "BARO",
                                             ["formation_template"] = "",
                                             ["name"] = "DictKey_WptName_1115",
@@ -35916,8 +35916,8 @@ mission =
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Turning Point",
-                                            ["x"] = -269442.85714286,
-                                            ["y"] = 761768.28571429,
+                                            ["x"] = -269446.57142857,
+                                            ["y"] = 761771.63392857,
                                         }, -- end of [1]
                                     }, -- end of ["points"]
                                     ["routeRelativeTOT"] = true,
@@ -35958,13 +35958,13 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "BTR-80",
                                         ["unitId"] = 555,
-                                        ["x"] = -269442.85714286,
-                                        ["y"] = 761768.28571429,
+                                        ["x"] = -269446.57142857,
+                                        ["y"] = 761771.63392857,
                                     }, -- end of [1]
                                 }, -- end of ["units"]
                                 ["visible"] = false,
-                                ["x"] = -269442.85714286,
-                                ["y"] = 761768.28571429,
+                                ["x"] = -269446.57142857,
+                                ["y"] = 761771.63392857,
                             }, -- end of [30]
                         }, -- end of ["group"]
                     }, -- end of ["vehicle"]
@@ -36078,7 +36078,7 @@ mission =
             [17] = 48,
         }, -- end of ["red"]
     }, -- end of ["coalitions"]
-    ["currentKey"] = 127644,
+    ["currentKey"] = 131580,
     ["date"] =
     {
         ["Day"] = 1,
@@ -39153,9 +39153,9 @@ mission =
     }, -- end of ["groundControl"]
     ["map"] =
     {
-        ["centerX"] = -270628.57142858,
-        ["centerY"] = 770311.14285714,
-        ["zoom"] = 100000,
+        ["centerX"] = -262568,
+        ["centerY"] = 795393.0625,
+        ["zoom"] = 500000,
     }, -- end of ["map"]
     ["maxDictId"] = 1117,
     ["needModules"] =
