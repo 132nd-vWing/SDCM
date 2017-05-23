@@ -1,7 +1,16 @@
 BASE:TraceAll(true)
 BASE:TraceOnOff(true)  
   
-AR_Zone = ZONE:New("AR_KORBOULI")
+
+
+AR_Zone = ZONE_POLYGON:New("AR_Zone", GROUP:FindByName( "AR_Korbouli_Zone" ))
+
+AR_Karbouli_TableSams_Zones = { ZONE_POLYGON:New("AR_Korbouli_Zone_SAM_SOUTH", GROUP:FindByName( "AR_Korbouli_Zone_SAM_SOUTH" )),
+ZONE_POLYGON:New("AR_Korbouli_Zone_SAM_EAST", GROUP:FindByName( "AR_Korbouli_Zone_SAM_EAST" )),
+ZONE_POLYGON:New("AR_Korbouli_Zone_SAM_NORTH", GROUP:FindByName( "AR_Korbouli_Zone_SAM_NORTH" )) }
+
+AR_Korbouli_TableSAM = { "AR_Korbouli_Zone_SA8", "AR_Korbouli_Zone_SA9", "AR_Korbouli_Zone_SA13","AR_Korbouli_Zone_SA19" }
+
 
 AR_Korbouli_TablePatrol = { "AR_Korbouli_Template1", "AR_Korbouli_Template2", "AR_Korbouli_Template3","AR_Korbouli_Template4","AR_Korbouli_Template5" }
 
@@ -20,3 +29,7 @@ end,{},12,180,0.5)
 SCHEDULER:New(nil,function()
 AR_Korbouli_Patrol_3:RouteToVec3(AR_Zone:GetRandomPointVec3(),25)
 end,{},18,180,0.5)
+
+
+AR_Korbouli_SAM = SPAWN:New( "AR_Korbouli_SAM" ):InitRandomizeTemplate( AR_Korbouli_TableSAM ):InitRandomizeZones( AR_Karbouli_TableSams_Zones ):Spawn()
+
