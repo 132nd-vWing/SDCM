@@ -36078,7 +36078,7 @@ mission =
             [17] = 48,
         }, -- end of ["red"]
     }, -- end of ["coalitions"]
-    ["currentKey"] = 132729,
+    ["currentKey"] = 135027,
     ["date"] =
     {
         ["Day"] = 1,
@@ -39153,11 +39153,11 @@ mission =
     }, -- end of ["groundControl"]
     ["map"] =
     {
-        ["centerX"] = -240068.57142857,
-        ["centerY"] = 768221.0625,
-        ["zoom"] = 200000,
+        ["centerX"] = -54007.142857143,
+        ["centerY"] = 640957.14285714,
+        ["zoom"] = 50000,
     }, -- end of ["map"]
-    ["maxDictId"] = 1117,
+    ["maxDictId"] = 1118,
     ["needModules"] =
     {
     }, -- end of ["needModules"]
@@ -39216,7 +39216,7 @@ mission =
         {
             [1] = "a_add_radio_item_for_group(75, getValueDictByKey(\"DictKey_ActionRadioText_453\"), 10, 1);a_add_radio_item_for_group(73, getValueDictByKey(\"DictKey_ActionRadioText_533\"), 20, 1);a_add_radio_item_for_group(68, getValueDictByKey(\"DictKey_ActionRadioText_761\"), 30, 1);a_group_off(88);a_group_off(93);a_group_off(84);a_group_off(87);a_group_off(94);a_group_off(94);a_group_off(99);a_group_off(136);a_group_off(135);a_group_off(134);a_group_off(133);a_group_off(142);a_group_off(147);",
             [2] = "a_out_text_delay(getValueDictByKey(\"DictKey_ActionText_853\"), 2, false);a_do_script_file(getValueResourceByKey(\"ResKey_Action_981\")); mission.trig.func[2]=nil;",
-            [3] = "a_out_text_delay(getValueDictByKey(\"DictKey_ActionText_982\"), 2, false);a_do_script_file(getValueResourceByKey(\"ResKey_Action_1117\")); mission.trig.func[3]=nil;",
+            [3] = "a_out_text_delay(getValueDictByKey(\"DictKey_ActionText_982\"), 2, false);a_do_script_file(getValueResourceByKey(\"ResKey_Action_1118\")); mission.trig.func[3]=nil;",
             [4] = "a_do_script_file(getValueResourceByKey(\"ResKey_Action_979\"));a_out_text_delay(getValueDictByKey(\"DictKey_ActionText_980\"), 10, false); mission.trig.func[4]=nil;",
             [5] = "a_do_script_file(getValueResourceByKey(\"ResKey_Action_461\"));a_out_text_delay(getValueDictByKey(\"DictKey_ActionText_852\"), 10, false); mission.trig.func[5]=nil;",
             [6] = "a_do_script_file(getValueResourceByKey(\"ResKey_Action_590\"));a_out_text_delay(getValueDictByKey(\"DictKey_ActionText_851\"), 10, false); mission.trig.func[6]=nil;",
@@ -40150,7 +40150,7 @@ mission =
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_1117",
+                    ["file"] = "ResKey_Action_1118",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [2]
             }, -- end of ["actions"]

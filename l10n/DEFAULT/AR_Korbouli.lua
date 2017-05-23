@@ -33,3 +33,11 @@ end,{},18,180,0.5)
 
 AR_Korbouli_SAM = SPAWN:New( "AR_Korbouli_SAM" ):InitRandomizeTemplate( AR_Korbouli_TableSAM ):InitRandomizeZones( AR_Karbouli_TableSams_Zones ):Spawn()
 
+AR_Korbouli_SAM_Unit = AR_Korbouli_SAM:GetUnit(1)
+AR_Korbouli_SAM_Unit_Coordinates = AR_Korbouli_SAM_Unit:GetCoordinate()
+AR_Korbouli_SAM_Unit_Location = AR_Korbouli_SAM_Unit_Coordinates:ToString(AR_Korbouli_SAM_Unit)
+
+AR_Intel = MENU_COALITION:New(coalition.side.BLUE,"AR Korbouli Intel")
+MENU_COALITION:New(coalition.side.BLUE,"SAM is located at coordinates "..AR_Korbouli_SAM_Unit_Location, AR_Intel)
+
+
