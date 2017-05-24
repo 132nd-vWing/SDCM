@@ -54,9 +54,24 @@ AR_Zone_HighValue = ZONE_POLYGON:New("AR_Zone_HighValue", GROUP:FindByName( "AR_
 AR_Korbouli_HighValue = SPAWN:New("AR_Korbouli_HighValue"):InitRandomizeTemplate( AR_Korbouli_TableHighValue ):SpawnFromVec3(AR_Zone_HighValue:GetRandomPointVec3()) -- spawner for high value target 
 
 SCHEDULER:New(nil,function()
+AR_Korbouli_HighValue:ClearTasks()
 AR_Korbouli_HighValue:RouteToVec3(AR_Zone_HighValue:GetRandomPointVec3(),25)
 end,{},30,600,0.2) -- high value 
 -- /High Value Target --
+
+-- Artillery Fire --
+AR_Karbouli_Artillery_Target_Location = GROUP:FindByName("AR_Karbouli_Artillery Target"):GetVec2() -- the Group in the ME will be the target location
+
+
+
+AR_Karbouli_Artillery_fire = SCHEDULER:New( nil,
+    function()
+     AR_Korbouli_HighValue:SetTask({id = 'FireAtPoint', params = {x=AR_Karbouli_Artillery_Target_Location.x, y=AR_Karbouli_Artillery_Target_Location.y, radius=100, expendQty=100, expendQtyEnabled=false}}, 1)
+    end,
+  {}, 5, 300 )
+
+
+
 
 
 

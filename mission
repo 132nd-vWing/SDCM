@@ -38072,6 +38072,88 @@ mission =
                                 ["x"] = -269690,
                                 ["y"] = 761425.14285713,
                             }, -- end of [37]
+                            [38] =
+                            {
+                                ["groupId"] = 209,
+                                ["hidden"] = false,
+                                ["lateActivation"] = true,
+                                ["name"] = "DictKey_GroupName_1278",
+                                ["route"] =
+                                {
+                                    ["points"] =
+                                    {
+                                        [1] =
+                                        {
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 578,
+                                            ["alt_type"] = "BARO",
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_1280",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] =
+                                            {
+                                                ["id"] = "ComboTask",
+                                                ["params"] =
+                                                {
+                                                    ["tasks"] =
+                                                    {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -259218,
+                                            ["y"] = 724786.57142855,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                    ["routeRelativeTOT"] = true,
+                                    ["spans"] =
+                                    {
+                                        [1] =
+                                        {
+                                            [1] =
+                                            {
+                                                ["x"] = -266039.42857143,
+                                                ["y"] = 747879.42857142,
+                                            }, -- end of [1]
+                                            [2] =
+                                            {
+                                                ["x"] = -266010.85714286,
+                                                ["y"] = 747950.85714285,
+                                            }, -- end of [2]
+                                        }, -- end of [1]
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["taskSelected"] = true,
+                                ["tasks"] =
+                                {
+                                }, -- end of ["tasks"]
+                                ["units"] =
+                                {
+                                    [1] =
+                                    {
+                                        ["heading"] = 1.1902899496824,
+                                        ["name"] = "DictKey_UnitName_1279",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "SKP-11",
+                                        ["unitId"] = 635,
+                                        ["x"] = -259218,
+                                        ["y"] = 724786.57142855,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -259218,
+                                ["y"] = 724786.57142855,
+                            }, -- end of [38]
                         }, -- end of ["group"]
                     }, -- end of ["vehicle"]
                 }, -- end of [12]
@@ -38184,7 +38266,7 @@ mission =
             [17] = 48,
         }, -- end of ["red"]
     }, -- end of ["coalitions"]
-    ["currentKey"] = 151392,
+    ["currentKey"] = 160473,
     ["date"] =
     {
         ["Day"] = 1,
@@ -41259,11 +41341,11 @@ mission =
     }, -- end of ["groundControl"]
     ["map"] =
     {
-        ["centerX"] = -267903.71428572,
-        ["centerY"] = 762005.14285713,
-        ["zoom"] = 10000,
+        ["centerX"] = -250750,
+        ["centerY"] = 771221.42857143,
+        ["zoom"] = 100000,
     }, -- end of ["map"]
-    ["maxDictId"] = 1276,
+    ["maxDictId"] = 1284,
     ["needModules"] =
     {
     }, -- end of ["needModules"]
@@ -41322,7 +41404,7 @@ mission =
         {
             [1] = "a_add_radio_item_for_group(75, getValueDictByKey(\"DictKey_ActionRadioText_453\"), 10, 1);a_add_radio_item_for_group(73, getValueDictByKey(\"DictKey_ActionRadioText_533\"), 20, 1);a_add_radio_item_for_group(68, getValueDictByKey(\"DictKey_ActionRadioText_761\"), 30, 1);a_group_off(88);a_group_off(93);a_group_off(84);a_group_off(87);a_group_off(94);a_group_off(94);a_group_off(99);a_group_off(136);a_group_off(135);a_group_off(134);a_group_off(133);a_group_off(142);a_group_off(147);a_group_off(197);",
             [2] = "a_out_text_delay(getValueDictByKey(\"DictKey_ActionText_853\"), 2, false);a_do_script_file(getValueResourceByKey(\"ResKey_Action_981\")); mission.trig.func[2]=nil;",
-            [3] = "a_out_text_delay(getValueDictByKey(\"DictKey_ActionText_982\"), 2, false);a_do_script_file(getValueResourceByKey(\"ResKey_Action_1276\")); mission.trig.func[3]=nil;",
+            [3] = "a_out_text_delay(getValueDictByKey(\"DictKey_ActionText_982\"), 2, false);a_do_script_file(getValueResourceByKey(\"ResKey_Action_1284\")); mission.trig.func[3]=nil;",
             [4] = "a_do_script_file(getValueResourceByKey(\"ResKey_Action_979\"));a_out_text_delay(getValueDictByKey(\"DictKey_ActionText_980\"), 10, false); mission.trig.func[4]=nil;",
             [5] = "a_do_script_file(getValueResourceByKey(\"ResKey_Action_461\"));a_out_text_delay(getValueDictByKey(\"DictKey_ActionText_852\"), 10, false); mission.trig.func[5]=nil;",
             [6] = "a_do_script_file(getValueResourceByKey(\"ResKey_Action_590\"));a_out_text_delay(getValueDictByKey(\"DictKey_ActionText_851\"), 10, false); mission.trig.func[6]=nil;",
@@ -42266,7 +42348,7 @@ mission =
                         [1] = "",
                         [2] = "",
                     }, -- end of ["ai_task"]
-                    ["file"] = "ResKey_Action_1276",
+                    ["file"] = "ResKey_Action_1284",
                     ["predicate"] = "a_do_script_file",
                 }, -- end of [2]
             }, -- end of ["actions"]
