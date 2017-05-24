@@ -36078,11 +36078,7 @@ mission =
             [17] = 48,
         }, -- end of ["red"]
     }, -- end of ["coalitions"]
-<<<<<<< HEAD
     ["currentKey"] = 135027,
-=======
-    ["currentKey"] = 132729,
->>>>>>> 46b62e4... chg: Minor! Adjusted SAM positions NORTH of TSKHINVALI and ONI
     ["date"] =
     {
         ["Day"] = 1,
