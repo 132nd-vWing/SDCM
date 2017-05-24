@@ -13386,73 +13386,6 @@ mission =
                             }, -- end of [4]
                             [5] =
                             {
-                                ["groupId"] = 139,
-                                ["hidden"] = false,
-                                ["name"] = "DictKey_GroupName_897",
-                                ["route"] =
-                                {
-                                    ["points"] =
-                                    {
-                                        [1] =
-                                        {
-                                            ["ETA"] = 0,
-                                            ["ETA_locked"] = true,
-                                            ["action"] = "Off Road",
-                                            ["alt"] = 829,
-                                            ["alt_type"] = "BARO",
-                                            ["formation_template"] = "",
-                                            ["name"] = "DictKey_WptName_899",
-                                            ["speed"] = 5.5555555555556,
-                                            ["speed_locked"] = true,
-                                            ["task"] =
-                                            {
-                                                ["id"] = "ComboTask",
-                                                ["params"] =
-                                                {
-                                                    ["tasks"] =
-                                                    {
-                                                    }, -- end of ["tasks"]
-                                                }, -- end of ["params"]
-                                            }, -- end of ["task"]
-                                            ["type"] = "Turning Point",
-                                            ["x"] = -292796.28571426,
-                                            ["y"] = 767162.8571429,
-                                        }, -- end of [1]
-                                    }, -- end of ["points"]
-                                    ["spans"] =
-                                    {
-                                    }, -- end of ["spans"]
-                                }, -- end of ["route"]
-                                ["start_time"] = 0,
-                                ["task"] = "Ground Nothing",
-                                ["taskSelected"] = true,
-                                ["tasks"] =
-                                {
-                                }, -- end of ["tasks"]
-                                ["units"] =
-                                {
-                                    [1] =
-                                    {
-                                        ["heading"] = 0,
-                                        ["name"] = "DictKey_UnitName_898",
-                                        ["playerCanDrive"] = true,
-                                        ["skill"] = "Average",
-                                        ["transportable"] =
-                                        {
-                                            ["randomTransportable"] = false,
-                                        }, -- end of ["transportable"]
-                                        ["type"] = "AAV7",
-                                        ["unitId"] = 484,
-                                        ["x"] = -292796.28571426,
-                                        ["y"] = 767162.8571429,
-                                    }, -- end of [1]
-                                }, -- end of ["units"]
-                                ["visible"] = false,
-                                ["x"] = -292796.28571426,
-                                ["y"] = 767162.8571429,
-                            }, -- end of [5]
-                            [6] =
-                            {
                                 ["groupId"] = 140,
                                 ["hidden"] = false,
                                 ["name"] = "DictKey_GroupName_900",
@@ -13487,7 +13420,7 @@ mission =
                                         }, -- end of [1]
                                         [2] =
                                         {
-                                            ["ETA"] = 2601.3106406798,
+                                            ["ETA"] = 3025.91796834,
                                             ["ETA_locked"] = false,
                                             ["action"] = "On Road",
                                             ["alt"] = 427,
@@ -16794,7 +16727,7 @@ mission =
                                 {
                                     [1] =
                                     {
-                                        ["heading"] = -2.015681755726,
+                                        ["heading"] = 2.4787359341846,
                                         ["name"] = "DictKey_UnitName_901",
                                         ["playerCanDrive"] = true,
                                         ["skill"] = "Average",
@@ -16811,8 +16744,8 @@ mission =
                                 ["visible"] = false,
                                 ["x"] = -293046.47598267,
                                 ["y"] = 767005.49154663,
-                            }, -- end of [6]
-                            [7] =
+                            }, -- end of [5]
+                            [6] =
                             {
                                 ["groupId"] = 148,
                                 ["hidden"] = false,
@@ -16878,7 +16811,7 @@ mission =
                                 ["visible"] = false,
                                 ["x"] = -229484.28571429,
                                 ["y"] = 641515.71428572,
-                            }, -- end of [7]
+                            }, -- end of [6]
                         }, -- end of ["group"]
                     }, -- end of ["vehicle"]
                 }, -- end of [40]
@@ -32609,6 +32542,379 @@ mission =
                                 ["x"] = -234543.71428571,
                                 ["y"] = 760132,
                             }, -- end of [43]
+                            [44] =
+                            {
+                                ["dead"] = false,
+                                ["groupId"] = 210,
+                                ["heading"] = 0.83775804095728,
+                                ["name"] = "DictKey_GroupName_1285",
+                                ["route"] =
+                                {
+                                    ["points"] =
+                                    {
+                                        [1] =
+                                        {
+                                            ["action"] = "",
+                                            ["alt"] = 0,
+                                            ["formation_template"] = "",
+                                            ["name"] = "",
+                                            ["speed"] = 0,
+                                            ["type"] = "",
+                                            ["x"] = -295444.28571428,
+                                            ["y"] = 764121.42857145,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                }, -- end of ["route"]
+                                ["units"] =
+                                {
+                                    [1] =
+                                    {
+                                        ["canCargo"] = false,
+                                        ["category"] = "Fortifications",
+                                        ["heading"] = 0.83775804095728,
+                                        ["name"] = "DictKey_GroupName_1285",
+                                        ["shape_name"] = "PalatkaB",
+                                        ["type"] = "FARP Tent",
+                                        ["unitId"] = 636,
+                                        ["x"] = -295444.28571428,
+                                        ["y"] = 764121.42857145,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["x"] = -295444.28571428,
+                                ["y"] = 764121.42857145,
+                            }, -- end of [44]
+                            [45] =
+                            {
+                                ["dead"] = false,
+                                ["groupId"] = 211,
+                                ["heading"] = 0.83775804095728,
+                                ["name"] = "DictKey_GroupName_1288",
+                                ["route"] =
+                                {
+                                    ["points"] =
+                                    {
+                                        [1] =
+                                        {
+                                            ["action"] = "",
+                                            ["alt"] = 0,
+                                            ["formation_template"] = "",
+                                            ["name"] = "",
+                                            ["speed"] = 0,
+                                            ["type"] = "",
+                                            ["x"] = -295517.14285714,
+                                            ["y"] = 764030.00000002,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                }, -- end of ["route"]
+                                ["units"] =
+                                {
+                                    [1] =
+                                    {
+                                        ["canCargo"] = false,
+                                        ["category"] = "Fortifications",
+                                        ["heading"] = 0.83775804095728,
+                                        ["name"] = "DictKey_GroupName_1288",
+                                        ["shape_name"] = "PalatkaB",
+                                        ["type"] = "FARP Tent",
+                                        ["unitId"] = 637,
+                                        ["x"] = -295517.14285714,
+                                        ["y"] = 764030.00000002,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["x"] = -295517.14285714,
+                                ["y"] = 764030.00000002,
+                            }, -- end of [45]
+                            [46] =
+                            {
+                                ["dead"] = false,
+                                ["groupId"] = 212,
+                                ["heading"] = 0.83775804095728,
+                                ["name"] = "DictKey_GroupName_1291",
+                                ["route"] =
+                                {
+                                    ["points"] =
+                                    {
+                                        [1] =
+                                        {
+                                            ["action"] = "",
+                                            ["alt"] = 0,
+                                            ["formation_template"] = "",
+                                            ["name"] = "",
+                                            ["speed"] = 0,
+                                            ["type"] = "",
+                                            ["x"] = -295482.85714285,
+                                            ["y"] = 764078.57142859,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                }, -- end of ["route"]
+                                ["units"] =
+                                {
+                                    [1] =
+                                    {
+                                        ["canCargo"] = false,
+                                        ["category"] = "Fortifications",
+                                        ["heading"] = 0.83775804095728,
+                                        ["name"] = "DictKey_GroupName_1291",
+                                        ["shape_name"] = "PalatkaB",
+                                        ["type"] = "FARP Tent",
+                                        ["unitId"] = 638,
+                                        ["x"] = -295482.85714285,
+                                        ["y"] = 764078.57142859,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["x"] = -295482.85714285,
+                                ["y"] = 764078.57142859,
+                            }, -- end of [46]
+                            [47] =
+                            {
+                                ["dead"] = false,
+                                ["groupId"] = 213,
+                                ["heading"] = 0.83775804095728,
+                                ["name"] = "DictKey_GroupName_1294",
+                                ["route"] =
+                                {
+                                    ["points"] =
+                                    {
+                                        [1] =
+                                        {
+                                            ["action"] = "",
+                                            ["alt"] = 0,
+                                            ["formation_template"] = "",
+                                            ["name"] = "",
+                                            ["speed"] = 0,
+                                            ["type"] = "",
+                                            ["x"] = -295407.14285714,
+                                            ["y"] = 764162.85714288,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                }, -- end of ["route"]
+                                ["units"] =
+                                {
+                                    [1] =
+                                    {
+                                        ["canCargo"] = false,
+                                        ["category"] = "Fortifications",
+                                        ["heading"] = 0.83775804095728,
+                                        ["name"] = "DictKey_GroupName_1294",
+                                        ["shape_name"] = "PalatkaB",
+                                        ["type"] = "FARP Tent",
+                                        ["unitId"] = 639,
+                                        ["x"] = -295407.14285714,
+                                        ["y"] = 764162.85714288,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["x"] = -295407.14285714,
+                                ["y"] = 764162.85714288,
+                            }, -- end of [47]
+                            [48] =
+                            {
+                                ["dead"] = false,
+                                ["groupId"] = 214,
+                                ["heading"] = 4.9567350756639,
+                                ["name"] = "DictKey_GroupName_1297",
+                                ["route"] =
+                                {
+                                    ["points"] =
+                                    {
+                                        [1] =
+                                        {
+                                            ["action"] = "",
+                                            ["alt"] = 0,
+                                            ["formation_template"] = "",
+                                            ["name"] = "",
+                                            ["speed"] = 0,
+                                            ["type"] = "",
+                                            ["x"] = -295334.28571428,
+                                            ["y"] = 778611.42857144,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                }, -- end of ["route"]
+                                ["units"] =
+                                {
+                                    [1] =
+                                    {
+                                        ["canCargo"] = false,
+                                        ["category"] = "Fortifications",
+                                        ["heading"] = 4.9567350756639,
+                                        ["name"] = "DictKey_GroupName_1297",
+                                        ["shape_name"] = "ComCenter",
+                                        ["type"] = ".Command Center",
+                                        ["unitId"] = 640,
+                                        ["x"] = -295334.28571428,
+                                        ["y"] = 778611.42857144,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["x"] = -295334.28571428,
+                                ["y"] = 778611.42857144,
+                            }, -- end of [48]
+                            [49] =
+                            {
+                                ["dead"] = false,
+                                ["groupId"] = 215,
+                                ["heading"] = 4.3284165449459,
+                                ["name"] = "DictKey_GroupName_1300",
+                                ["route"] =
+                                {
+                                    ["points"] =
+                                    {
+                                        [1] =
+                                        {
+                                            ["action"] = "",
+                                            ["alt"] = 0,
+                                            ["formation_template"] = "",
+                                            ["name"] = "",
+                                            ["speed"] = 0,
+                                            ["type"] = "",
+                                            ["x"] = -295322.85714286,
+                                            ["y"] = 778742.85714287,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                }, -- end of ["route"]
+                                ["units"] =
+                                {
+                                    [1] =
+                                    {
+                                        ["canCargo"] = false,
+                                        ["category"] = "Fortifications",
+                                        ["heading"] = 4.3284165449459,
+                                        ["name"] = "DictKey_GroupName_1300",
+                                        ["rate"] = 50,
+                                        ["shape_name"] = "PalatkaB",
+                                        ["type"] = "FARP Tent",
+                                        ["unitId"] = 641,
+                                        ["x"] = -295322.85714286,
+                                        ["y"] = 778742.85714287,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["x"] = -295322.85714286,
+                                ["y"] = 778742.85714287,
+                            }, -- end of [49]
+                            [50] =
+                            {
+                                ["dead"] = false,
+                                ["groupId"] = 216,
+                                ["heading"] = 4.3284165449459,
+                                ["name"] = "DictKey_GroupName_1303",
+                                ["route"] =
+                                {
+                                    ["points"] =
+                                    {
+                                        [1] =
+                                        {
+                                            ["action"] = "",
+                                            ["alt"] = 0,
+                                            ["formation_template"] = "",
+                                            ["name"] = "",
+                                            ["speed"] = 0,
+                                            ["type"] = "",
+                                            ["x"] = -295370,
+                                            ["y"] = 778677.14285716,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                }, -- end of ["route"]
+                                ["units"] =
+                                {
+                                    [1] =
+                                    {
+                                        ["canCargo"] = false,
+                                        ["category"] = "Fortifications",
+                                        ["heading"] = 4.3284165449459,
+                                        ["name"] = "DictKey_GroupName_1303",
+                                        ["rate"] = 50,
+                                        ["shape_name"] = "PalatkaB",
+                                        ["type"] = "FARP Tent",
+                                        ["unitId"] = 642,
+                                        ["x"] = -295370,
+                                        ["y"] = 778677.14285716,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["x"] = -295370,
+                                ["y"] = 778677.14285716,
+                            }, -- end of [50]
+                            [51] =
+                            {
+                                ["dead"] = false,
+                                ["groupId"] = 217,
+                                ["heading"] = 4.3284165449459,
+                                ["name"] = "DictKey_GroupName_1306",
+                                ["route"] =
+                                {
+                                    ["points"] =
+                                    {
+                                        [1] =
+                                        {
+                                            ["action"] = "",
+                                            ["alt"] = 0,
+                                            ["formation_template"] = "",
+                                            ["name"] = "",
+                                            ["speed"] = 0,
+                                            ["type"] = "",
+                                            ["x"] = -295347.14285714,
+                                            ["y"] = 778710.00000002,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                }, -- end of ["route"]
+                                ["units"] =
+                                {
+                                    [1] =
+                                    {
+                                        ["canCargo"] = false,
+                                        ["category"] = "Fortifications",
+                                        ["heading"] = 4.3284165449459,
+                                        ["name"] = "DictKey_GroupName_1306",
+                                        ["rate"] = 50,
+                                        ["shape_name"] = "PalatkaB",
+                                        ["type"] = "FARP Tent",
+                                        ["unitId"] = 643,
+                                        ["x"] = -295347.14285714,
+                                        ["y"] = 778710.00000002,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["x"] = -295347.14285714,
+                                ["y"] = 778710.00000002,
+                            }, -- end of [51]
+                            [52] =
+                            {
+                                ["dead"] = false,
+                                ["groupId"] = 218,
+                                ["heading"] = 4.3284165449459,
+                                ["name"] = "DictKey_GroupName_1309",
+                                ["route"] =
+                                {
+                                    ["points"] =
+                                    {
+                                        [1] =
+                                        {
+                                            ["action"] = "",
+                                            ["alt"] = 0,
+                                            ["formation_template"] = "",
+                                            ["name"] = "",
+                                            ["speed"] = 0,
+                                            ["type"] = "",
+                                            ["x"] = -295382.85714286,
+                                            ["y"] = 778728.57142859,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                }, -- end of ["route"]
+                                ["units"] =
+                                {
+                                    [1] =
+                                    {
+                                        ["canCargo"] = false,
+                                        ["category"] = "Fortifications",
+                                        ["heading"] = 4.3284165449459,
+                                        ["name"] = "DictKey_GroupName_1309",
+                                        ["rate"] = 50,
+                                        ["shape_name"] = "PalatkaB",
+                                        ["type"] = "FARP Tent",
+                                        ["unitId"] = 644,
+                                        ["x"] = -295382.85714286,
+                                        ["y"] = 778728.57142859,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["x"] = -295382.85714286,
+                                ["y"] = 778728.57142859,
+                            }, -- end of [52]
                         }, -- end of ["group"]
                     }, -- end of ["static"]
                     ["vehicle"] =
@@ -38154,6 +38460,520 @@ mission =
                                 ["x"] = -259218,
                                 ["y"] = 724786.57142855,
                             }, -- end of [38]
+                            [39] =
+                            {
+                                ["groupId"] = 219,
+                                ["hidden"] = false,
+                                ["name"] = "DictKey_GroupName_1312",
+                                ["route"] =
+                                {
+                                    ["points"] =
+                                    {
+                                        [1] =
+                                        {
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 718,
+                                            ["alt_type"] = "BARO",
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_1314",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] =
+                                            {
+                                                ["id"] = "ComboTask",
+                                                ["params"] =
+                                                {
+                                                    ["tasks"] =
+                                                    {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -295168.57142857,
+                                            ["y"] = 778500.85714287,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                    ["spans"] =
+                                    {
+                                        [1] =
+                                        {
+                                            [1] =
+                                            {
+                                                ["x"] = -293994.85714286,
+                                                ["y"] = 778324.2857143,
+                                            }, -- end of [1]
+                                            [2] =
+                                            {
+                                                ["x"] = -295452,
+                                                ["y"] = 777924.2857143,
+                                            }, -- end of [2]
+                                        }, -- end of [1]
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["tasks"] =
+                                {
+                                }, -- end of ["tasks"]
+                                ["units"] =
+                                {
+                                    [1] =
+                                    {
+                                        ["heading"] = 4.6774823953448,
+                                        ["name"] = "DictKey_UnitName_1313",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 645,
+                                        ["x"] = -295168.57142857,
+                                        ["y"] = 778500.85714287,
+                                    }, -- end of [1]
+                                    [2] =
+                                    {
+                                        ["heading"] = 4.7647488579445,
+                                        ["name"] = "DictKey_UnitName_1315",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 646,
+                                        ["x"] = -295184,
+                                        ["y"] = 778466.00000002,
+                                    }, -- end of [2]
+                                    [3] =
+                                    {
+                                        ["heading"] = 4.9043751981041,
+                                        ["name"] = "DictKey_UnitName_1316",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 647,
+                                        ["x"] = -295199.42857143,
+                                        ["y"] = 778427.14285716,
+                                    }, -- end of [3]
+                                    [4] =
+                                    {
+                                        ["heading"] = 5.0789081233035,
+                                        ["name"] = "DictKey_UnitName_1317",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 648,
+                                        ["x"] = -295298.28571429,
+                                        ["y"] = 778516.85714287,
+                                    }, -- end of [4]
+                                    [5] =
+                                    {
+                                        ["heading"] = 5.1312680008633,
+                                        ["name"] = "DictKey_UnitName_1318",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 649,
+                                        ["x"] = -295312,
+                                        ["y"] = 778494.00000002,
+                                    }, -- end of [5]
+                                    [6] =
+                                    {
+                                        ["heading"] = 4.9916416607038,
+                                        ["name"] = "DictKey_UnitName_1319",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 650,
+                                        ["x"] = -295285.71428571,
+                                        ["y"] = 778535.71428573,
+                                    }, -- end of [6]
+                                    [7] =
+                                    {
+                                        ["heading"] = 5.4454272662223,
+                                        ["name"] = "DictKey_UnitName_1320",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 651,
+                                        ["x"] = -295408.57142857,
+                                        ["y"] = 778695.14285716,
+                                    }, -- end of [7]
+                                    [8] =
+                                    {
+                                        ["heading"] = 5.4977871437821,
+                                        ["name"] = "DictKey_UnitName_1321",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 652,
+                                        ["x"] = -295400.57142857,
+                                        ["y"] = 778683.14285716,
+                                    }, -- end of [8]
+                                    [9] =
+                                    {
+                                        ["heading"] = 5.5850536063819,
+                                        ["name"] = "DictKey_UnitName_1322",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 653,
+                                        ["x"] = -295392.57142857,
+                                        ["y"] = 778670.57142859,
+                                    }, -- end of [9]
+                                    [10] =
+                                    {
+                                        ["heading"] = 4.9916416607038,
+                                        ["name"] = "DictKey_UnitName_1324",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 654,
+                                        ["x"] = -294565.14285714,
+                                        ["y"] = 778092.57142859,
+                                    }, -- end of [10]
+                                    [11] =
+                                    {
+                                        ["heading"] = 5.3407075111026,
+                                        ["name"] = "DictKey_UnitName_1325",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 655,
+                                        ["x"] = -294613.71428571,
+                                        ["y"] = 778124.00000002,
+                                    }, -- end of [11]
+                                    [12] =
+                                    {
+                                        ["heading"] = 5.2534410485029,
+                                        ["name"] = "DictKey_UnitName_1326",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 656,
+                                        ["x"] = -294652.28571428,
+                                        ["y"] = 778159.71428573,
+                                    }, -- end of [12]
+                                    [13] =
+                                    {
+                                        ["heading"] = 4.2411500823462,
+                                        ["name"] = "DictKey_UnitName_1327",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 657,
+                                        ["x"] = -295063.71428571,
+                                        ["y"] = 778808.85714287,
+                                    }, -- end of [13]
+                                    [14] =
+                                    {
+                                        ["heading"] = 4.1887902047864,
+                                        ["name"] = "DictKey_UnitName_1328",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 658,
+                                        ["x"] = -295080.28571429,
+                                        ["y"] = 778782.57142859,
+                                    }, -- end of [14]
+                                    [15] =
+                                    {
+                                        ["heading"] = 4.2760566673861,
+                                        ["name"] = "DictKey_UnitName_1329",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 659,
+                                        ["x"] = -295094.57142857,
+                                        ["y"] = 778754.00000002,
+                                    }, -- end of [15]
+                                    [16] =
+                                    {
+                                        ["heading"] = 2.775073510671,
+                                        ["name"] = "DictKey_UnitName_1330",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 660,
+                                        ["x"] = -295020.85714286,
+                                        ["y"] = 778736.2857143,
+                                    }, -- end of [16]
+                                    [17] =
+                                    {
+                                        ["heading"] = 2.6179938779915,
+                                        ["name"] = "DictKey_UnitName_1331",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 661,
+                                        ["x"] = -295008.85714286,
+                                        ["y"] = 778765.42857145,
+                                    }, -- end of [17]
+                                    [18] =
+                                    {
+                                        ["heading"] = 2.7227136331112,
+                                        ["name"] = "DictKey_UnitName_1332",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 662,
+                                        ["x"] = -294997.42857143,
+                                        ["y"] = 778791.71428573,
+                                    }, -- end of [18]
+                                    [19] =
+                                    {
+                                        ["heading"] = 2.7052603405912,
+                                        ["name"] = "DictKey_UnitName_1333",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 663,
+                                        ["x"] = -294935.14285714,
+                                        ["y"] = 778714.57142859,
+                                    }, -- end of [19]
+                                    [20] =
+                                    {
+                                        ["heading"] = 2.7401669256311,
+                                        ["name"] = "DictKey_UnitName_1334",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 664,
+                                        ["x"] = -294920.28571429,
+                                        ["y"] = 778735.71428573,
+                                    }, -- end of [20]
+                                    [21] =
+                                    {
+                                        ["heading"] = 2.8972465583106,
+                                        ["name"] = "DictKey_UnitName_1335",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 665,
+                                        ["x"] = -294905.42857143,
+                                        ["y"] = 778754.57142859,
+                                    }, -- end of [21]
+                                    [22] =
+                                    {
+                                        ["heading"] = 5.6548667764616,
+                                        ["name"] = "DictKey_UnitName_1336",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 666,
+                                        ["x"] = -294252.57142857,
+                                        ["y"] = 777807.14285716,
+                                    }, -- end of [22]
+                                    [23] =
+                                    {
+                                        ["heading"] = 5.3930673886625,
+                                        ["name"] = "DictKey_UnitName_1337",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 667,
+                                        ["x"] = -294312.57142857,
+                                        ["y"] = 777847.14285716,
+                                    }, -- end of [23]
+                                    [24] =
+                                    {
+                                        ["heading"] = 5.3232542185827,
+                                        ["name"] = "DictKey_UnitName_1338",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 668,
+                                        ["x"] = -294313.71428571,
+                                        ["y"] = 777758.2857143,
+                                    }, -- end of [24]
+                                    [25] =
+                                    {
+                                        ["heading"] = 2.6703537555513,
+                                        ["name"] = "DictKey_UnitName_1339",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 669,
+                                        ["x"] = -294867.71428571,
+                                        ["y"] = 779020.85714288,
+                                    }, -- end of [25]
+                                    [26] =
+                                    {
+                                        ["heading"] = 3.1415926535898,
+                                        ["name"] = "DictKey_UnitName_1340",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 670,
+                                        ["x"] = -294871.42857142,
+                                        ["y"] = 779053.71428574,
+                                    }, -- end of [26]
+                                    [27] =
+                                    {
+                                        ["heading"] = 2.9321531433505,
+                                        ["name"] = "DictKey_UnitName_1341",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 671,
+                                        ["x"] = -294860.28571428,
+                                        ["y"] = 779034.28571431,
+                                    }, -- end of [27]
+                                    [28] =
+                                    {
+                                        ["heading"] = 3.4095030760134,
+                                        ["name"] = "DictKey_UnitName_1342",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 672,
+                                        ["x"] = -294813.14285714,
+                                        ["y"] = 779157.14285717,
+                                    }, -- end of [28]
+                                    [29] =
+                                    {
+                                        ["heading"] = 3.4095030760134,
+                                        ["name"] = "DictKey_UnitName_1343",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 673,
+                                        ["x"] = -294829.71428571,
+                                        ["y"] = 779142.85714288,
+                                    }, -- end of [29]
+                                    [30] =
+                                    {
+                                        ["heading"] = 3.4095030760134,
+                                        ["name"] = "DictKey_UnitName_1344",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "BTR-80",
+                                        ["unitId"] = 674,
+                                        ["x"] = -294844.57142856,
+                                        ["y"] = 779123.71428574,
+                                    }, -- end of [30]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -295168.57142857,
+                                ["y"] = 778500.85714287,
+                            }, -- end of [39]
                         }, -- end of ["group"]
                     }, -- end of ["vehicle"]
                 }, -- end of [12]
@@ -38266,7 +39086,7 @@ mission =
             [17] = 48,
         }, -- end of ["red"]
     }, -- end of ["coalitions"]
-    ["currentKey"] = 160473,
+    ["currentKey"] = 164041,
     ["date"] =
     {
         ["Day"] = 1,
@@ -41341,11 +42161,11 @@ mission =
     }, -- end of ["groundControl"]
     ["map"] =
     {
-        ["centerX"] = -250750,
-        ["centerY"] = 771221.42857143,
-        ["zoom"] = 100000,
+        ["centerX"] = -295429.14285714,
+        ["centerY"] = 762601.14285717,
+        ["zoom"] = 200000,
     }, -- end of ["map"]
-    ["maxDictId"] = 1284,
+    ["maxDictId"] = 1344,
     ["needModules"] =
     {
     }, -- end of ["needModules"]
@@ -42077,6 +42897,38 @@ mission =
                 ["y"] = 748282.57142862,
                 ["zoneId"] = 5534,
             }, -- end of [32]
+            [33] =
+            {
+                ["color"] =
+                {
+                    [1] = 1,
+                    [2] = 1,
+                    [3] = 0,
+                    [4] = 0.14901960784314,
+                }, -- end of ["color"]
+                ["hidden"] = false,
+                ["name"] = "KASHURI_BASE",
+                ["radius"] = 6096,
+                ["x"] = -293322.85714286,
+                ["y"] = 777334.28571429,
+                ["zoneId"] = 5687,
+            }, -- end of [33]
+            [34] =
+            {
+                ["color"] =
+                {
+                    [1] = 1,
+                    [2] = 1,
+                    [3] = 0,
+                    [4] = 0.14901960784314,
+                }, -- end of ["color"]
+                ["hidden"] = false,
+                ["name"] = "KASHURI_FWD_BASE",
+                ["radius"] = 457.2,
+                ["x"] = -295310,
+                ["y"] = 764142.85714287,
+                ["zoneId"] = 5688,
+            }, -- end of [34]
         }, -- end of ["zones"]
     }, -- end of ["triggers"]
     ["trigrules"] =
