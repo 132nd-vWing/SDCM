@@ -101,6 +101,86 @@ mission =
                                 ["x"] = -240471.42857143,
                                 ["y"] = 707699.42857142,
                             }, -- end of [1]
+                            [2] =
+                            {
+                                ["groupId"] = 237,
+                                ["hidden"] = false,
+                                ["name"] = "DictKey_GroupName_1456",
+                                ["route"] =
+                                {
+                                    ["points"] =
+                                    {
+                                        [1] =
+                                        {
+                                            ["ETA"] = 0,
+                                            ["ETA_locked"] = true,
+                                            ["action"] = "Off Road",
+                                            ["alt"] = 678,
+                                            ["alt_type"] = "BARO",
+                                            ["formation_template"] = "",
+                                            ["name"] = "DictKey_WptName_1458",
+                                            ["speed"] = 5.5555555555556,
+                                            ["speed_locked"] = true,
+                                            ["task"] =
+                                            {
+                                                ["id"] = "ComboTask",
+                                                ["params"] =
+                                                {
+                                                    ["tasks"] =
+                                                    {
+                                                    }, -- end of ["tasks"]
+                                                }, -- end of ["params"]
+                                            }, -- end of ["task"]
+                                            ["type"] = "Turning Point",
+                                            ["x"] = -298053.42857141,
+                                            ["y"] = 746456.5714286,
+                                        }, -- end of [1]
+                                    }, -- end of ["points"]
+                                    ["spans"] =
+                                    {
+                                        [1] =
+                                        {
+                                            [1] =
+                                            {
+                                                ["x"] = -298053.42857141,
+                                                ["y"] = 746456.5714286,
+                                            }, -- end of [1]
+                                            [2] =
+                                            {
+                                                ["x"] = -295553.42857141,
+                                                ["y"] = 749585.14285717,
+                                            }, -- end of [2]
+                                        }, -- end of [1]
+                                    }, -- end of ["spans"]
+                                }, -- end of ["route"]
+                                ["start_time"] = 0,
+                                ["task"] = "Ground Nothing",
+                                ["taskSelected"] = true,
+                                ["tasks"] =
+                                {
+                                }, -- end of ["tasks"]
+                                ["units"] =
+                                {
+                                    [1] =
+                                    {
+                                        ["heading"] = 0.89661248757778,
+                                        ["name"] = "DictKey_UnitName_1457",
+                                        ["playerCanDrive"] = true,
+                                        ["skill"] = "Average",
+                                        ["transportable"] =
+                                        {
+                                            ["randomTransportable"] = false,
+                                        }, -- end of ["transportable"]
+                                        ["type"] = "Soldier stinger",
+                                        ["unitId"] = 736,
+                                        ["x"] = -298053.42857141,
+                                        ["y"] = 746456.5714286,
+                                    }, -- end of [1]
+                                }, -- end of ["units"]
+                                ["visible"] = false,
+                                ["x"] = -298053.42857141,
+                                ["y"] = 746456.5714286,
+                            }, -- end of [2]
                         }, -- end of ["group"]
                     }, -- end of ["vehicle"]
                 }, -- end of [4]
@@ -7137,8 +7217,8 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "BTR-80",
                                         ["unitId"] = 691,
-                                        ["x"] = -286825.72192383,
-                                        ["y"] = 731069.43762207,
+                                        ["x"] = -286825.72070313,
+                                        ["y"] = 731069.43658447,
                                     }, -- end of [4]
                                     [5] =
                                     {
@@ -7549,7 +7629,7 @@ mission =
                                             ["ETA"] = 0,
                                             ["ETA_locked"] = true,
                                             ["action"] = "Off Road",
-                                            ["alt"] = 163,
+                                            ["alt"] = 183,
                                             ["alt_type"] = "BARO",
                                             ["formation_template"] = "",
                                             ["name"] = "DictKey_WptName_1414",
@@ -7604,8 +7684,8 @@ mission =
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Turning Point",
-                                            ["x"] = -288515.42857142,
-                                            ["y"] = 739671.71428576,
+                                            ["x"] = -288489.14285712,
+                                            ["y"] = 739570.85714289,
                                         }, -- end of [1]
                                     }, -- end of ["points"]
                                     ["spans"] =
@@ -7632,8 +7712,8 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "BTR-80",
                                         ["unitId"] = 718,
-                                        ["x"] = -288515.42857142,
-                                        ["y"] = 739671.71428576,
+                                        ["x"] = -288489.14285712,
+                                        ["y"] = 739570.85714289,
                                     }, -- end of [1]
                                     [2] =
                                     {
@@ -7647,8 +7727,8 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "BTR-80",
                                         ["unitId"] = 719,
-                                        ["x"] = -288555.42857142,
-                                        ["y"] = 739671.71428576,
+                                        ["x"] = -288529.14285712,
+                                        ["y"] = 739570.85714289,
                                     }, -- end of [2]
                                     [3] =
                                     {
@@ -7662,13 +7742,13 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "BTR-80",
                                         ["unitId"] = 720,
-                                        ["x"] = -288595.42857142,
-                                        ["y"] = 739671.71428576,
+                                        ["x"] = -288569.14285712,
+                                        ["y"] = 739570.85714289,
                                     }, -- end of [3]
                                 }, -- end of ["units"]
                                 ["visible"] = false,
-                                ["x"] = -288515.42857142,
-                                ["y"] = 739671.71428576,
+                                ["x"] = -288489.14285712,
+                                ["y"] = 739570.85714289,
                             }, -- end of [15]
                             [16] =
                             {
@@ -7684,7 +7764,7 @@ mission =
                                             ["ETA"] = 0,
                                             ["ETA_locked"] = true,
                                             ["action"] = "Off Road",
-                                            ["alt"] = 197,
+                                            ["alt"] = 164,
                                             ["alt_type"] = "BARO",
                                             ["formation_template"] = "",
                                             ["name"] = "DictKey_WptName_1426",
@@ -7739,8 +7819,8 @@ mission =
                                                 }, -- end of ["params"]
                                             }, -- end of ["task"]
                                             ["type"] = "Turning Point",
-                                            ["x"] = -293936.85714285,
-                                            ["y"] = 744200.28571434,
+                                            ["x"] = -288831.99999998,
+                                            ["y"] = 739992.28571432,
                                         }, -- end of [1]
                                     }, -- end of ["points"]
                                     ["spans"] =
@@ -7767,8 +7847,8 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "BTR-80",
                                         ["unitId"] = 724,
-                                        ["x"] = -293936.85714285,
-                                        ["y"] = 744200.28571434,
+                                        ["x"] = -288831.99999998,
+                                        ["y"] = 739992.28571432,
                                     }, -- end of [1]
                                     [2] =
                                     {
@@ -7782,8 +7862,8 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "BTR-80",
                                         ["unitId"] = 725,
-                                        ["x"] = -293976.85714285,
-                                        ["y"] = 744200.28571434,
+                                        ["x"] = -288871.99999998,
+                                        ["y"] = 739992.28571432,
                                     }, -- end of [2]
                                     [3] =
                                     {
@@ -7797,13 +7877,13 @@ mission =
                                         }, -- end of ["transportable"]
                                         ["type"] = "BTR-80",
                                         ["unitId"] = 726,
-                                        ["x"] = -294016.85714285,
-                                        ["y"] = 744200.28571434,
+                                        ["x"] = -288911.99999998,
+                                        ["y"] = 739992.28571432,
                                     }, -- end of [3]
                                 }, -- end of ["units"]
                                 ["visible"] = false,
-                                ["x"] = -293936.85714285,
-                                ["y"] = 744200.28571434,
+                                ["x"] = -288831.99999998,
+                                ["y"] = 739992.28571432,
                             }, -- end of [16]
                         }, -- end of ["group"]
                     }, -- end of ["vehicle"]
@@ -40928,7 +41008,7 @@ mission =
             [17] = 48,
         }, -- end of ["red"]
     }, -- end of ["coalitions"]
-    ["currentKey"] = 187826,
+    ["currentKey"] = 193881,
     ["date"] =
     {
         ["Day"] = 1,
@@ -44003,11 +44083,11 @@ mission =
     }, -- end of ["groundControl"]
     ["map"] =
     {
-        ["centerX"] = -295239.14285712,
-        ["centerY"] = 780042.28571431,
-        ["zoom"] = 500000,
+        ["centerX"] = -295903.42857141,
+        ["centerY"] = 767623.71428575,
+        ["zoom"] = 200000,
     }, -- end of ["map"]
-    ["maxDictId"] = 1455,
+    ["maxDictId"] = 1459,
     ["needModules"] =
     {
     }, -- end of ["needModules"]

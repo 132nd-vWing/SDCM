@@ -16,6 +16,7 @@
 -- Adding control zone(s)
 autogft_TaskGroup.USING_ROAD_DISTANCE_THRESHOLD_M = 100
 autogft_TaskGroup.ROUTE_OVERSHOOT_M = 50
+autogft_observerIntel.enable("JTAC_SPARTAN")
 
   autogft_Setup:new()
     :useStaging()
