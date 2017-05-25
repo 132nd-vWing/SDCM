@@ -14,8 +14,8 @@
 -- (BLUE TASK FORCE)
 -- Adding base zone(s)
 -- Adding control zone(s)
-autogft_Group.USING_ROAD_DISTANCE_THRESHOLD_M = 100
-autogft_Group.ROUTE_OVERSHOOT_M = 50
+autogft_TaskGroup.USING_ROAD_DISTANCE_THRESHOLD_M = 100
+autogft_TaskGroup.ROUTE_OVERSHOOT_M = 50
 
 autogft_Setup:new()
   :useStaging()
