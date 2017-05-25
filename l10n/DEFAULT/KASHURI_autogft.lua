@@ -18,6 +18,7 @@ autogft_TaskGroup.USING_ROAD_DISTANCE_THRESHOLD_M = 100
 autogft_TaskGroup.ROUTE_OVERSHOOT_M = 50
 
   autogft_Setup:new()
+    :useStaging()
     :addBaseZone("ZESTAFONI_BASE")
 	:startUsingRoads()
     :addControlZone("ZESTAFONI_FWD_BASE")
@@ -56,6 +57,7 @@ autogft_TaskGroup.ROUTE_OVERSHOOT_M = 50
 
   
   autogft_Setup:new()
+    :useStaging()
     :addBaseZone("KASHURI_BASE")
 	:startUsingRoads()
     :addControlZone("KASHURI_FWD_BASE")

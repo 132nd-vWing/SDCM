@@ -40928,7 +40928,7 @@ mission =
             [17] = 48,
         }, -- end of ["red"]
     }, -- end of ["coalitions"]
-    ["currentKey"] = 183395,
+    ["currentKey"] = 187826,
     ["date"] =
     {
         ["Day"] = 1,
