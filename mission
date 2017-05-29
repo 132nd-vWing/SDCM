@@ -34065,7 +34065,7 @@ mission =
                                         }, -- end of ["callsign"]
                                         ["hardpoint_racks"] = true,
                                         ["heading"] = 0,
-                                        ["livery_id"] = "132 Mi-8 Standard",
+                                        ["livery_id"] = "132 259th Looney",
                                         ["name"] = "DictKey_UnitName_1855",
                                         ["onboard_num"] = "041",
                                         ["parking"] = 12,
@@ -34216,7 +34216,7 @@ mission =
                                         }, -- end of ["callsign"]
                                         ["hardpoint_racks"] = true,
                                         ["heading"] = 0,
-                                        ["livery_id"] = "132 Mi-8 Standard",
+                                        ["livery_id"] = "132 259th Makeshift",
                                         ["name"] = "DictKey_UnitName_1894",
                                         ["onboard_num"] = "042",
                                         ["parking"] = "4",
@@ -34367,7 +34367,7 @@ mission =
                                         }, -- end of ["callsign"]
                                         ["hardpoint_racks"] = true,
                                         ["heading"] = 0,
-                                        ["livery_id"] = "132 Mi-8 Standard",
+                                        ["livery_id"] = "132 259th Fudd",
                                         ["name"] = "DictKey_UnitName_1897",
                                         ["onboard_num"] = "043",
                                         ["parking"] = "6",
@@ -34518,7 +34518,7 @@ mission =
                                         }, -- end of ["callsign"]
                                         ["hardpoint_racks"] = true,
                                         ["heading"] = 0,
-                                        ["livery_id"] = "132 Mi-8 Standard",
+                                        ["livery_id"] = "132 259th Evilivan",
                                         ["name"] = "DictKey_UnitName_1900",
                                         ["onboard_num"] = "044",
                                         ["parking"] = "8",
@@ -34820,7 +34820,7 @@ mission =
                                         }, -- end of ["callsign"]
                                         ["hardpoint_racks"] = true,
                                         ["heading"] = 0,
-                                        ["livery_id"] = "132 Mi-8 Standard",
+                                        ["livery_id"] = "132 259th Standard",
                                         ["name"] = "DictKey_UnitName_1906",
                                         ["onboard_num"] = "046",
                                         ["parking"] = "14",
@@ -70373,7 +70373,7 @@ mission =
             [17] = 48,
         }, -- end of ["red"]
     }, -- end of ["coalitions"]
-    ["currentKey"] = 321648,
+    ["currentKey"] = 323589,
     ["date"] =
     {
         ["Day"] = 1,
@@ -73464,9 +73464,9 @@ mission =
     }, -- end of ["groundControl"]
     ["map"] =
     {
-        ["centerX"] = -271570.28571429,
-        ["centerY"] = 794771.71428572,
-        ["zoom"] = 500000,
+        ["centerX"] = -285398.85714286,
+        ["centerY"] = 683703.14285715,
+        ["zoom"] = 10000,
     }, -- end of ["map"]
     ["maxDictId"] = 2375,
     ["needModules"] =
