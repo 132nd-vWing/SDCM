@@ -70373,7 +70373,7 @@ mission =
             [17] = 48,
         }, -- end of ["red"]
     }, -- end of ["coalitions"]
-    ["currentKey"] = 317766,
+    ["currentKey"] = 321648,
     ["date"] =
     {
         ["Day"] = 1,
@@ -73422,7 +73422,7 @@ mission =
         ["geffect"] = "realistic",
         ["immortal"] = false,
         ["labels"] = false,
-        ["optionsView"] = "optview_myaircraft",
+        ["optionsView"] = "optview_all",
         ["padlock"] = false,
         ["radio"] = false,
         ["userMarks"] = false,
@@ -73464,9 +73464,9 @@ mission =
     }, -- end of ["groundControl"]
     ["map"] =
     {
-        ["centerX"] = -286397.42857143,
-        ["centerY"] = 682188.85714286,
-        ["zoom"] = 50000,
+        ["centerX"] = -271570.28571429,
+        ["centerY"] = 794771.71428572,
+        ["zoom"] = 500000,
     }, -- end of ["map"]
     ["maxDictId"] = 2375,
     ["needModules"] =
@@ -73774,7 +73774,7 @@ mission =
                     [4] = 0.14901960784314,
                 }, -- end of ["color"]
                 ["hidden"] = false,
-                ["name"] = "AI",
+                ["name"] = "AI_TSKHINVALI",
                 ["radius"] = 6096,
                 ["x"] = -263757.14285714,
                 ["y"] = 806300,
@@ -73934,7 +73934,7 @@ mission =
                     [4] = 0.14901960784314,
                 }, -- end of ["color"]
                 ["hidden"] = false,
-                ["name"] = "AI (Bridge tgts)",
+                ["name"] = "AI_CHASAVALI (Bridge tgts)",
                 ["radius"] = 4572,
                 ["x"] = -233914.28571429,
                 ["y"] = 778957.14285715,
@@ -74532,6 +74532,22 @@ mission =
                 ["y"] = 702335.71428572,
                 ["zoneId"] = 7228,
             }, -- end of [51]
+            [52] =
+            {
+                ["color"] =
+                {
+                    [1] = 1,
+                    [2] = 0,
+                    [3] = 0,
+                    [4] = 0.14901960784314,
+                }, -- end of ["color"]
+                ["hidden"] = false,
+                ["name"] = "KASHURI_AR",
+                ["radius"] = 3000,
+                ["x"] = -295441.71428572,
+                ["y"] = 779714.57142857,
+                ["zoneId"] = 7381,
+            }, -- end of [52]
         }, -- end of ["zones"]
     }, -- end of ["triggers"]
     ["trigrules"] =
