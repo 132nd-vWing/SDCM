@@ -66,7 +66,7 @@ AR_Karbouli_Artillery_Target_Location = GROUP:FindByName("AR_Karbouli_Artillery 
 
 AR_Karbouli_Artillery_fire = SCHEDULER:New( nil,
     function()
-     AR_Korbouli_HighValue:SetTask({id = 'FireAtPoint', params = {x=AR_Karbouli_Artillery_Target_Location.x, y=AR_Karbouli_Artillery_Target_Location.y, radius=100, expendQty=100, expendQtyEnabled=false}}, 1)
+     AR_Korbouli_HighValue:SetTask({id = 'FireAtPoint', params = {x=AR_Karbouli_Artillery_Target_Location.x, y=AR_Karbouli_Artillery_Target_Location.y, radius=100, expendQty=3, expendQtyEnabled=true}}, 1)
     end,
   {}, 5, 300 )
 

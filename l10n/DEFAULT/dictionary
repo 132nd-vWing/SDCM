@@ -169,7 +169,7 @@ Ensure that LZ is clear.\
 \
 LZ can be marked with green smoke (Use F10 menu)",
     ["DictKey_ActionText_980"] = "MIST loaded",
-    ["DictKey_ActionText_982"] = "MOOSE  loaded",
+    ["DictKey_ActionText_982"] = "AR_Korbouli loaded",
     ["DictKey_ActionText_984"] = "BASE:TraceAll(true)\
 BASE:TraceOnOff(true)  \
   \
