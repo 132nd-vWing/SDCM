@@ -205,7 +205,7 @@ do -- SAR
     end
     
     MENU_COALITION_COMMAND:New( coalition.side.BLUE, 'Activate Crashsite', TRMT.SAR.MENU, TRMT.SAR.START )
-    MENU_COALITION_COMMAND:New( coalition.side.BLUE, 'Dispatch Rescue Helicopter', TRMT.SAR.MENU, TRMT.SAR.SPAWN_HELO )
+    --MENU_COALITION_COMMAND:New( coalition.side.BLUE, 'Dispatch Rescue Helicopter', TRMT.SAR.MENU, TRMT.SAR.SPAWN_HELO )
     MENU_COALITION_COMMAND:New( coalition.side.BLUE, 'Request Smoke on the Crashsite', TRMT.SAR.MENU, TRMT.SAR.SPAWN_SMOKE )
     MENU_COALITION_COMMAND:New( coalition.side.BLUE, 'Activate Hostile Forces', TRMT.SAR.MENU, TRMT.SAR.SPAWN_HOSTILES )
   
