@@ -45,15 +45,25 @@ autogft_Setup:new()
 
 
 -- (RED TASK FORCE)
-
+-- From ONI to RUS FWD Base
 autogft_Setup:new()
   :useStaging()
-  :addBaseZone("AMB_RED_BASE")
+  :addBaseZone("ONI_MAIN_BASE")
   :startUsingRoads()
-  :setSpeed(5)
+  :addControlZone("AMB_RED_FWD_BASE")
+  :copyGroupsLayout("AMB:RUS_BTR_plt1")
+  :copyGroupsLayout("AMB:RUS_BTR_plt1")
+
+	
+-- From RUS FWD Base to combat zone
+autogft_Setup:new()
+  :useStaging()
+  :addBaseZone("AMB_RED_FWD_BASE")
+  :startUsingRoads()
+  :setSpeed(6)
   :addControlZone("AMB_junction_north")
   :addControlZone("AMB_Junction_south")
-  :scanUnits("AMB:RUS_BMP_plt1")
+  :scanUnits("AMB:RUS_BTR_plt1")
   
   
 
