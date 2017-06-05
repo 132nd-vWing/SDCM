@@ -1,7 +1,6 @@
 mapResource = 
 {
     ["ResKey_Action_590"] = "autogft-1_12-pre-release.lua",
-    ["ResKey_Action_591"] = "AMB_autogft.lua",
     ["ResKey_Action_889"] = "CHI_autogft.lua",
     ["ResKey_Action_979"] = "mist_4_3_74.lua",
     ["ResKey_Action_1428"] = "KASHURI_autogft.lua",
@@ -11,4 +10,5 @@ mapResource =
     ["ResKey_Action_2430"] = "beaconsilent.ogg",
     ["ResKey_Action_2440"] = "CTLD.lua",
     ["ResKey_Action_2447"] = "CSAR.lua",
+    ["ResKey_Action_2526"] = "AMB_autogft.lua",
 } -- end of mapResource

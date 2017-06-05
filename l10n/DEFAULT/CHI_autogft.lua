@@ -55,10 +55,21 @@ autogft_Setup:new()
 
 ---
 -- (RED TASK FORCE)
-
 autogft_Setup:new()
   :useStaging()
   :addBaseZone("CHI_RED_BASE")
+  :startUsingRoads()
+  :addControlZone("CHI_RED_FWD_BASE")
+  :copyGroupsLayout("CHI:RUS_IFV_PLT1")
+  :copyGroupsLayout("CHI:RUS_IFV_PLT2")
+  :copyGroupsLayout("CHI:RUS_IFV_PLT3")
+  :copyGroupsLayout("CHI:RUS_IFV_PLT4")
+
+
+
+autogft_Setup:new()
+  :useStaging()
+  :addBaseZone("CHI_RED_FWD_BASE")
   :startUsingRoads()
   :setSpeed(30)
   :addControlZone("CHI_RUS_Road")
@@ -70,7 +81,7 @@ autogft_Setup:new()
   
 autogft_Setup:new()
   :useStaging()
-  :addBaseZone("CHI_RED_BASE")
+  :addBaseZone("CHI_RED_FWD_BASE")
   :setSpeed(35)
   :addControlZone("CHI_RUS_Road")
   :startUsingRoads()
@@ -91,6 +102,18 @@ autogft_Setup:new()
   :addControlZone("CHI_FACTORY")
   :addControlZone("CHI_ROADJUNCTION_WEST")
   :scanUnits("CHI:RUS_IFV_PLT3")
+  
+autogft_Setup:new()
+  :useStaging()
+  :addBaseZone("CHI_RED_FWD_BASE")
+  :setSpeed(40)
+  :addControlZone("CHI_RUS_Road")
+  :startUsingRoads()
+  :setSpeed(6)
+  :addControlZone("CHI_ROADJUNCTION")
+  :addControlZone("CHI_FACTORY")
+  :addControlZone("CHI_ROADJUNCTION_WEST")
+  :scanUnits("CHI:RUS_IFV_PLT4")
   
   
 
