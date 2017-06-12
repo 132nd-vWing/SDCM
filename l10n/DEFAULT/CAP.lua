@@ -94,9 +94,10 @@ _RC_RESPAWN_DELAY = 300
 -----------------------------------------
 
 env.info('RED CAP: loading: start')
-
-if _DATABASE == nil then
+if routines.majorVersion == nil then
   env.info('RED CAP: loading: error: MOOSE not found')
+elseif routines.majorVersion < 3 then
+  env.info('RED CAP: loading: error: requires MOOSE version 3 or more recent')  
 else
 
   _RC = {
