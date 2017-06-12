@@ -38,6 +38,20 @@
 -- Repeat step 4 as many times as necessary; for example, you can have a group consisting of a MiG29, another group consisting of a Su27, and,
 -- why not, yet another group consisting of a P51D.
 
+-- Defines the name of the group that delimits the zone in which enemy aircrafts will patrol
+--
+-- Waypoints will be created randomly within this polygon
+_RC_PATROL_ZONE = 'RUSSIA_EAST_CAP PATROL ZONE'
+
+-- Defines the name of the group that delimits the zone in which friendly flights will be engaged by the CAP
+--
+-- Friendly flights flying outside that zone, however close to the CAP they are, will not be engaged
+_RC_ENGAGE_POLYGON = 'RUSSIA_EAST_CAP ZONE'
+
+-- Defines the name of the group that delimits the zone in which enemy planes have to stay
+--
+-- If an enemy plane leaves this zone, any engagement will be aborted, and the enemy plane will head back to its patrolling state
+_RC_CAP_LIMIT_ZONE = 'RUSSIA_EAST_CAP ZONE'
 
 -- Defines the minimum amount of fuel for patrolling aicraft.
 -- 
@@ -86,9 +100,9 @@ if _DATABASE == nil then
 else
 
   _RC = {
-    red_zone = ZONE:New('red_cap_red_zone'),
-    patrol_zone = ZONE:New('red_cap_patrol_zone'),
-    engage_zone = ZONE_POLYGON:New( 'red_cap_engage_zone_', GROUP:FindByName( 'red_cap_engage_zone' ) ),
+    red_zone = ZONE_POLYGON:New( _RC_CAP_LIMIT_ZONE..'_', GROUP:FindByName( _RC_CAP_LIMIT_ZONE ) ),
+    patrol_zone = ZONE_POLYGON:New( _RC_PATROL_ZONE..'_', GROUP:FindByName( _RC_PATROL_ZONE ) ),
+    engage_zone = ZONE_POLYGON:New( _RC_ENGAGE_POLYGON..'_', GROUP:FindByName( _RC_ENGAGE_POLYGON ) ),
     min_fuel = _RC_MIN_FUEL,
     orbit_delay = _RC_DELAY,
     event_handlers = {},
