@@ -147,7 +147,7 @@ TO: JTAC\
 \
 ARTILLERY:\
 Currently we have no artillery support.",
-    ["DictKey_ActionText_851"] = "ATUOFGT loaded",
+    ["DictKey_ActionText_851"] = "AUTOFGT loaded",
     ["DictKey_ActionText_852"] = "CTLD loaded",
     ["DictKey_ActionText_853"] = "MOOSE  loaded",
     ["DictKey_ActionText_890"] = "CHI_autogft loaded",
