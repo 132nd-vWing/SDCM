@@ -186,7 +186,7 @@ else
           -- Schedule a periodic check to force the CAP to stay in the pre-defined zone
           _RC.schedulers[name] = SCHEDULER:New(
             group, -- link the scheduler to the group so it stops when the group is destroyed
-            function ( name )
+            function ( group, name )
               if _RC.patrols[name]:GetControllable():IsNotInZone(_RC.red_zone) then
                 _RC.DEBUG(name..': out of red zone!')
                 _RC.patrols[name]:Abort() -- Immediate abort
@@ -234,12 +234,12 @@ else
       'Current aircraft(s) count',
       _RC.menu[group_name].root,
       function()
-        counter = 0
+        local counter = 0
         for _, patrol_name in ipairs(_RC.patrols[group_name]) do
-          local group = _RC.event_handlers[patrol_name]
-          if group and group:IsALive() then
+          local group = GROUP:FindByName(patrol_name)
+          if group ~= nil and group:IsAlive() then
             if _RC.patrols[patrol_name].OnAfterRTB ~= nil then
-              counter = conuter + 1
+              counter = counter + 1
             end
           end
         end
