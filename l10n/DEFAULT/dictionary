@@ -203,6 +203,7 @@ The friendly ground forces will commence their assault against AMBROLAURI within
     ["DictKey_ActionText_2426"] = "",
     ["DictKey_ActionText_2428"] = "",
     ["DictKey_ActionText_2431"] = "",
+    ["DictKey_ActionText_2843"] = "RED CAP loaded",
     ["DictKey_GroupName_5"] = "617 Neck",
     ["DictKey_GroupName_8"] = "617 Trollef",
     ["DictKey_GroupName_11"] = "617 Hansolo",
