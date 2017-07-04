@@ -21,9 +21,10 @@
 -- NOTE: this setup assumes that the Combat Air Patrol & the friendlies are part of opposing coalitions; this script will not work
 --       for a simulated blue-on-blue scenario.
 --
--- 1. Create a trigger zone named "red_cap_patrol_zone"; the patrolling airplanes will randomly fly into during their patrol.
--- 2. Create a Trigger Zone names "red_cap_red_zone"; the patrolling airplanes will NOT be allowed to fly outside this zone,
---    and will abort their attack and return to their patrolling state upon exiting it.
+-- 1. Create a Late Activation group named  "red_cap_patrol_zone"; use the waypoints of this group to define a polygon; 
+--	  the patrolling airplanes will randomly fly into that polygon during their patrol.
+-- 2. Create a Late Activation group named  "red_cap_red_zone"; use the waypoints of this group to define a polygon;
+--    the patrolling airplanes will NOT be allowed to fly outside this polygon and will abort their attack and return to their patrolling state upon exiting it.
 -- 3. Create a Late Activation group named "red_cap_engage_zone"; use the waypoints of this group to define a polygon; any
 --    "enemy" unit entering this area will be engaged by the CAP.
 -- 4. Create the Combat Air Patrols:
@@ -32,7 +33,7 @@
 --        NOTE: it is advised to create groups consisting of only one aircraft.
 --    4.2 Place it on an airfield
 --    4.3 Set the initial waypoint ("SP") to "Start from runway"
---    4.4 Make sure that the group has a waypoints loadout relevant for their CAP mission
+--    4.4 Make sure that the group has a weapons loadout relevant for their CAP mission
 -- 5. (optional) Adjust the values
 --
 -- Repeat step 4 as many times as necessary; for example, you can have a group consisting of a MiG29, another group consisting of a Su27, and,
@@ -41,17 +42,17 @@
 -- Defines the name of the group that delimits the zone in which enemy aircrafts will patrol
 --
 -- Waypoints will be created randomly within this polygon
-_RC_PATROL_ZONE = 'RUSSIA_EAST_CAP PATROL ZONE'
-
--- Defines the name of the group that delimits the zone in which friendly flights will be engaged by the CAP
---
--- Friendly flights flying outside that zone, however close to the CAP they are, will not be engaged
-_RC_ENGAGE_POLYGON = 'RUSSIA_EAST_CAP ZONE'
+_RC_PATROL_ZONE = 'red_cap_patrol_zone'
 
 -- Defines the name of the group that delimits the zone in which enemy planes have to stay
 --
 -- If an enemy plane leaves this zone, any engagement will be aborted, and the enemy plane will head back to its patrolling state
-_RC_CAP_LIMIT_ZONE = 'RUSSIA_EAST_CAP ZONE'
+_RC_CAP_LIMIT_ZONE = 'red_cap_red_zone'
+
+-- Defines the name of the group that delimits the zone in which friendly flights will be engaged by the CAP
+--
+-- Friendly flights flying outside that zone, however close to the CAP they are, will be engaged
+_RC_ENGAGE_POLYGON = 'red_cap_engage_zone'
 
 -- Defines the minimum amount of fuel for patrolling aicraft.
 -- 
