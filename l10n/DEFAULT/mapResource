@@ -11,4 +11,5 @@ mapResource =
     ["ResKey_Action_2440"] = "CTLD.lua",
     ["ResKey_Action_2447"] = "CSAR.lua",
     ["ResKey_Action_2746"] = "AMB_autogft.lua",
+    ["ResKey_Action_2844"] = "CAP.lua",
 } -- end of mapResource
