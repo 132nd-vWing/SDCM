@@ -24,7 +24,7 @@ Different types of aicrafts and Combat Air Patrol can be mixed together.
 
 This option can be "daisy-chained" at the start of an event, to trigger a set amount of CAP aicrafts to start patrolling.
 
-For example, one could quickly call "Add an aircraft" 4 times in a row, and 4 aircrafts will be "queued" for take-off (the will not be created immediately).
+For example, one could quickly call "Add an aircraft" 4 times in a row, and 4 aircrafts will be "queued" for take-off (they will not be created immediately).
 
 #### Second option: "Cancel this CAP"
 
@@ -32,10 +32,10 @@ This option sends all patrolling aircrafts back to base, and effectively cancels
 
 This can be used to reset the CAP if, for example, a CAP was too strong, or if there are less friendlies available.
 
-If there are 4 MiG29S currently patrolling, and it turns out this is too strong an oppossing force, one can call "Cancel this CAP", sending
+If there are 4 MiG29S currently patrolling, and it turns out this is too strong an opposing force, one can call "Cancel this CAP", sending
 those four MiG29S home, and call "Add an aircraft" 2 times, to replace them with a 2-ships CAP instead.
 
-#### Third optoin: "Current aircraft(s) count"
+#### Third option: "Current aircraft(s) count"
 
 This option simply prints the amount of currently active aicrafts in the CAP.
 
