@@ -1,22 +1,17 @@
 --[[
     Combat Troop and Logistics Drop
-
     Allows Huey, Mi-8 and C130 to transport troops internally and Helicopters to transport Logistic / Vehicle units to the field via sling-loads
     without requiring external mods.
-
     Supports all of the original CTTS functionality such as AI auto troop load and unload as well as group spawning and preloading of troops into units.
-
     Supports deployment of Auto Lasing JTAC to the field
-
     See https://github.com/ciribob/DCS-CTLD for a user manual and the latest version
-
-	Contributors:
-	    - Steggles - https://github.com/Bob7heBuilder
-	    - mvee - https://github.com/mvee
-	    - jmontleon - https://github.com/jmontleon
-	    - emilianomolina - https://github.com/emilianomolina
-
-    Version: 1.64 - 10/12/2016
+  Contributors:
+      - Steggles - https://github.com/Bob7heBuilder
+      - mvee - https://github.com/mvee
+      - jmontleon - https://github.com/jmontleon
+      - emilianomolina - https://github.com/emilianomolina
+    Version: 1.70 - 25/06/2017
+      - Added ability to set maximum group size that can be carried
       - Added new sling load crates
       - Fixed bug where crates and / or groups would disappear
       - Fixed bug where count in zone wouldn't work for mission crates
@@ -33,7 +28,7 @@ ctld.staticBugWorkaround = false --  DCS had a bug where destroying statics woul
 
 ctld.disableAllSmoke = false -- if true, all smoke is diabled at pickup and drop off zones regardless of settings below. Leave false to respect settings below
 
-ctld.hoverPickup = false --  if set to false you can load crates with the F10 menu instead of hovering... Only if not using real crates!
+ctld.hoverPickup = true --  if set to false you can load crates with the F10 menu instead of hovering... Only if not using real crates!
 
 ctld.enableCrates = true -- if false, Helis will not be able to spawn or unpack crates so will be normal CTTS
 ctld.slingLoad = true -- if false, crates can be used WITHOUT slingloading, by hovering above the crate, simulating slingloading but not the weight...
@@ -45,10 +40,11 @@ ctld.enableSmokeDrop = true -- if false, helis and c-130 will not be able to dro
 
 ctld.maxExtractDistance = 125 -- max distance from vehicle to troops to allow a group extraction
 ctld.maximumDistanceLogistic = 200 -- max distance from vehicle to logistics to allow a loading or spawning operation
-ctld.maximumSearchDistance = 40 -- max distance for troops to search for enemy
+ctld.maximumSearchDistance = 2000 -- max distance for troops to search for enemy
 ctld.maximumMoveDistance = 30 -- max distance for troops to move from drop point if no enemy is nearby
 
-ctld.numberOfTroops = 10 -- default number of troops to load on a transport heli or C-130
+ctld.numberOfTroops = 21 -- default number of troops to load on a transport heli or C-130 
+              -- also works as maximum size of group that'll fit into a helicopter unless overridden
 ctld.enableFastRopeInsertion = true -- allows you to drop troops by fast rope
 ctld.fastRopeMaximumHeight = 18.28 -- in meters which is 60 ft max fast rope (not rappell) safe height
 
@@ -58,10 +54,10 @@ ctld.vehiclesForTransportBLUE = { "M1045 HMMWV TOW", "M1043 HMMWV Armament" } --
 ctld.aaLaunchers = 3 -- controls how many launchers to add to the kub/buk when its spawned.
 ctld.hawkLaunchers = 5 -- controls how many launchers to add to the hawk when its spawned.
 
-ctld.spawnRPGWithCoalition = true --spawns a friendly RPG unit with Coalition forces
-ctld.spawnStinger = false -- spawns a stinger / igla soldier with a group of 6 or more soldiers!
+ctld.spawnRPGWithCoalition = false --spawns a friendly RPG unit with Coalition forces
+ctld.spawnStinger = true -- spawns a stinger / igla soldier with a group of 6 or more soldiers!
 
-ctld.enabledFOBBuilding = true -- if true, you can load a crate INTO a C-130 than when unpacked creates a Forward Operating Base (FOB) which is a new place to spawn (crates) and carry crates from
+ctld.enabledFOBBuilding = false -- if true, you can load a crate INTO a C-130 than when unpacked creates a Forward Operating Base (FOB) which is a new place to spawn (crates) and carry crates from
 -- In future i'd like it to be a FARP but so far that seems impossible...
 -- You can also enable troop Pickup at FOBS
 
@@ -77,7 +73,7 @@ ctld.buildTimeFOB = 120 --time in seconds for the FOB to be built
 ctld.radioSound = "beacon.ogg" -- the name of the sound file to use for the FOB radio beacons. If this isnt added to the mission BEACONS WONT WORK!
 ctld.radioSoundFC3 = "beaconsilent.ogg" -- name of the second silent radio file, used so FC3 aircraft dont hear ALL the beacon noises... :)
 
-ctld.deployedBeaconBattery = 30 -- the battery on deployed beacons will last for this number minutes before needing to be re-deployed
+ctld.deployedBeaconBattery = 120 -- the battery on deployed beacons will last for this number minutes before needing to be re-deployed
 
 ctld.enabledRadioBeaconDrop = true -- if its set to false then beacons cannot be dropped by units
 
@@ -85,10 +81,10 @@ ctld.allowRandomAiTeamPickups = false -- Allows the AI to randomize the loading 
 
 -- Simulated Sling load configuration
 
-ctld.minimumHoverHeight = 7.5 -- Lowest allowable height for crate hover
-ctld.maximumHoverHeight = 12.0 -- Highest allowable height for crate hover
-ctld.maxDistanceFromCrate = 5.5 -- Maximum distance from from crate for hover
-ctld.hoverTime = 10 -- Time to hold hover above a crate for loading in seconds
+ctld.minimumHoverHeight = 5 -- Lowest allowable height for crate hover
+ctld.maximumHoverHeight = 20 -- Highest allowable height for crate hover
+ctld.maxDistanceFromCrate = 13 -- Maximum distance from from crate for hover
+ctld.hoverTime = 6 -- Time to hold hover above a crate for loading in seconds
 
 -- end of Simulated Sling load configuration
 
@@ -120,7 +116,7 @@ ctld.JTAC_smokeOn_BLUE = true -- enables marking of target with smoke for BLUE f
 ctld.JTAC_smokeColour_RED = 4 -- RED side smoke colour -- Green = 0 , Red = 1, White = 2, Orange = 3, Blue = 4
 ctld.JTAC_smokeColour_BLUE = 1 -- BLUE side smoke colour -- Green = 0 , Red = 1, White = 2, Orange = 3, Blue = 4
 
-ctld.JTAC_jtacStatusF10 = true -- enables F10 JTAC Status menu
+ctld.JTAC_jtacStatusF10 = false -- enables F10 JTAC Status menu
 
 ctld.JTAC_location = true -- shows location of target in JTAC message
 
@@ -146,16 +142,17 @@ ctld.JTAC_lock = "all" -- "vehicle" OR "troop" OR "all" forces JTAC to only lock
 
 --pickupZones = { "Zone name or Ship Unit Name", "smoke color", "limit (-1 unlimited)", "ACTIVE (yes/no)", "side (0 = Both sides / 1 = Red / 2 = Blue )", flag number (optional) }
 ctld.pickupZones = {
-    { "pickzone1", "blue", -1, "yes", 0 },
-    { "pickzone2", "red", -1, "yes", 0 },
+    { "pickzone1", "none", -1, "yes", 0 },
+    { "pickzone2", "none", -1, "yes", 0 },
     { "pickzone3", "none", -1, "yes", 0 },
     { "pickzone4", "none", -1, "yes", 0 },
     { "pickzone5", "none", -1, "yes", 0 },
     { "pickzone6", "none", -1, "yes", 0 },
     { "pickzone7", "none", -1, "yes", 0 },
     { "pickzone8", "none", -1, "yes", 0 },
-    { "pickzone9", "none", 5, "yes", 1 }, -- limits pickup zone 9 to 5 groups of soldiers or vehicles, only red can pick up
+    { "pickzone9", "none", -1, "yes", 0 },
     { "pickzone10", "none", 10, "yes", 2 },  -- limits pickup zone 10 to 10 groups of soldiers or vehicles, only blue can pick up
+  { "pickzone11", "none", 5, "yes", 1 }, -- limits pickup zone 9 to 5 groups of soldiers or vehicles, only red can pick up
 
     { "pickzone11", "blue", 20, "no", 2 },  -- limits pickup zone 11 to 20 groups of soldiers or vehicles, only blue can pick up. Zone starts inactive!
     { "pickzone12", "red", 20, "no", 1 },  -- limits pickup zone 11 to 20 groups of soldiers or vehicles, only blue can pick up. Zone starts inactive!
@@ -206,14 +203,14 @@ ctld.wpZones = {
 
 -- Use any of the predefined names or set your own ones
 ctld.transportPilotNames = {
-    "NECK1",
-    "259 Entropy",
-    "259 Evilivan",
-    "259 Fudd",
-    "259 Looney",
-    "259 Makeshift",
-    "259 SPARE#1",
-    "helicargo8",
+  NECK1,  
+  "259 Entropy",
+  "259 Evilivan",
+  "259 Fudd",
+  "259 Looney",
+  "259 Makeshift",
+  "259 SPARE#1",
+  "helicargo8",
     "helicargo9",
     "helicargo10",
 
@@ -294,72 +291,23 @@ ctld.transportPilotNames = {
     "MEDEVAC BLUE #19",
     "MEDEVAC BLUE #20",
     "MEDEVAC BLUE #21",
-
-    -- *** AI transports names (different names only to ease identification in mission) ***
-
-    -- Use any of the predefined names or set your own ones
-
-    "transport1",
-    "transport2",
-    "transport3",
-    "transport4",
-    "transport5",
-    "transport6",
-    "transport7",
-    "transport8",
-    "transport9",
-    "transport10",
-
-    "transport11",
-    "transport12",
-    "transport13",
-    "transport14",
-    "transport15",
-    "transport16",
-    "transport17",
-    "transport18",
-    "transport19",
-    "transport20",
-
-    "transport21",
-    "transport22",
-    "transport23",
-    "transport24",
-    "transport25",
-}
+  
+  }
 
 -- *************** Optional Extractable GROUPS *****************
 
 -- Use any of the predefined names or set your own ones
 
 ctld.extractableGroups = {
-    "NECK2",
-    "extract2",
-    "extract3",
-    "extract4",
-    "extract5",
-    "extract6",
-    "extract7",
-    "extract8",
-    "extract9",
-    "extract10",
+  "TIANETI JTAC NORTH EAST",
+  "TIANETI JTAC SOUTH WEST",
+  "DUSHETI JTAC NORTH",
+  "DUSHETI JTAC WEST",
+  "TETRA  JTAC NORTH WEST",
+  "TETRA  JTAC NORTH EAST",
 
-    "extract11",
-    "extract12",
-    "extract13",
-    "extract14",
-    "extract15",
-    "extract16",
-    "extract17",
-    "extract18",
-    "extract19",
-    "extract20",
-
-    "extract21",
-    "extract22",
-    "extract23",
-    "extract24",
-    "extract25",
+    "DUSHETI_Medevac1",
+    "DUSHETI_Medevac2",
 }
 
 -- ************** Logistics UNITS FOR CRATE SPAWNING ******************
@@ -373,12 +321,7 @@ ctld.logisticUnits = {
     "logistic3",
     "logistic4",
     "logistic5",
-    "logistic6",
-    "logistic7",
-    "logistic8",
-    "logistic9",
-    "logistic10",
-}
+   }
 
 -- ************** UNITS ABLE TO TRANSPORT VEHICLES ******************
 -- Add the model name of the unit that you want to be able to transport and deploy vehicles
@@ -387,6 +330,20 @@ ctld.logisticUnits = {
 ctld.vehicleTransportEnabled = {
     "76MD", -- the il-76 mod doesnt use a normal - sign so il-76md wont match... !!!! GRR
     "C-130",
+}
+
+
+-- ************** Maximum Units SETUP for UNITS ******************
+
+-- Put the name of the Unit you want to limit group sizes too
+-- i.e
+-- ["UH-1H"] = 10,
+--
+-- Will limit UH1 to only transport groups with a size 10 or less
+-- Make sure the unit name is exactly right or it wont work
+
+ctld.unitLoadLimits = {
+  ["UH-1H"] = 8, 
 }
 
 -- ************** INFANTRY GROUPS FOR PICKUP ******************
@@ -400,11 +357,9 @@ ctld.vehicleTransportEnabled = {
 -- You can also add an optional coalition side to limit the group to one side
 -- for the side - 2 is BLUE and 1 is RED
 ctld.loadableGroups = {
-    {name = "Standard Group", inf = 6, mg = 2, at = 2 }, -- will make a loadable group with 5 infantry, 2 MGs and 2 anti-tank for both coalitions
-    {name = "Anti Air", inf = 2, aa = 3  },
-    {name = "Anti Tank", inf = 2, at = 6  },
+  {name = "Small Combat Group (8)", inf = 5, mg = 2, aa = 1 },
+    {name = "Large Combat Group (20)", inf = 11, mg = 7, aa = 2 }, 
     {name = "Mortar Squad", mortar = 6 },
-    -- {name = "Mortar Squad Red", inf = 2, mortar = 5, side =1 }, --would make a group loadable by RED only
 }
 
 -- ************** SPAWNABLE CRATES ******************
@@ -1346,48 +1301,47 @@ function ctld.spawnCrateStatic(_country, _unitId, _point, _name, _weight,_side)
         
 --[[ Placeholder for different type of cargo containers. Let's say pipes and trunks, fuel for FOB building
                         ["shape_name"] = "ab-212_cargo",
-			["type"] = "uh1h_cargo" --new type for the container previously used
-			
-			["shape_name"] = "ammo_box_cargo",
+      ["type"] = "uh1h_cargo" --new type for the container previously used
+      
+      ["shape_name"] = "ammo_box_cargo",
                         ["type"] = "ammo_cargo",
-			
-			["shape_name"] = "barrels_cargo",
+      
+      ["shape_name"] = "barrels_cargo",
                         ["type"] = "barrels_cargo",
-
                         ["shape_name"] = "bw_container_cargo",
                         ["type"] = "container_cargo",
-			
+      
                         ["shape_name"] = "f_bar_cargo",
                         ["type"] = "f_bar_cargo",
-			
-			["shape_name"] = "fueltank_cargo",
+      
+      ["shape_name"] = "fueltank_cargo",
                         ["type"] = "fueltank_cargo",
-			
-			["shape_name"] = "iso_container_cargo",
-			["type"] = "iso_container",
-			
-			["shape_name"] = "iso_container_small_cargo",
-			["type"] = "iso_container_small",
-			
-			["shape_name"] = "oiltank_cargo",
+      
+      ["shape_name"] = "iso_container_cargo",
+      ["type"] = "iso_container",
+      
+      ["shape_name"] = "iso_container_small_cargo",
+      ["type"] = "iso_container_small",
+      
+      ["shape_name"] = "oiltank_cargo",
                         ["type"] = "oiltank_cargo",
                         
-			["shape_name"] = "pipes_big_cargo",
-                        ["type"] = "pipes_big_cargo",			
-			
-			["shape_name"] = "pipes_small_cargo",
-			["type"] = "pipes_small_cargo",
-			
-			["shape_name"] = "tetrapod_cargo",
-			["type"] = "tetrapod_cargo",
-			
-			["shape_name"] = "trunks_long_cargo",
-			["type"] = "trunks_long_cargo",
-			
-			["shape_name"] = "trunks_small_cargo",
-			["type"] = "trunks_small_cargo",
+      ["shape_name"] = "pipes_big_cargo",
+                        ["type"] = "pipes_big_cargo",     
+      
+      ["shape_name"] = "pipes_small_cargo",
+      ["type"] = "pipes_small_cargo",
+      
+      ["shape_name"] = "tetrapod_cargo",
+      ["type"] = "tetrapod_cargo",
+      
+      ["shape_name"] = "trunks_long_cargo",
+      ["type"] = "trunks_long_cargo",
+      
+      ["shape_name"] = "trunks_small_cargo",
+      ["type"] = "trunks_small_cargo",
 ]]--
-	else	
+  else  
             _crate = {
                 ["shape_name"] = "GeneratorF",
                 ["type"] = "GeneratorF",
@@ -2179,7 +2133,20 @@ function ctld.extractTroops(_args)
             _extractTroops = ctld.findNearestGroup(_heli, ctld.droppedTroopsBLUE)
         end
 
+
         if _extractTroops ~= nil then
+
+            local _limit = ctld.getTransportLimit(_heli:getTypeName())
+
+            local _size =  #_extractTroops.group:getUnits()
+
+            if _limit <= #_extractTroops.group:getUnits() then
+
+                ctld.displayMessageToGroup(_heli, "Sorry - The group of ".._size.." is too large to fit. \n\nLimit is ".._limit.." for ".._heli:getTypeName(), 20)
+
+                return
+            end
+
 
             _onboard.troops = _extractTroops.details
 
@@ -4511,6 +4478,16 @@ function ctld.checkAIStatus()
 
 end
 
+function ctld.getTransportLimit(_unitType)
+
+    if ctld.unitLoadLimits[_unitType] then
+
+        return ctld.unitLoadLimits[_unitType]
+    end
+
+    return ctld.numberOfTroops
+
+end
 
 -- Adds menuitem to all heli units that are active
 function ctld.addF10MenuOptions()
@@ -4543,7 +4520,11 @@ function ctld.addF10MenuOptions()
                         -- local _loadPath = missionCommands.addSubMenuForGroup(_groupId, "Load From Zone", _troopCommandsPath)
                         for _,_loadGroup in pairs(ctld.loadableGroups) do
                             if not _loadGroup.side or _loadGroup.side == _unit:getCoalition() then
-                                missionCommands.addCommandForGroup(_groupId, "Load ".._loadGroup.name, _troopCommandsPath, ctld.loadTroopsFromZone, { _unitName, true,_loadGroup,false })
+                            
+                                -- check size & unit
+                                if ctld.getTransportLimit(_unit:getTypeName()) >= _loadGroup.total then
+                                    missionCommands.addCommandForGroup(_groupId, "Load ".._loadGroup.name, _troopCommandsPath, ctld.loadTroopsFromZone, { _unitName, true,_loadGroup,false })
+                                end
                             end
                         end
 
@@ -5786,6 +5767,34 @@ if ctld.allowRandomAiTeamPickups == true then
             table.insert(ctld.blueTeams, _)
         end
     end
+end
+
+-- add total count
+
+for _,_loadGroup in pairs(ctld.loadableGroups) do
+
+    _loadGroup.total = 0
+    if _loadGroup.aa then
+        _loadGroup.total = _loadGroup.aa + _loadGroup.total
+    end
+
+    if _loadGroup.inf then
+        _loadGroup.total = _loadGroup.inf + _loadGroup.total
+    end
+
+
+    if _loadGroup.mg then
+        _loadGroup.total = _loadGroup.mg + _loadGroup.total
+    end
+
+    if _loadGroup.at then
+        _loadGroup.total = _loadGroup.at + _loadGroup.total
+    end
+
+    if _loadGroup.mortar then
+        _loadGroup.total = _loadGroup.mortar + _loadGroup.total
+    end
+
 end
 
 
