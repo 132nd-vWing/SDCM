@@ -18,7 +18,7 @@ artifacts:
 deploy:
 - provider: GitHub
   auth_token:
-    secure: pSZSIGECKsAVKeW3cxW8/fvsGAjGAmqvlLgAABm6oQYkQjvW7ixUUAHm/RsOXddF
+    secure: oqhY5z4JkQh4bNg2w52lZ5+XL6WOoJxwkfhXBUdwvThrqT+4rX5QsN7DmP9MuRTa
   artifact: 'SDCM'
   draft: false
   force_update: true
