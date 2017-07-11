@@ -4,7 +4,6 @@ mapResource =
     ["ResKey_Action_889"] = "CHI_autogft.lua",
     ["ResKey_Action_979"] = "mist_4_3_74.lua",
     ["ResKey_Action_1428"] = "KASHURI_autogft.lua",
-    ["ResKey_Action_2378"] = "AR_Korbouli.lua",
     ["ResKey_Action_2429"] = "beacon.ogg",
     ["ResKey_Action_2430"] = "beaconsilent.ogg",
     ["ResKey_Action_2447"] = "CSAR.lua",
@@ -12,4 +11,6 @@ mapResource =
     ["ResKey_Action_2844"] = "CAP.lua",
     ["ResKey_Action_2896"] = "CTLD.lua",
     ["ResKey_Action_2897"] = "Moose.lua",
+    ["ResKey_Action_3020"] = "AR_Korbouli.lua",
+    ["ResKey_Action_3023"] = "AI_Tskhinvali.lua",
 } -- end of mapResource
