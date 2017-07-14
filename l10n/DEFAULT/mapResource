@@ -10,7 +10,7 @@ mapResource =
     ["ResKey_Action_2746"] = "AMB_autogft.lua",
     ["ResKey_Action_2844"] = "CAP.lua",
     ["ResKey_Action_2896"] = "CTLD.lua",
-    ["ResKey_Action_2897"] = "Moose.lua",
     ["ResKey_Action_3020"] = "AR_Korbouli.lua",
     ["ResKey_Action_3023"] = "AI_Tskhinvali.lua",
+    ["ResKey_Action_3050"] = "Moose.lua",
 } -- end of mapResource

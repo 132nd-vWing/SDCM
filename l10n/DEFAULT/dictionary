@@ -220,7 +220,7 @@ The friendly ground forces will commence their assault against AMBROLAURI within
     ["DictKey_GroupName_41"] = "617th #4",
     ["DictKey_GroupName_44"] = "",
     ["DictKey_GroupName_47"] = "617 Lion",
-    ["DictKey_GroupName_50"] = "617 Level",
+    ["DictKey_GroupName_50"] = "617 Chilts",
     ["DictKey_GroupName_53"] = "617 Kimkiller",
     ["DictKey_GroupName_56"] = "617th #5",
     ["DictKey_GroupName_59"] = "617th #6",
@@ -708,7 +708,7 @@ The friendly ground forces will commence their assault against AMBROLAURI within
     ["DictKey_UnitName_42"] = "617th #4",
     ["DictKey_UnitName_45"] = "",
     ["DictKey_UnitName_48"] = "Lion",
-    ["DictKey_UnitName_51"] = "Level",
+    ["DictKey_UnitName_51"] = "Chilts",
     ["DictKey_UnitName_54"] = "617 Kimkiller",
     ["DictKey_UnitName_57"] = "617th #5",
     ["DictKey_UnitName_60"] = "617th #6",
@@ -3146,6 +3146,6 @@ The friendly ground forces will commence their assault against AMBROLAURI within
     ["DictKey_descriptionText_1"] = "See full mission briefing on 132nd Virtual Wing website for detailed information about situation and tasking.\
 \
 \
-METAR by DAWS: UGTB 111300Z 11010KT 9999 BKN047CB 26/17 Q1019 R13R/CLRD70 NOSIG",
+METAR by DAWS: UGTB 140600Z 18004KT 120V230 CAVOK 23/12 Q1015 R31L/CLRD70 NOSIG",
     ["DictKey_sortie_4"] = "[132nd] OP GEORGIAN SHIELD",
 } -- end of dictionary
