@@ -13,4 +13,5 @@ mapResource =
     ["ResKey_Action_3020"] = "AR_Korbouli.lua",
     ["ResKey_Action_3023"] = "AI_Tskhinvali.lua",
     ["ResKey_Action_3050"] = "Moose.lua",
+    ["ResKey_Action_3213"] = "AR_Oni.lua",
 } -- end of mapResource
