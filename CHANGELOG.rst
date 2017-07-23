@@ -2,6 +2,15 @@ Changelog
 =========
 
 
+(unreleased)
+------------
+- Merge pull request #20 from 132nd-vWing/132nd-etcher-patch-1. [132nd-
+  Entropy]
+
+  Adds link to ZenHub page to README
+- Adds link to ZenHub page to README. [132nd-etcher]
+
+
 1.4.0 (2017-07-21)
 ------------------
 
