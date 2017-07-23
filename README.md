@@ -1,6 +1,10 @@
 # SDCM
 Standard Dynamic Combat Mission
 
+## Development
+
+An overview of the development process for this repository can be found on [ZenHub](https://app.zenhub.com/workspace/o/132nd-vwing/132nd-virtual-wing-training-mission-tblisi/boards?repos=79440118,91231932) (a Github account is needed view it).
+
 ## Builds
 
 The latest MIZ files build can be obtained from [Appveyor](https://ci.appveyor.com/project/132nd-VirtualWing/sdcm/build/artifacts).
