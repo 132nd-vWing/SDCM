@@ -358,7 +358,7 @@ ctld.unitLoadLimits = {
 -- for the side - 2 is BLUE and 1 is RED
 ctld.loadableGroups = {
   {name = "Small Combat Group (8)", inf = 5, mg = 2, aa = 1 },
-    {name = "Large Combat Group (20)", inf = 11, mg = 7, aa = 2 }, 
+    {name = "Large Combat Group (20)", inf = 10, mg = 7, aa = 2 }, 
     {name = "Mortar Squad", mortar = 6 },
 }
 
