@@ -58,17 +58,17 @@ AR_Korbouli_HighValue:ClearTasks()
 AR_Korbouli_HighValue:RouteToVec3(AR_Zone_Korbouli_HighValue:GetRandomPointVec3(),17)
 end,{},30,600,0.2) -- high value 
 -- /High Value Target --
-
--- Artillery Fire --
-AR_Korbouli_Artillery_Target_Location = GROUP:FindByName("AR_Korbouli_Artillery_Target"):GetVec2() -- the Group in the ME will be the target location
-
-
-
-AR_Korbouli_Artillery_fire = SCHEDULER:New( nil,
-    function()
-     AR_Korbouli_HighValue:SetTask({id = 'FireAtPoint', params = {x=AR_Korbouli_Artillery_Target_Location.x, y=AR_Korbouli_Artillery_Target_Location.y, radius=100, expendQty=3, expendQtyEnabled=true}}, 1)
-    end,
-  {}, 5, 300 )
+--
+---- Artillery Fire --
+--AR_Korbouli_Artillery_Target_Location = GROUP:FindByName("AR_Korbouli_Artillery_Target"):GetVec2() -- the Group in the ME will be the target location
+--
+--
+--
+--AR_Korbouli_Artillery_fire = SCHEDULER:New( nil,
+--    function()
+--     AR_Korbouli_HighValue:SetTask({id = 'FireAtPoint', params = {x=AR_Korbouli_Artillery_Target_Location.x, y=AR_Korbouli_Artillery_Target_Location.y, radius=100, expendQty=3, expendQtyEnabled=true}}, 1)
+--    end,
+--  {}, 5, 300 )
 
 
 

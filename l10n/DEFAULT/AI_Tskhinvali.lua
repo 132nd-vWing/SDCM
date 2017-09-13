@@ -59,16 +59,16 @@ AR_Tskhinvali_HighValue:RouteToVec3(AR_Zone_Tskhinvali_HighValue:GetRandomPointV
 end,{},30,600,0.2) -- high value 
 -- /High Value Target --
 
--- Artillery Fire --
-AR_Tskhinvali_Artillery_Target_Location = GROUP:FindByName("AR_Tskhinvali_Artillery_Target"):GetVec2() -- the Group in the ME will be the target location
-
-
-
-AR_Tskhinvali_Artillery_fire = SCHEDULER:New( nil,
-    function()
-     AR_Tskhinvali_HighValue:SetTask({id = 'FireAtPoint', params = {x=AR_Tskhinvali_Artillery_Target_Location.x, y=AR_Tskhinvali_Artillery_Target_Location.y, radius=100, expendQty=3, expendQtyEnabled=true}}, 1)
-    end,
-  {}, 5, 300 )
+---- Artillery Fire --
+--AR_Tskhinvali_Artillery_Target_Location = GROUP:FindByName("AR_Tskhinvali_Artillery_Target"):GetVec2() -- the Group in the ME will be the target location
+--
+--
+--
+--AR_Tskhinvali_Artillery_fire = SCHEDULER:New( nil,
+--    function()
+--     AR_Tskhinvali_HighValue:SetTask({id = 'FireAtPoint', params = {x=AR_Tskhinvali_Artillery_Target_Location.x, y=AR_Tskhinvali_Artillery_Target_Location.y, radius=100, expendQty=3, expendQtyEnabled=true}}, 1)
+--    end,
+--  {}, 5, 300 )
 
 
 

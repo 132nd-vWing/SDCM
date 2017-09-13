@@ -9,9 +9,9 @@ mapResource =
     ["ResKey_Action_2447"] = "CSAR.lua",
     ["ResKey_Action_2746"] = "AMB_autogft.lua",
     ["ResKey_Action_2844"] = "CAP.lua",
-    ["ResKey_Action_3020"] = "AR_Korbouli.lua",
-    ["ResKey_Action_3023"] = "AI_Tskhinvali.lua",
-    ["ResKey_Action_3213"] = "AR_Oni.lua",
     ["ResKey_Action_3217"] = "Moose.lua",
     ["ResKey_Action_3316"] = "CTLD.lua",
+    ["ResKey_Action_3317"] = "AR_Korbouli.lua",
+    ["ResKey_Action_3318"] = "AI_Tskhinvali.lua",
+    ["ResKey_Action_3319"] = "AR_Oni.lua",
 } -- end of mapResource

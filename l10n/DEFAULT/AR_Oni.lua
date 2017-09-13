@@ -58,16 +58,16 @@ AR_Oni_HighValue:RouteToVec3(AR_Zone_Oni_HighValue:GetRandomPointVec3(),17)
 end,{},30,600,0.2) -- high value 
 -- /High Value Target --
 
--- Artillery Fire --
-AR_Oni_Artillery_Target_Location = GROUP:FindByName("AR_Oni_Artillery_Target"):GetVec2() -- the Group in the ME will be the target location
-
-
-
-AR_Oni_Artillery_fire = SCHEDULER:New( nil,
-    function()
-     AR_Oni_HighValue:SetTask({id = 'FireAtPoint', params = {x=AR_Oni_Artillery_Target_Location.x, y=AR_Oni_Artillery_Target_Location.y, radius=100, expendQty=3, expendQtyEnabled=true}}, 1)
-    end,
-  {}, 5, 300 )
+---- Artillery Fire --
+--AR_Oni_Artillery_Target_Location = GROUP:FindByName("AR_Oni_Artillery_Target"):GetVec2() -- the Group in the ME will be the target location
+--
+--
+--
+--AR_Oni_Artillery_fire = SCHEDULER:New( nil,
+--    function()
+--     AR_Oni_HighValue:SetTask({id = 'FireAtPoint', params = {x=AR_Oni_Artillery_Target_Location.x, y=AR_Oni_Artillery_Target_Location.y, radius=100, expendQty=3, expendQtyEnabled=true}}, 1)
+--    end,
+--  {}, 5, 300 )
 
 
 
