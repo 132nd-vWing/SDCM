@@ -3310,6 +3310,6 @@ The friendly ground forces will commence their assault against AMBROLAURI within
     ["DictKey_descriptionText_1"] = "See full mission briefing on 132nd Virtual Wing website for detailed information about situation and tasking.\
 \
 \
-METAR by DAWS: UGTB 251000Z 18007KT 130V220 9999 SCT046CB 30/17 Q1010 R13R/CLRD70 NOSIG",
+METAR by DAWS: UGTB 140600Z 18004KT 120V230 CAVOK 23/12 Q1015 R31L/CLRD70 NOSIG",
     ["DictKey_sortie_4"] = "[132nd] OP GEORGIAN SHIELD",
 } -- end of dictionary

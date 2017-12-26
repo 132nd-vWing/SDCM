@@ -1,5 +1,5 @@
 env.info( '*** MOOSE STATIC INCLUDE START *** ' )
-env.info( 'Moose Generation Timestamp: 20170725_1112' )
+env.info( 'Moose Generation Timestamp: 20170713_2214' )
 
 --- Various routines
 -- @module routines
@@ -17483,7 +17483,7 @@ do
     
     self:HandleEvent( EVENTS.Dead )
     
-    self:__Lasing( -1 )
+    self:__Lasing( -0.2 )
   end
 
   --- @param #SPOT self
@@ -17508,7 +17508,7 @@ do
     if self.Target:IsAlive() then
       self.SpotIR:setPoint( self.Target:GetPointVec3():AddY(1):AddY(math.random(-100,100)/100):AddX(math.random(-100,100)/100):GetVec3() )
       self.SpotLaser:setPoint( self.Target:GetPointVec3():AddY(1):GetVec3() )
-      self:__Lasing( -1 )
+      self:__Lasing( -0.2 )
     else
       self:E( { "Target is not alive", self.Target:IsAlive() } )
     end
@@ -27361,7 +27361,7 @@ function SPAWN:SpawnAtAirbase( Airbase, Takeoff ) -- R2.2
       
       SpawnTemplate.route.points[1].x = PointVec3.x
       SpawnTemplate.route.points[1].y = PointVec3.z
-      SpawnTemplate.route.points[1].alt = PointVec3.y + 200
+      SpawnTemplate.route.points[1].alt = Airbase.y
       SpawnTemplate.route.points[1].type = GROUPTEMPLATE.Takeoff[Takeoff]
       SpawnTemplate.route.points[1].airdromeId = Airbase:GetID()
       
@@ -32130,6 +32130,7 @@ do -- DETECTION_BASE
     -- Create FSM transitions.
     
     self:SetStartState( "Stopped" )
+    self.CountryID = DetectionSetGroup:GetFirst():GetCountry()
     
     self:AddTransition( "Stopped", "Start", "Detecting")
     
@@ -34411,7 +34412,6 @@ do -- DETECTION_AREAS
       end
 
       if DETECTION_AREAS._BoundDetectedZones or self._BoundDetectedZones then
-        self.CountryID = DetectedSet:GetFirst():GetCountry()
         DetectedZone:BoundZone( 12, self.CountryID )
       end
     end
@@ -34588,12 +34588,7 @@ do -- DESIGNATE
   --     
   -- The example will activate the threat level prioritization for this the Designate object. Threats will be marked based on the threat level of the Target.
   -- 
-  -- ## 6. Designate Menu Location for a Mission
-  -- 
-  -- You can make DESIGNATE work for a @{Mission#MISSION} object. In this way, the designate menu will not appear in the root of the radio menu, but in the menu of the Mission.
-  -- Use the method @{#DESIGNATE.SetMission}() to set the @{Mission} object for the designate function.
-  -- 
-  -- ## 7. Status Report
+  -- ## 6. Status Report
   -- 
   -- A status report is available that displays the current Targets detected, grouped per DetectionItem, and a list of which Targets are currently being marked.
   -- 
@@ -34608,6 +34603,7 @@ do -- DESIGNATE
   -- The example will activate the flashing of the status menu for this Designate object.
   -- 
   -- @field #DESIGNATE
+  -- 
   DESIGNATE = {
     ClassName = "DESIGNATE",
   }
@@ -34617,9 +34613,8 @@ do -- DESIGNATE
   -- @param Tasking.CommandCenter#COMMANDCENTER CC
   -- @param Functional.Detection#DETECTION_BASE Detection
   -- @param Core.Set#SET_GROUP AttackSet The Attack collection of GROUP objects to designate and report for.
-  -- @param Tasking.Mission#MISSION Mission (Optional) The Mission where the menu needs to be attached.
   -- @return #DESIGNATE
-  function DESIGNATE:New( CC, Detection, AttackSet, Mission )
+  function DESIGNATE:New( CC, Detection, AttackSet )
   
     local self = BASE:Inherit( self, FSM:New() ) -- #DESIGNATE
     self:F( { Detection } )
@@ -34790,7 +34785,6 @@ do -- DESIGNATE
     self.LaseDuration = 60
     
     self:SetFlashStatusMenu( false )
-    self:SetMission( Mission )
     self:SetDesignateMenu()
     
     self:SetLaserCodes( 1688 ) -- set self.LaserCodes
@@ -34928,17 +34922,6 @@ do -- DESIGNATE
     return self
   end
   
-  --- Set the MISSION object for which designate will function.
-  -- When a MISSION object is assigned, the menu for the designation will be located at the Mission Menu.
-  -- @param #DESIGNATE self
-  -- @param Tasking.Mission#MISSION Mission The MISSION object.
-  -- @return #DESIGNATE
-  function DESIGNATE:SetMission( Mission ) --R2.2
-
-    self.Mission = Mission
-
-    return self
-  end
   
 
   --- 
@@ -35050,15 +35033,8 @@ do -- DESIGNATE
           DesignateMenu = nil
           self:E("Remove Menu")
         end
-        
-        local MissionMenu = nil
-        
-        if self.Mission then
-          MissionMenu = self.Mission:GetRootMenu( AttackGroup )
-        end
-        
-        DesignateMenu = MENU_GROUP:New( AttackGroup, "Designate", MissionMenu )
-        self:E( DesignateMenu )
+        DesignateMenu = MENU_GROUP:New( AttackGroup, "Designate" )
+        self:E(DesignateMenu)
         AttackGroup:SetState( AttackGroup, "DesignateMenu", DesignateMenu )
         
         -- Set Menu option for auto lase
@@ -37587,24 +37563,6 @@ do -- AI_A2A_DISPATCHER
   -- 
   -- The @{#AI_A2A_DISPATCHER} class is designed to create an automatic air defence system for a coalition. 
   -- 
-  -- ====
-  -- 
-  -- # Demo Mission
-  -- 
-  -- ### [AI\_A2A\_DISPATCHER Demo Mission](https://github.com/FlightControl-Master/MOOSE_MISSIONS/tree/release-2-2-pre/AID%20-%20AI%20Dispatching/AID-100%20-%20AI_A2A%20-%20Demonstration)
-  -- 
-  -- ### [AI\_A2A\_DISPATCHER Mission, only for beta testers](https://github.com/FlightControl-Master/MOOSE_MISSIONS/tree/master/AID%20-%20AI%20Dispatching/AID-100%20-%20AI_A2A%20-%20Demonstration)
-  --
-  -- ### [ALL Demo Missions pack of the last release](https://github.com/FlightControl-Master/MOOSE_MISSIONS/releases)
-  -- 
-  -- ====
-  -- 
-  -- # YouTube Channel
-  -- 
-  -- ### [---]()
-  -- 
-  -- ===
-  -- 
   -- ![Banner Image](..\Presentations\AI_A2A_DISPATCHER\Dia3.JPG)
   -- 
   -- It includes automatic spawning of Combat Air Patrol aircraft (CAP) and Ground Controlled Intercept aircraft (GCI) in response to enemy air movements that are detected by a ground based radar network. 
@@ -38148,7 +38106,7 @@ do -- AI_A2A_DISPATCHER
     self.DefenderTasks = {} -- The Defenders Tasks.
     
     -- TODO: Check detection through radar.
-    self.Detection:FilterCategories( { Unit.Category.AIRPLANE, Unit.Category.HELICOPTER } )
+    self.Detection:FilterCategories( Unit.Category.AIRPLANE, Unit.Category.HELICOPTER )
     --self.Detection:InitDetectRadar( true )
     self.Detection:SetDetectionInterval( 30 )
 
@@ -39218,7 +39176,7 @@ do -- AI_A2A_DISPATCHER
     
       if Cap then
     
-        local Spawn = DefenderSquadron.Spawn[ math.random( 1, #DefenderSquadron.Spawn ) ] -- Functional.Spawn#SPAWN
+        local Spawn = DefenderSquadron.Spawn[ math.random( 1, #DefenderSquadron.Spawn ) ]
         Spawn:InitGrouping( DefenderSquadron.Grouping )
 
         local TakeoffMethod = self:GetSquadronTakeoff( SquadronName )
@@ -39669,74 +39627,41 @@ do
   -- ![Banner Image](..\Presentations\AI_A2A_DISPATCHER\Dia1.JPG)
   -- 
   -- The AI_A2A_GCICAP class is designed to create an automatic air defence system for a coalition setting up GCI and CAP air defenses. 
-  -- The class derives from @{AI#AI_A2A_DISPATCHER} and thus, all the methods that are defined in the @{AI#AI_A2A_DISPATCHER} class, can be used also in AI\_A2A\_GCICAP.
-  -- 
-  -- ====
-  -- 
-  -- # Demo Missions
-  -- 
-  -- ### [AI\_A2A\_GCICAP for Caucasus](https://github.com/FlightControl-Master/MOOSE_MISSIONS/tree/release-2-2-pre/AID%20-%20AI%20Dispatching/AID-200%20-%20AI_A2A%20-%20GCICAP%20Demonstration)
-  -- ### [AI\_A2A\_GCICAP for NTTR](https://github.com/FlightControl-Master/MOOSE_MISSIONS/tree/release-2-2-pre/AID%20-%20AI%20Dispatching/AID-210%20-%20NTTR%20AI_A2A_GCICAP%20Demonstration)
-  -- ### [AI\_A2A\_GCICAP for Normandy](https://github.com/FlightControl-Master/MOOSE_MISSIONS/tree/release-2-2-pre/AID%20-%20AI%20Dispatching/AID-220%20-%20NORMANDY%20AI_A2A_GCICAP%20Demonstration)
-  -- 
-  -- ### [AI\_A2A\_GCICAP for beta testers](https://github.com/FlightControl-Master/MOOSE_MISSIONS/tree/master/AID%20-%20AI%20Dispatching)
-  --
-  -- ====
-  -- 
-  -- # YouTube Channel
-  -- 
-  -- ### [---]()
-  -- 
-  -- ===
+  -- The class derives from @{AI#AI_A2A_DISPATCHER} and thus all the methods that are defined in this class, can be used also in AI\_A2A\_GCICAP.
   -- 
   -- ![Banner Image](..\Presentations\AI_A2A_DISPATCHER\Dia3.JPG)
   -- 
-  -- AI\_A2A\_GCICAP includes automatic spawning of Combat Air Patrol aircraft (CAP) and Ground Controlled Intercept aircraft (GCI) in response to enemy 
-  -- air movements that are detected by an airborne or ground based radar network. 
-  -- 
-  -- With a little time and with a little work it provides the mission designer with a convincing and completely automatic air defence system.
-  -- 
-  -- The AI_A2A_GCICAP provides a lightweight configuration method using the mission editor. Within a very short time, and with very little coding, 
-  -- the mission designer is able to configure a complete A2A defense system for a coalition using the DCS Mission Editor available functions. 
-  -- Using the DCS Mission Editor, you define borders of the coalition which are guarded by GCICAP, 
-  -- configure airbases to belong to the coalition, define squadrons flying certain types of planes or payloads per airbase, and define CAP zones.
-  -- **Very little lua needs to be applied, a one liner**, which is fully explained below, which can be embedded 
-  -- right in a DO SCRIPT trigger action or in a larger DO SCRIPT FILE trigger action. 
-  -- 
+  -- AI_A2A_GCICAP includes automatic spawning of Combat Air Patrol aircraft (CAP) and Ground Controlled Intercept aircraft (GCI) in response to enemy 
+  -- air movements that are detected by a ground based radar network. 
   -- CAP flights will take off and proceed to designated CAP zones where they will remain on station until the ground radars direct them to intercept 
   -- detected enemy aircraft or they run short of fuel and must return to base (RTB). 
-  -- 
-  -- When a CAP flight leaves their zone to perform a GCI or return to base a new CAP flight will spawn to take its place.
+  -- When a CAP flight leaves their zone to perform an interception or return to base a new CAP flight will spawn to take their place.
   -- If all CAP flights are engaged or RTB then additional GCI interceptors will scramble to intercept unengaged enemy aircraft under ground radar control.
-  -- 
+  -- With a little time and with a little work it provides the mission designer with a convincing and completely automatic air defence system. 
   -- In short it is a plug in very flexible and configurable air defence module for DCS World.
   -- 
-  -- ====
+  -- The AI_A2A_GCICAP provides a lightweight configuration method using the mission editor.
   -- 
-  -- # The following actions need to be followed when using AI\_A2A\_GCICAP in your mission:
-  -- 
+  --   
   -- ## 1) Configure a working AI\_A2A\_GCICAP defense system for ONE coalition. 
   --   
   -- ### 1.1) Define which airbases are for which coalition. 
   -- 
-  -- ![Mission Editor Action](..\Presentations\AI_A2A_DISPATCHER\AI_A2A_GCICAP-ME_1.JPG)
-  -- 
   -- Color the airbases red or blue. You can do this by selecting the airbase on the map, and select the coalition blue or red.
   -- 
-  -- ### 1.2) Place groups of units given a name starting with a **EWR prefix** of your choice to build your EWR network. 
-  -- 
-  -- ![Mission Editor Action](..\Presentations\AI_A2A_DISPATCHER\AI_A2A_GCICAP-ME_2.JPG)
+  -- ### 1.2) Place Groups given a name starting with a **EWR prefix** of your choice to build your EWR network. 
   --       
   -- **All EWR groups starting with the EWR prefix (text) will be included in the detection system.**  
   -- 
   -- An EWR network, or, Early Warning Radar network, is used to early detect potential airborne targets and to understand the position of patrolling targets of the enemy.
   -- Typically EWR networks are setup using 55G6 EWR, 1L13 EWR, Hawk sr and Patriot str ground based radar units. 
   -- These radars have different ranges and 55G6 EWR and 1L13 EWR radars are Eastern Bloc units (eg Russia, Ukraine, Georgia) while the Hawk and Patriot radars are Western (eg US).
-  -- Additionally, ANY other radar capable unit can be part of the EWR network! 
-  -- Also AWACS airborne units, planes, helicopters can help to detect targets, as long as they have radar.
+  -- Additionally, ANY other radar capable unit can be part of the EWR network! Also AWACS airborne units, planes, helicopters can help to detect targets, as long as they have radar.
   -- The position of these units is very important as they need to provide enough coverage 
   -- to pick up enemy aircraft as they approach so that CAP and GCI flights can be tasked to intercept them.
   -- 
+  -- ![Banner Image](..\Presentations\AI_A2A_DISPATCHER\Dia7.JPG)
+  --  
   -- Additionally in a hot war situation where the border is no longer respected the placement of radars has a big effect on how fast the war escalates. 
   -- For example if they are a long way forward and can detect enemy planes on the ground and taking off 
   -- they will start to vector CAP and GCI flights to attack them straight away which will immediately draw a response from the other coalition. 
@@ -39747,30 +39672,17 @@ do
   -- EWR networks are **dynamically maintained**. By defining in a **smart way the names or name prefixes of the groups** with EWR capable units, these groups will be **automatically added or deleted** from the EWR network, 
   -- increasing or decreasing the radar coverage of the Early Warning System.
   -- 
-  -- ### 1.3) Place Airplane or Helicopter Groups with late activation switched on above the airbases to define Squadrons. 
+  -- ### 1.3) Place Airplane or Helicopter Groups with late activation switched on 
   -- 
-  -- ![Mission Editor Action](..\Presentations\AI_A2A_DISPATCHER\AI_A2A_GCICAP-ME_3.JPG)
-  -- 
-  -- These are **templates**, with a given name starting with a **Template prefix** above each airbase that you wanna have a squadron. 
-  -- These **templates** need to be within 1.5km from the airbase center. They don't need to have a slot at the airplane, they can just be positioned above the airbase, 
+  -- These are **templates**, with a given name starting with **a Template prefix** above each airbase that you wanna have a squadron. 
+  -- These **templates** need to be within 10km from the airbase center. They don't need to have a slot at the airplane, they can just be positioned above the airbase, 
   -- without a route, and should only have ONE unit.
   -- 
-  -- ![Mission Editor Action](..\Presentations\AI_A2A_DISPATCHER\AI_A2A_GCICAP-ME_4.JPG)
-  -- 
-  -- **All airplane or helicopter groups that are starting with any of the choosen Template Prefixes will result in a squadron created at the airbase.**  
-  -- 
-  -- ### 1.4) Place floating helicopters to create the CAP zones defined by its route points. 
-  -- 
-  -- ![Mission Editor Action](..\Presentations\AI_A2A_DISPATCHER\AI_A2A_GCICAP-ME_5.JPG)
-  -- 
-  -- **All airplane or helicopter groups that are starting with any of the choosen Template Prefixes will result in a squadron created at the airbase.**  
+  -- ### 1.4) Place floating helicopters to create the CAP zones. 
   -- 
   -- The helicopter indicates the start of the CAP zone. 
-  -- The route points define the form of the CAP zone polygon. 
-  -- 
-  -- ![Mission Editor Action](..\Presentations\AI_A2A_DISPATCHER\AI_A2A_GCICAP-ME_6.JPG)
-  -- 
-  -- **The place of the helicopter is important, as the airbase closest to the helicopter will be the airbase from where the CAP planes will take off for CAP.**
+  -- The route points the form of the CAP zone polygon. 
+  -- The place of the helicopter is important, as the airbase closest to the helicopter will be the airbase from where the CAP planes will take off for CAP.
   -- 
   -- ## 2) There are a lot of defaults set, which can be further modified using the methods in @{AI#AI_A2A_DISPATCHER}:
   -- 
@@ -39779,42 +39691,10 @@ do
   -- This prevents airbases to get cluttered with airplanes taking off, it also reduces the risk of human players colliding with taxiiing airplanes,
   -- resulting in the airbase to halt operations.
   -- 
-  -- You can change the way how planes take off by using the inherited methods from AI\_A2A\_DISPATCHER:
-  -- 
-  --   * @{#AI_A2A_DISPATCHER.SetSquadronTakeoff}() is the generic configuration method to control takeoff from the air, hot, cold or from the runway. See the method for further details.
-  --   * @{#AI_A2A_DISPATCHER.SetSquadronTakeoffInAir}() will spawn new aircraft from the squadron directly in the air.
-  --   * @{#AI_A2A_DISPATCHER.SetSquadronTakeoffFromParkingCold}() will spawn new aircraft in without running engines at a parking spot at the airfield.
-  --   * @{#AI_A2A_DISPATCHER.SetSquadronTakeoffFromParkingHot}() will spawn new aircraft in with running engines at a parking spot at the airfield.
-  --   * @{#AI_A2A_DISPATCHER.SetSquadronTakeoffFromRunway}() will spawn new aircraft at the runway at the airfield.
-  -- 
-  -- Use these methods to fine-tune for specific airfields that are known to create bottlenecks, or have reduced airbase efficiency.
-  -- The more and the longer aircraft need to taxi at an airfield, the more risk there is that:
-  -- 
-  --   * aircraft will stop waiting for each other or for a landing aircraft before takeoff.
-  --   * aircraft may get into a "dead-lock" situation, where two aircraft are blocking each other.
-  --   * aircraft may collide at the airbase.
-  --   * aircraft may be awaiting the landing of a plane currently in the air, but never lands ...
-  --   
-  -- Currently within the DCS engine, the airfield traffic coordination is erroneous and contains a lot of bugs.
-  -- If you experience while testing problems with aircraft take-off or landing, please use one of the above methods as a solution to workaround these issues!
-  -- 
   -- ### 2.2) Planes return near the airbase or will land if damaged.
   -- 
   -- When damaged airplanes return to the airbase, they will be routed and will dissapear in the air when they are near the airbase.
   -- There are exceptions to this rule, airplanes that aren't "listening" anymore due to damage or out of fuel, will return to the airbase and land.
-  -- 
-  -- You can change the way how planes land by using the inherited methods from AI\_A2A\_DISPATCHER:
-  -- 
-  --   * @{#AI_A2A_DISPATCHER.SetSquadronLanding}() is the generic configuration method to control landing, namely despawn the aircraft near the airfield in the air, right after landing, or at engine shutdown.
-  --   * @{#AI_A2A_DISPATCHER.SetSquadronLandingNearAirbase}() will despawn the returning aircraft in the air when near the airfield.
-  --   * @{#AI_A2A_DISPATCHER.SetSquadronLandingAtRunway}() will despawn the returning aircraft directly after landing at the runway.
-  --   * @{#AI_A2A_DISPATCHER.SetSquadronLandingAtEngineShutdown}() will despawn the returning aircraft when the aircraft has returned to its parking spot and has turned off its engines.
-  -- 
-  -- You can use these methods to minimize the airbase coodination overhead and to increase the airbase efficiency.
-  -- When there are lots of aircraft returning for landing, at the same airbase, the takeoff process will be halted, which can cause a complete failure of the
-  -- A2A defense system, as no new CAP or GCI planes can takeoff.
-  -- Note that the method @{#AI_A2A_DISPATCHER.SetSquadronLandingNearAirbase}() will only work for returning aircraft, not for damaged or out of fuel aircraft.
-  -- Damaged or out-of-fuel aircraft are returning to the nearest friendly airbase and will land, and are out of control from ground control.
   -- 
   -- ### 2.3) CAP operations setup for specific airbases, will be executed with the following parameters: 
   -- 
@@ -39822,48 +39702,9 @@ do
   --   * The CAP speed will vary between 500 and 800 km/h. 
   --   * The engage speed between 800 and 1200 km/h.
   --   
-  -- You can change or add a CAP zone by using the inherited methods from AI\_A2A\_DISPATCHER:
-  -- 
-  -- The method @{#AI_A2A_DISPATCHER.SetSquadronCap}() defines a CAP execution for a squadron.
-  -- 
-  -- Setting-up a CAP zone also requires specific parameters:
-  -- 
-  --   * The minimum and maximum altitude
-  --   * The minimum speed and maximum patrol speed
-  --   * The minimum and maximum engage speed
-  --   * The type of altitude measurement
-  -- 
-  -- These define how the squadron will perform the CAP while partrolling. Different terrain types requires different types of CAP. 
-  -- 
-  -- The @{#AI_A2A_DISPATCHER.SetSquadronCapInterval}() method specifies **how much** and **when** CAP flights will takeoff.
-  -- 
-  -- It is recommended not to overload the air defense with CAP flights, as these will decrease the performance of the overall system. 
-  -- 
-  -- For example, the following setup will create a CAP for squadron "Sochi":
-  -- 
-  --    A2ADispatcher:SetSquadronCap( "Sochi", CAPZoneWest, 4000, 8000, 600, 800, 800, 1200, "BARO" )
-  --    A2ADispatcher:SetSquadronCapInterval( "Sochi", 2, 30, 120, 1 )
-  -- 
   -- ### 2.4) Each airbase will perform GCI when required, with the following parameters:
   -- 
   --   * The engage speed is between 800 and 1200 km/h.
-  -- 
-  -- You can change or add a GCI parameters by using the inherited methods from AI\_A2A\_DISPATCHER:
-  -- 
-  -- The method @{#AI_A2A_DISPATCHER.SetSquadronGci}() defines a GCI execution for a squadron.
-  -- 
-  -- Setting-up a GCI readiness also requires specific parameters:
-  -- 
-  --   * The minimum speed and maximum patrol speed
-  -- 
-  -- Essentially this controls how many flights of GCI aircraft can be active at any time.
-  -- Note allowing large numbers of active GCI flights can adversely impact mission performance on low or medium specification hosts/servers.
-  -- GCI needs to be setup at strategic airbases. Too far will mean that the aircraft need to fly a long way to reach the intruders, 
-  -- too short will mean that the intruders may have alraedy passed the ideal interception point!
-  -- 
-  -- For example, the following setup will create a GCI for squadron "Sochi":
-  -- 
-  --    A2ADispatcher:SetSquadronGci( "Mozdok", 900, 1200 )
   -- 
   -- ### 2.5) Grouping or detected targets.
   -- 
@@ -39884,39 +39725,27 @@ do
   -- 
   -- This is a good implementation, because maybe in the future, more coalitions may become available in DCS world.
   -- 
-  -- ## 4) Coding examples how to use the AI\_A2A\_GCICAP class:
   -- 
-  -- ### 4.1) An easy setup:
+  -- 
+  -- 
+  -- ## 4) Coding example how to use the AI\_A2A\_GCICAP class:
   -- 
   --      -- Setup the AI_A2A_GCICAP dispatcher for one coalition, and initialize it.
   --      GCI_Red = AI_A2A_GCICAP:New( "EWR CCCP", "SQUADRON CCCP", "CAP CCCP", 2 )
-  --   -- 
+  -- 
+  -- This will create a GCI/CAP system for the RED coalition, and stores the reference to the GCI/CAP system in the `GCI\_Red` variable!
+  -- In the mission editor, the following setup will have taken place:
+  -- 
+  -- ![Banner Image](..\Presentations\AI_A2A_DISPATCHER\Dia5.JPG)
+  -- 
   -- The following parameters were given to the :New method of AI_A2A_GCICAP, and mean the following:
   -- 
-  --    * `"EWR CCCP"`: Groups of the blue coalition are placed that define the EWR network. These groups start with the name `EWR CCCP`.
-  --    * `"SQUADRON CCCP"`: Late activated Groups objects of the red coalition are placed above the relevant airbases that will contain these templates in the squadron.
+  --    * `EWR CCCP`: Groups of the RED coalition are placed that define the EWR network. These groups start with the name `EWR CCCP`.
+  --    * `SQUADRON CCCP`: Late activated Groups objects of the RED coalition are placed above the relevant airbases that will contain these templates in the squadron.
   --      These late activated Groups start with the name `SQUADRON CCCP`. Each Group object contains only one Unit, and defines the weapon payload, skin and skill level.
-  --    * `"CAP CCCP"`: CAP Zones are defined using floating, late activated Helicopter Group objects, where the route points define the route of the polygon of the CAP Zone.
+  --    * `CAP CCCP`: CAP Zones are defined using floating, late activated Helicopter Group objects, where the route points define the route of the polygon of the CAP Zone.
   --      These Helicopter Group objects start with the name `CAP CCCP`, and will be the locations wherein CAP will be performed.
   --    * `2` Defines how many CAP airplanes are patrolling in each CAP zone defined simulateneously.  
-  -- 
-  -- 
-  -- ### 4.2) A more advanced setup:
-  -- 
-  --      -- Setup the AI_A2A_GCICAP dispatcher for the blue coalition.
-  -- 
-  --      A2A_GCICAP_Blue = AI_A2A_GCICAP:New( { "BLUE EWR" }, { "104th", "105th", "106th" }, { "104th CAP" }, 4 ) 
-  -- 
-  -- The following parameters for the :New method have the following meaning:
-  -- 
-  --    * `{ "BLUE EWR" }`: An array of the group name prefixes of the groups of the blue coalition are placed that define the EWR network. These groups start with the name `BLUE EWR`.
-  --    * `{ "104th", "105th", "106th" } `: An array of the group name prefixes of the Late activated Groups objects of the blue coalition are 
-  --      placed above the relevant airbases that will contain these templates in the squadron.
-  --      These late activated Groups start with the name `104th` or `105th` or `106th`. 
-  --    * `{ "104th CAP" }`: An array of the names of the CAP zones are defined using floating, late activated helicopter group objects, 
-  --      where the route points define the route of the polygon of the CAP Zone.
-  --      These Helicopter Group objects start with the name `104th CAP`, and will be the locations wherein CAP will be performed.
-  --    * `4` Defines how many CAP airplanes are patrolling in each CAP zone defined simulateneously.  
   -- 
   -- @field #AI_A2A_GCICAP
   AI_A2A_GCICAP = {
@@ -39930,7 +39759,7 @@ do
   -- @param #list<#string> EWRPrefixes A list of prefixes that of groups that setup the Early Warning Radar network.
   -- @param #number GroupingRadius The radius in meters wherein detected planes are being grouped as one target area. 
   -- For airplanes, 6000 (6km) is recommended, and is also the default value of this parameter.
-  -- @return #AI_A2A_GCICAP
+  -- @return #AI_A2A_DISPATCHER_GCICAP
   -- @usage
   --   
   --   -- Set a new AI A2A GCICAP object, based on an EWR network with a 30 km grouping radius
@@ -39975,17 +39804,14 @@ do
 
     -- Setup squadrons
     
-    self:F( { Airbases = AirbaseNames  } )
-    
     for AirbaseID, AirbaseName in pairs( AirbaseNames ) do
       local Airbase = _DATABASE:FindAirbase( AirbaseName ) -- Wrapper.Airbase#AIRBASE
       local AirbaseName = Airbase:GetName()
       local AirbaseCoord = Airbase:GetCoordinate()
-      local AirbaseZone = ZONE_RADIUS:New( "Airbase", AirbaseCoord:GetVec2(), 3000 )
+      local AirbaseZone = ZONE_RADIUS:New( "Airbase", AirbaseCoord:GetVec2(), 10000 )
       local Templates = nil
       for TemplateID, Template in pairs( self.Templates:GetSet() ) do
         local Template = Template -- Wrapper.Group#GROUP
-        self:F( { Template = Template:GetName() } )
         local TemplateCoord = Template:GetCoordinate()
         if AirbaseZone:IsVec2InZone( TemplateCoord:GetVec2() ) then
           Templates = Templates or {}
@@ -40039,6 +39865,57 @@ do
         self:SetSquadronGci( AirbaseName, 800, 1200 )
       end
     end
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     self:__Start( 5 )
     
@@ -46135,23 +46012,7 @@ function MISSION:RemoveTaskMenu( Task )
 end
 
 
---- Gets the root mission menu for the TaskGroup.
--- @param #MISSION self
--- @return Core.Menu#MENU_COALITION self
-function MISSION:GetRootMenu( TaskGroup ) -- R2.2
-
-  local CommandCenter = self:GetCommandCenter()
-  local CommandCenterMenu = CommandCenter:GetMenu()
-
-  local MissionName = self:GetName()
-  --local MissionMenu = CommandCenterMenu:GetMenu( MissionName )
-  
-  self.MissionMenu = self.MissionMenu or MENU_COALITION:New( self.MissionCoalition, self:GetName(), CommandCenterMenu )
-
-  return self.MissionMenu
-end
-
---- Gets the mission menu for the TaskGroup.
+--- Gets the mission menu for the coalition.
 -- @param #MISSION self
 -- @return Core.Menu#MENU_COALITION self
 function MISSION:GetMenu( TaskGroup ) -- R2.1 -- Changed Menu Structure
@@ -46162,28 +46023,27 @@ function MISSION:GetMenu( TaskGroup ) -- R2.1 -- Changed Menu Structure
   local MissionName = self:GetName()
   --local MissionMenu = CommandCenterMenu:GetMenu( MissionName )
   
-  self.MissionGroupMenu = self.MissionGroupMenu or {}
-  self.MissionGroupMenu[TaskGroup] = self.MissionGroupMenu[TaskGroup] or {}
+  self.MissionMenu = self.MissionMenu or {}
+  self.MissionMenu[TaskGroup] = self.MissionMenu[TaskGroup] or {}
   
-  local GroupMenu = self.MissionGroupMenu[TaskGroup]
+  local Menu = self.MissionMenu[TaskGroup]
   
-  self.MissionMenu = self.MissionMenu or MENU_COALITION:New( self.MissionCoalition, self:GetName(), CommandCenterMenu )
-  
-  GroupMenu.BriefingMenu = GroupMenu.BriefingMenu or MENU_GROUP_COMMAND:New( TaskGroup, "Mission Briefing", self.MissionMenu, self.MenuReportBriefing, self, TaskGroup )
+  Menu.MainMenu = Menu.MainMenu or MENU_GROUP:New( TaskGroup, self:GetName(), CommandCenterMenu )
+  Menu.BriefingMenu = Menu.BriefingMenu or MENU_GROUP_COMMAND:New( TaskGroup, "Mission Briefing", Menu.MainMenu, self.MenuReportBriefing, self, TaskGroup )
 
-  GroupMenu.TaskReportsMenu = GroupMenu.TaskReportsMenu or                      MENU_GROUP:New( TaskGroup, "Task Reports", self.MissionMenu )
-  GroupMenu.ReportTasksMenu = GroupMenu.ReportTasksMenu or                      MENU_GROUP_COMMAND:New( TaskGroup, "Report Tasks", GroupMenu.TaskReportsMenu, self.MenuReportTasksSummary, self, TaskGroup )
-  GroupMenu.ReportPlannedTasksMenu = GroupMenu.ReportPlannedTasksMenu or        MENU_GROUP_COMMAND:New( TaskGroup, "Report Planned Tasks", GroupMenu.TaskReportsMenu, self.MenuReportTasksPerStatus, self, TaskGroup, "Planned" )
-  GroupMenu.ReportAssignedTasksMenu = GroupMenu.ReportAssignedTasksMenu or      MENU_GROUP_COMMAND:New( TaskGroup, "Report Assigned Tasks", GroupMenu.TaskReportsMenu, self.MenuReportTasksPerStatus, self, TaskGroup, "Assigned" )
-  GroupMenu.ReportSuccessTasksMenu = GroupMenu.ReportSuccessTasksMenu or        MENU_GROUP_COMMAND:New( TaskGroup, "Report Successful Tasks", GroupMenu.TaskReportsMenu, self.MenuReportTasksPerStatus, self, TaskGroup, "Success" )
-  GroupMenu.ReportFailedTasksMenu = GroupMenu.ReportFailedTasksMenu or          MENU_GROUP_COMMAND:New( TaskGroup, "Report Failed Tasks", GroupMenu.TaskReportsMenu, self.MenuReportTasksPerStatus, self, TaskGroup, "Failed" )
-  GroupMenu.ReportHeldTasksMenu = GroupMenu.ReportHeldTasksMenu or              MENU_GROUP_COMMAND:New( TaskGroup, "Report Held Tasks", GroupMenu.TaskReportsMenu, self.MenuReportTasksPerStatus, self, TaskGroup, "Hold" )
+  Menu.TaskReportsMenu = Menu.TaskReportsMenu or                      MENU_GROUP:New( TaskGroup, "Task Reports", Menu.MainMenu )
+  Menu.ReportTasksMenu = Menu.ReportTasksMenu or                      MENU_GROUP_COMMAND:New( TaskGroup, "Report Tasks", Menu.TaskReportsMenu, self.MenuReportTasksSummary, self, TaskGroup )
+  Menu.ReportPlannedTasksMenu = Menu.ReportPlannedTasksMenu or        MENU_GROUP_COMMAND:New( TaskGroup, "Report Planned Tasks", Menu.TaskReportsMenu, self.MenuReportTasksPerStatus, self, TaskGroup, "Planned" )
+  Menu.ReportAssignedTasksMenu = Menu.ReportAssignedTasksMenu or      MENU_GROUP_COMMAND:New( TaskGroup, "Report Assigned Tasks", Menu.TaskReportsMenu, self.MenuReportTasksPerStatus, self, TaskGroup, "Assigned" )
+  Menu.ReportSuccessTasksMenu = Menu.ReportSuccessTasksMenu or        MENU_GROUP_COMMAND:New( TaskGroup, "Report Successful Tasks", Menu.TaskReportsMenu, self.MenuReportTasksPerStatus, self, TaskGroup, "Success" )
+  Menu.ReportFailedTasksMenu = Menu.ReportFailedTasksMenu or          MENU_GROUP_COMMAND:New( TaskGroup, "Report Failed Tasks", Menu.TaskReportsMenu, self.MenuReportTasksPerStatus, self, TaskGroup, "Failed" )
+  Menu.ReportHeldTasksMenu = Menu.ReportHeldTasksMenu or              MENU_GROUP_COMMAND:New( TaskGroup, "Report Held Tasks", Menu.TaskReportsMenu, self.MenuReportTasksPerStatus, self, TaskGroup, "Hold" )
   
-  GroupMenu.PlayerReportsMenu = GroupMenu.PlayerReportsMenu or                  MENU_GROUP:New( TaskGroup, "Statistics Reports", self.MissionMenu )
-  GroupMenu.ReportMissionHistory = GroupMenu.ReportPlayersHistory or            MENU_GROUP_COMMAND:New( TaskGroup, "Report Mission Progress", GroupMenu.PlayerReportsMenu, self.MenuReportPlayersProgress, self, TaskGroup )
-  GroupMenu.ReportPlayersPerTaskMenu = GroupMenu.ReportPlayersPerTaskMenu or    MENU_GROUP_COMMAND:New( TaskGroup, "Report Players per Task", GroupMenu.PlayerReportsMenu, self.MenuReportPlayersPerTask, self, TaskGroup )
+  Menu.PlayerReportsMenu = Menu.PlayerReportsMenu or                  MENU_GROUP:New( TaskGroup, "Statistics Reports", Menu.MainMenu )
+  Menu.ReportMissionHistory = Menu.ReportPlayersHistory or            MENU_GROUP_COMMAND:New( TaskGroup, "Report Mission Progress", Menu.PlayerReportsMenu, self.MenuReportPlayersProgress, self, TaskGroup )
+  Menu.ReportPlayersPerTaskMenu = Menu.ReportPlayersPerTaskMenu or    MENU_GROUP_COMMAND:New( TaskGroup, "Report Players per Task", Menu.PlayerReportsMenu, self.MenuReportPlayersPerTask, self, TaskGroup )
   
-  return self.MissionMenu
+  return Menu.MainMenu
 end
 
 
