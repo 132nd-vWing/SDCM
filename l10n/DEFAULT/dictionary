@@ -22,6 +22,17 @@ dictionary =
     ["DictKey_ActionRadioText_768"] = "GFC Check-in",
     ["DictKey_ActionRadioText_915"] = "MEDEVAC info",
     ["DictKey_ActionRadioText_916"] = "Green smoke on LZ",
+    ["DictKey_ActionRadioText_3326"] = "GFC Check-in",
+    ["DictKey_ActionRadioText_3328"] = "GFC intent",
+    ["DictKey_ActionRadioText_3329"] = "Threat",
+    ["DictKey_ActionRadioText_3330"] = "Enemies",
+    ["DictKey_ActionRadioText_3331"] = "Friendlies",
+    ["DictKey_ActionRadioText_3332"] = "Artillery",
+    ["DictKey_ActionRadioText_3333"] = "GFC Check-in",
+    ["DictKey_ActionRadioText_3344"] = "",
+    ["DictKey_ActionRadioText_3346"] = "Start Convoy",
+    ["DictKey_ActionRadioText_3348"] = "Casualty info",
+    ["DictKey_ActionRadioText_3350"] = "",
     ["DictKey_ActionText_454"] = "",
     ["DictKey_ActionText_455"] = "From: GFC\
 To: JTAC\
@@ -205,6 +216,74 @@ The friendly ground forces will commence their assault against AMBROLAURI within
     ["DictKey_ActionText_2431"] = "",
     ["DictKey_ActionText_2843"] = "RED CAP loaded",
     ["DictKey_ActionText_3021"] = "AR_Korbouli loaded",
+    ["DictKey_ActionText_3327"] = "From: GFC\
+To: JTAC\
+Welcome, we need your support. Use the F10 menu to get additional information.\
+\
+Once you have CAS overhead, use F10 to start convoy movement.",
+    ["DictKey_ActionText_3334"] = "",
+    ["DictKey_ActionText_3335"] = "",
+    ["DictKey_ActionText_3336"] = "FROM: GFC\
+TO: JTAC\
+\
+GFC INTENT:\
+Due to increased threat I want CAS in support before moving into FOB AMTKEL.\
+I want CAS to scan the area ahead of the convoy and report any potential ambushes. If positive identification on eny combatans (weapons), I want the insugents taken out.\
+\
+I want aircrafts to scan 200-1000km ahead of the convoy and report any movement on the road, and report any potential ambushsites,\
+\
+Target priorities:\
+If we are under attack, I want aircrafts to be able to support us as soon as possible.\
+\
+\
+Restrictions:\
+Type 1 and Type 2 control approved.\
+",
+    ["DictKey_ActionText_3337"] = "FROM: GFC\
+TO: JTAC\
+\
+THREAT:\
+No reporting indicates AAA/SAM threats in the area.",
+    ["DictKey_ActionText_3338"] = "FROM: GFC\
+TO: JTAC\
+\
+ENEMY:\
+Intelligence reports communications chatter that insurgents have been preparing for a complex attack against a coalition convoy. \
+\
+Intelligence have also picked up that insurgent commschatter that our convoy have arrived here in MERHEULI.\
+",
+    ["DictKey_ActionText_3339"] = "FROM: GFC\
+TO: JTAC\
+\
+FRIENDLIES:\
+The convoy consist of 3 elements:\
+Lead: 8 vehicles (3x HUMVWE+5x transports)\
+Middle: JTAC vehicle\
+Rear: 3 vehicles(2x transports + 1x HUMVWE)\
+\
+\
+",
+    ["DictKey_ActionText_3340"] = "FROM: GFC\
+TO: JTAC\
+\
+ARTILLERY:\
+Currently we have no artillery support.",
+    ["DictKey_ActionText_3345"] = "FROM: GFC\
+TO: JTAC\
+\
+Convoy is moving out at this time. I will not stop for anything, and I want you to support me as best as possible during the movement.",
+    ["DictKey_ActionText_3347"] = "From: GFC\
+To: JTAC\
+\
+We have injured personell in the convoy. I request you get us MEDEVAC or CASEVAC support. I expect us to be at FOB AMTKEL within the next 15 minutes. \
+\
+I want you to request pick-up at FOB AMTKEL at their Helicopter Landing Zone (HLZ) there.",
+    ["DictKey_ActionText_3349"] = "From: GFC\
+To: JTAC\
+\
+Update: We have 2 critical injured casualties.\
+\
+I want you to request pick-up at FOB AMTKEL at their Helicopter Landing Zone (HLZ) there.",
     ["DictKey_GroupName_5"] = "617 Neck",
     ["DictKey_GroupName_8"] = "617 Trollef",
     ["DictKey_GroupName_11"] = "617 Hansolo",
@@ -759,8 +838,9 @@ The friendly ground forces will commence their assault against AMBROLAURI within
     ["DictKey_GroupName_3296"] = "696_Sukhumi#1",
     ["DictKey_GroupName_3299"] = "696_Sukhumi#2",
     ["DictKey_GroupName_3302"] = "Hospital Role 2 Sukhumi",
-    ["DictKey_GroupName_3305"] = "CONV1_JTAC",
+    ["DictKey_GroupName_3305"] = "JTAC_CONV1",
     ["DictKey_GroupName_3308"] = "CONV1_part 2",
+    ["DictKey_GroupName_3341"] = "",
     ["DictKey_UnitName_6"] = "Neck",
     ["DictKey_UnitName_9"] = "Trollef",
     ["DictKey_UnitName_12"] = "Hansolo",
@@ -2485,10 +2565,11 @@ The friendly ground forces will commence their assault against AMBROLAURI within
     ["DictKey_UnitName_3297"] = "696_Sukhumi#1",
     ["DictKey_UnitName_3300"] = "696_Sukhumi#2",
     ["DictKey_UnitName_3303"] = "",
-    ["DictKey_UnitName_3306"] = "CONV1_JTAC",
+    ["DictKey_UnitName_3306"] = "JTAC_CONV1",
     ["DictKey_UnitName_3309"] = "CONV1_part 2 #002",
     ["DictKey_UnitName_3311"] = "CONV1_part 2 #001",
     ["DictKey_UnitName_3312"] = "CONV1_part 2",
+    ["DictKey_UnitName_3342"] = "",
     ["DictKey_WptName_7"] = "",
     ["DictKey_WptName_10"] = "",
     ["DictKey_WptName_13"] = "",
@@ -3417,6 +3498,7 @@ The friendly ground forces will commence their assault against AMBROLAURI within
     ["DictKey_WptName_3323"] = "",
     ["DictKey_WptName_3324"] = "",
     ["DictKey_WptName_3325"] = "",
+    ["DictKey_WptName_3343"] = "",
     ["DictKey_descriptionBlueTask_3"] = "",
     ["DictKey_descriptionRedTask_2"] = "",
     ["DictKey_descriptionText_1"] = "See full mission briefing on 132nd Virtual Wing website for detailed information about situation and tasking.\
